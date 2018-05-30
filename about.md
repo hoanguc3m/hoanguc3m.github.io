@@ -3,6 +3,7 @@ layout: page
 title: About
 permalink: /about/
 ---
+![hoang@uc3m](https://raw.githubusercontent.com/hoanguc3m/hoanguc3m.github.io/master/images/photo1.jpg)
 
 ### To whom it may concern
 
