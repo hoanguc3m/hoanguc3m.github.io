@@ -26,3 +26,16 @@ More information: [Paper](https://github.com/hoanguc3m/Talk/raw/master/00_sustai
 
 
  
+* *Variational Bayesian inference for high dimensional structured factor copulas*, joint with [M. Concepcíon Ausín](http://portal.uc3m.es/portal/page/portal/dpto_estadistica/personal/Concepcion_Ausin) and [Pedro Galeano](http://portal.uc3m.es/portal/page/portal/dpto_estadistica/home/members/pedro_galeano_san_miguel) (UC3M)
+
+Factor copula models have been recently proposed for describing the joint distribution of a large number of variables in terms of a few common latent factors. 
+In this paper, we employ a Bayesian procedure to make a fast inference for multi-factor and structured factor copulas. 
+To deal with the high dimensional structure, we apply a Variational Inference (VI) approximation to estimate the different specifications of factor copula models. 
+Compared to the Markov chain Monte Carlo (MCMC) approach, the VI approximation is much faster and could handle a sizeable problem in a few seconds.
+Another issue of factor copulas is that the bivariate links among the nodes are unknown in high dimensions. We derive an automated procedure to recover the dependence structure. By taking advantage of the posterior samples, we inspect the initial assumption of bivariate copula functions and switch for a better one by minimizing Bayesian information criterion (BIC). 
+The simulation in different context shows that the procedures of bivariate copula selection could be at least 80\% accuracy compared to the true generated copula model. We illustrate our proposed procedure with high dimensional real data sets in different contexts.
+
+More information: [Paper]() -
+[Slides]() - 
+[Poster](https://github.com/hoanguc3m/Talk/raw/master/02_vifcop/poster2.pdf) - [Code](https://github.com/hoanguc3m/vifcopula) 
+
