@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    <title>An introduction to TensorFlow – Hoang Nguyen – If the statistics are boring, then you've got the wrong numbers. <i>Edward R. Tufte</i></title>
+
+    <meta name="author" content="Hoang Nguyen" />
+    <meta name="description" content="If the statistics are boring, then you've got the wrong numbers. <i>Edward R. Tufte</i>">
+    <meta name="keywords" content="hoanguc3m">
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="Hoang Nguyen - If the statistics are boring, then you've got the wrong numbers. <i>Edward R. Tufte</i>" href="/feed.xml" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+
+<!-- mathjax config similar to math.stackexchange -->
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  jax: ["input/TeX", "output/HTML-CSS"],
+  tex2jax: {
+    inlineMath: [ ['$', '$'] ],
+    displayMath: [ ['$$', '$$']],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  },
+  messageStyle: "none",
+  "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] }
+});
+</script>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
+
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="/" class="site-avatar"><img src="https://raw.githubusercontent.com/hoanguc3m/hoanguc3m.github.io/master/images/jekyll-logo.png" /></a>
+          
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">Hoang Nguyen</a></h1>
+            <p class="site-description">If the statistics are boring, then you've got the wrong numbers. <i>Edward R. Tufte</i></p>
+          </div>
+          
+          <nav>
+            <a href="/">Blog</a>
+            <a href="/teaching">Teaching</a>
+            <a href="/research">Research</a>
+            <a href="/about">About</a>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <article class="post">
+  <h1>An introduction to TensorFlow</h1>
+
+  <div class="date">
+    Written on July  3, 2018 by Hoang Nguyen
+  </div>
+
+  <div class="entry">
+    <p><strong>Abstract:</strong> <code class="highlighter-rouge">TensorFlow</code> has been widely used for many applications in machine learning and deep learning. However, <code class="highlighter-rouge">TensorFlow</code> is more than that, it is a general purpose computing library. Based on that, people have created a rich ecosystem for quickly developing models. In this talk, I will show how statisticians can get most of the main features in <code class="highlighter-rouge">TensorFlow</code> such as automatic differentiation, optimization, and Bayesian analysis through a simple linear regression example.</p>
+
+<h2 id="introduction">Introduction</h2>
+
+<p><code class="highlighter-rouge">TensorFlow</code> is a machine learning framework of <code class="highlighter-rouge">Google</code>. It is developed by <code class="highlighter-rouge">Google Brain</code> team since 2015 and released publicly in 02.2017. It is now implemented for many applications in machine learning and deep learning. It has <code class="highlighter-rouge">API</code> for <code class="highlighter-rouge">Python</code>, <code class="highlighter-rouge">R</code>, <code class="highlighter-rouge">C</code>.</p>
+
+<p><code class="highlighter-rouge">TensorFlow</code> is not only used for deep learning. As a   statistician, there are a lot of features that we can take advantages.</p>
+
+<ul>
+  <li><code class="highlighter-rouge">TensorFlow</code> = general purpose computing library.</li>
+  <li><code class="highlighter-rouge">TensorFlow</code> in <code class="highlighter-rouge">R</code> = Interface to <code class="highlighter-rouge">TensorFlow</code> library.</li>
+  <li>Computations are implemented as input data (tensor/ generalized matrix/ multidimensional array) flow through nodes (mathematical operators) to the output data.</li>
+</ul>
+
+<p>Tensorflow features:</p>
+
+<ul>
+  <li>Reverse-mode auto differentiation.</li>
+  <li>Multicore CPU, GPU supports.</li>
+  <li>Official <code class="highlighter-rouge">Python</code> API and <code class="highlighter-rouge">C</code> API, third-party packages for <code class="highlighter-rouge">Julia</code>, <code class="highlighter-rouge">R</code>.</li>
+  <li>An ecosystem with numbers of machine learning algorithms <code class="highlighter-rouge">tfestimators</code>, <code class="highlighter-rouge">keras</code>.</li>
+  <li>Graphical probabilistic modelling with <code class="highlighter-rouge">TensorFlow Probability</code>.</li>
+  <li>Monitor and metrics with <code class="highlighter-rouge">TensorBoard</code>.</li>
+</ul>
+
+<p><img src="/figure/source/2018-07-03-introduction-tensorflow/pic0.png" alt="tensorflow" title="Tf framework" /></p>
+
+<h3 id="install-tensorflow-in-r">Install <code class="highlighter-rouge">TensorFlow</code> in <code class="highlighter-rouge">R</code></h3>
+
+<p>We summary the main steps for installing <code class="highlighter-rouge">TensorFlow</code> package in <code class="highlighter-rouge">R</code>. 
+For the full instruction, please go to:</p>
+
+<ul>
+  <li><a href="https://www.tensorflow.org/install/install_windows">Windows</a></li>
+  <li><a href="https://www.tensorflow.org/install/install_linux">Ubuntu</a></li>
+  <li><a href="https://www.tensorflow.org/install/install_mac">macOS</a></li>
+</ul>
+
+<h4 id="install-tensorflow-in-python-virtual-environment">Install <code class="highlighter-rouge">TensorFlow</code> in <code class="highlighter-rouge">python</code> virtual environment</h4>
+
+<h5 id="windows">Windows</h5>
+
+<p>Install <code class="highlighter-rouge">python</code>, <code class="highlighter-rouge">pip3</code> and <code class="highlighter-rouge">TensorFlow</code>,</p>
+
+<p>a. Download <a href="https://www.python.org/downloads/release/python-354/"><code class="highlighter-rouge">python</code></a> and install (Choose add path and install <code class="highlighter-rouge">pip3</code>).</p>
+
+<p>b. Open cmd with administration role and execute,</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">pip3 <span class="nb">install </span><span class="nv">tensorflow</span><span class="o">==</span>1.9.0rc1
+pip3 <span class="nb">install </span>tfp-nightly<span class="o">==</span>0.1.0rc1.dev20180702  <span class="c"># depends on tensorflow (CPU-only)</span></code></pre></figure>
+
+<h5 id="ubuntu">Ubuntu</h5>
+<p>Install <code class="highlighter-rouge">python</code>, <code class="highlighter-rouge">pip3</code> and <code class="highlighter-rouge">TensorFlow</code>,</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">sudo </span>apt-get <span class="nb">install </span>python3-pip python3-dev
+pip3 <span class="nb">install </span><span class="nv">tensorflow</span><span class="o">==</span>1.9.0rc1
+pip3 <span class="nb">install </span>tfp-nightly<span class="o">==</span>0.1.0rc1.dev20180702  <span class="c"># depends on tensorflow (CPU-only)</span></code></pre></figure>
+
+<h5 id="macos">macOS</h5>
+
+<p>Check <code class="highlighter-rouge">pip3</code> version:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">pip3 <span class="nt">-V</span> <span class="c"># for Python 3.n </span></code></pre></figure>
+
+<p>If <code class="highlighter-rouge">pip</code> or <code class="highlighter-rouge">pip3</code> version <code class="highlighter-rouge">8.1</code> or later is not installed, issue the following commands to install or upgrade:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">sudo </span>easy_install <span class="nt">--upgrade</span> pip
+<span class="nb">sudo </span>easy_install <span class="nt">--upgrade</span> six 
+pip3 <span class="nb">install </span><span class="nv">tensorflow</span><span class="o">==</span>1.9.0rc1
+pip3 <span class="nb">install </span>tfp-nightly<span class="o">==</span>0.1.0rc1.dev20180702  <span class="c"># depends on tensorflow (CPU-only)</span></code></pre></figure>
+
+<p>Once you have installed <code class="highlighter-rouge">TensorFlow</code>, we go to <code class="highlighter-rouge">RStudio</code> and intall the <code class="highlighter-rouge">R</code> API package.</p>
+
+<h4 id="install-r-package-tensorflow">Install <code class="highlighter-rouge">R</code> package <code class="highlighter-rouge">TensorFlow</code></h4>
+
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">install.packages</span><span class="p">(</span><span class="s2">"tensorflow"</span><span class="p">,</span><span class="w"> </span><span class="s2">"reticulate"</span><span class="p">)</span><span class="w">
+</span><span class="n">tensorflow</span><span class="o">::</span><span class="n">install_tensorflow</span><span class="p">()</span></code></pre></figure>
+
+<h3 id="hello-tensorflow">Hello <code class="highlighter-rouge">TensorFlow</code></h3>
+
+<p>Test your installation with this chunk of codes</p>
+
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">library</span><span class="p">(</span><span class="n">tensorflow</span><span class="p">)</span><span class="w">
+
+</span><span class="n">sess</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">tf</span><span class="o">$</span><span class="n">Session</span><span class="p">()</span><span class="w">
+
+</span><span class="n">hello</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">tf</span><span class="o">$</span><span class="n">constant</span><span class="p">(</span><span class="s2">"Hello, TensorFlow!"</span><span class="p">)</span><span class="w">
+</span><span class="n">sess</span><span class="o">$</span><span class="n">run</span><span class="p">(</span><span class="n">hello</span><span class="p">)</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-text" data-lang="text">## [1] "Hello, TensorFlow!"</code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">a</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">tf</span><span class="o">$</span><span class="n">constant</span><span class="p">(</span><span class="m">10</span><span class="p">)</span><span class="w">
+</span><span class="n">b</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">tf</span><span class="o">$</span><span class="n">constant</span><span class="p">(</span><span class="m">32</span><span class="p">)</span><span class="w">
+</span><span class="n">sess</span><span class="o">$</span><span class="n">run</span><span class="p">(</span><span class="n">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">b</span><span class="p">)</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-text" data-lang="text">## [1] 42</code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">sess</span><span class="o">$</span><span class="n">close</span><span class="p">()</span></code></pre></figure>
+
+<p>If everything works, we are ready to go.</p>
+
+<h2 id="tensorflow-api-from-r"><code class="highlighter-rouge">TensorFlow</code> API from <code class="highlighter-rouge">R</code></h2>
+
+<p>We start with how to declare variables, constants and placeholders in <code class="highlighter-rouge">TensorFlow</code>.
+We assign an object (<code class="highlighter-rouge">sess</code>) pointing to <code class="highlighter-rouge">tf$Session()</code> 
+and close a session with <code class="highlighter-rouge">sess$close()</code>. Here top level API is <code class="highlighter-rouge">tf</code> which provides access to <code class="highlighter-rouge">TensorFlow</code> modules.</p>
+
+<p>There are several ways to evaluate a <code class="highlighter-rouge">TensorFlow</code> variable.</p>
+
+<ul>
+  <li>Temporary use <code class="highlighter-rouge">tf$Session()</code>,</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">tensor_0D</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">tf</span><span class="o">$</span><span class="n">constant</span><span class="p">(</span><span class="m">42</span><span class="p">,</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"tensor_0D"</span><span class="p">)</span><span class="w">    </span><span class="c1"># Declare a constant </span><span class="w">
+</span><span class="n">tensor_0D</span><span class="w">                                           </span><span class="c1"># Print tensor </span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-text" data-lang="text">## Tensor("tensor_0D:0", shape=(), dtype=float32)</code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">with</span><span class="p">(</span><span class="n">tf</span><span class="o">$</span><span class="n">Session</span><span class="p">()</span><span class="w"> </span><span class="o">%as%</span><span class="w"> </span><span class="n">sess</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w">      </span><span class="c1"># temporary use tf$Session()</span><span class="w">
+    </span><span class="n">sess</span><span class="o">$</span><span class="n">run</span><span class="p">(</span><span class="n">tensor_0D</span><span class="p">)</span><span class="w">             </span><span class="c1"># Get the value of a tensor</span><span class="w">
+</span><span class="p">})</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-text" data-lang="text">## [1] 42</code></pre></figure>
+
+<ul>
+  <li><code class="highlighter-rouge">tf$Session()$run()</code> in <code class="highlighter-rouge">tf$Session()</code> ,</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="w"> </span><span class="c1"># Start a sesssion with `TensorFlow`</span><span class="w">
+</span><span class="n">sess</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">tf</span><span class="o">$</span><span class="n">Session</span><span class="p">()</span><span class="w">                
+</span><span class="c1"># vector of variables as a place holder</span><span class="w">
+</span><span class="n">tensor_1D</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">tf</span><span class="o">$</span><span class="n">Variable</span><span class="p">(</span><span class="nf">c</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="m">2</span><span class="p">,</span><span class="m">3</span><span class="p">),</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"tensor_1D"</span><span class="p">)</span><span class="w"> 
+</span><span class="c1"># Initiate the values of all variables ( include tensor_1D)</span><span class="w">
+</span><span class="n">sess</span><span class="o">$</span><span class="n">run</span><span class="p">(</span><span class="n">tf</span><span class="o">$</span><span class="n">global_variables_initializer</span><span class="p">())</span><span class="w">   
+</span><span class="n">sess</span><span class="o">$</span><span class="n">run</span><span class="p">(</span><span class="n">tensor_1D</span><span class="p">)</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-text" data-lang="text">## [1] 1 2 3</code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">sess</span><span class="o">$</span><span class="n">close</span><span class="p">()</span><span class="w">                </span><span class="c1"># Close a session</span></code></pre></figure>
+
+<ul>
+  <li><code class="highlighter-rouge">object_name$eval()</code> in <code class="highlighter-rouge">tf$InteractiveSession()</code>,</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">sess</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">tf</span><span class="o">$</span><span class="n">InteractiveSession</span><span class="p">()</span><span class="w">             </span><span class="c1"># An interactive session</span><span class="w">
+
+</span><span class="c1"># Data 2D : (samples, features)</span><span class="w">
+</span><span class="n">tensor_2D</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">tf</span><span class="o">$</span><span class="n">placeholder</span><span class="p">(</span><span class="n">tf</span><span class="o">$</span><span class="n">float32</span><span class="p">,</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">2</span><span class="p">,</span><span class="m">4</span><span class="p">),</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"tensor_2D"</span><span class="p">)</span><span class="w"> 
+</span><span class="c1"># Initialize tensor_2D with data</span><span class="w">
+</span><span class="n">tensor_2D</span><span class="o">$</span><span class="n">eval</span><span class="p">(</span><span class="n">feed_dict</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dict</span><span class="p">(</span><span class="n">tensor_2D</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">matrix</span><span class="p">(</span><span class="m">1</span><span class="o">:</span><span class="m">8</span><span class="p">,</span><span class="w"> </span><span class="n">nrow</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="n">ncol</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">4</span><span class="p">)))</span><span class="w">                 </span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-text" data-lang="text">##      [,1] [,2] [,3] [,4]
+## [1,]    1    3    5    7
+## [2,]    2    4    6    8</code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># 3D tensor variable</span><span class="w">
+</span><span class="n">tensor_3D</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">tf</span><span class="o">$</span><span class="n">Variable</span><span class="p">(</span><span class="n">tf</span><span class="o">$</span><span class="n">ones</span><span class="p">(</span><span class="nf">c</span><span class="p">(</span><span class="m">3</span><span class="p">,</span><span class="m">2</span><span class="p">,</span><span class="m">2</span><span class="p">)),</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"tensor_3D"</span><span class="p">)</span><span class="w">         
+</span><span class="n">sess</span><span class="o">$</span><span class="n">run</span><span class="p">(</span><span class="n">tf</span><span class="o">$</span><span class="n">global_variables_initializer</span><span class="p">())</span><span class="w"> </span><span class="c1"># Initialize  all variables</span><span class="w">
+</span><span class="n">tensor_3D</span><span class="o">$</span><span class="n">eval</span><span class="p">()</span><span class="w">                            </span><span class="c1"># Instead of: sess$run(tensor_3D)</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-text" data-lang="text">## , , 1
+## 
+##      [,1] [,2]
+## [1,]    1    1
+## [2,]    1    1
+## [3,]    1    1
+## 
+## , , 2
+## 
+##      [,1] [,2]
+## [1,]    1    1
+## [2,]    1    1
+## [3,]    1    1</code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">sess</span><span class="o">$</span><span class="n">close</span><span class="p">()</span><span class="w">                                </span><span class="c1"># Close a session</span><span class="w">
+</span><span class="n">tf</span><span class="o">$</span><span class="n">reset_default_graph</span><span class="p">()</span></code></pre></figure>
+
+<h2 id="linear-regression">Linear regression</h2>
+
+<h3 id="gradient-descent-algorithm">Gradient descent algorithm</h3>
+<p>We analyze an example of simple linear regression to see how to use <code class="highlighter-rouge">TensorFlow</code> to optimize over a loss function. 
+Then we use <code class="highlighter-rouge">TensorBoard</code> to monitor the loss function in each iteration. 
+For a simple linear regression, we fit a linear function,</p>
+
+<script type="math/tex; mode=display">y = A x + b + \epsilon</script>
+
+<p>such that it minimizes the distance between the predicted values ($\hat{y_i}$) and the observed values ($y_i$) in term of mean square error (MSE).</p>
+
+<script type="math/tex; mode=display">MSE = \frac{1}{n} \sum_{i = 1}^n (y_i - \hat{y}_i)^2</script>
+
+<p>In order to illustrate how to solve for this optimization, we use the <code class="highlighter-rouge">iris</code> data (collected by Ronald Fisher in his well-known 1936 paper).
+We want to define a linear model between <code class="highlighter-rouge">Petal.Length</code> and <code class="highlighter-rouge">Petal.Width</code>.
+We first create a placeholder (<code class="highlighter-rouge">x_data</code>, <code class="highlighter-rouge">y_data</code>) for (<code class="highlighter-rouge">Petal.Length</code>, <code class="highlighter-rouge">Petal.Width</code>),
+Then, we derive the prediction $\hat{y} = A x + b$.</p>
+
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># We model the relationship between Petal.Width and Petal.Length</span><span class="w">
+</span><span class="n">data</span><span class="p">(</span><span class="n">iris</span><span class="p">)</span><span class="w">              
+</span><span class="c1">#head(iris)</span><span class="w">
+</span><span class="n">sess</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">tf</span><span class="o">$</span><span class="n">Session</span><span class="p">()</span><span class="w">
+
+</span><span class="n">x_data</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">tf</span><span class="o">$</span><span class="n">placeholder</span><span class="p">(</span><span class="n">dtype</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"float"</span><span class="p">,</span><span class="w"> 
+                         </span><span class="n">shape</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">length</span><span class="p">(</span><span class="n">iris</span><span class="o">$</span><span class="n">Petal.Length</span><span class="p">),</span><span class="w"> 
+                         </span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Petal.Length"</span><span class="p">)</span><span class="w"> </span><span class="c1"># Placeholder for Petal.Length</span><span class="w">
+</span><span class="n">y_data</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">tf</span><span class="o">$</span><span class="n">placeholder</span><span class="p">(</span><span class="n">dtype</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"float"</span><span class="p">,</span><span class="w">
+                         </span><span class="n">shape</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">length</span><span class="p">(</span><span class="n">iris</span><span class="o">$</span><span class="n">Petal.Width</span><span class="p">),</span><span class="w"> 
+                         </span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Petal.Width"</span><span class="p">)</span><span class="w"> </span><span class="c1"># Placeholder for Petal.Width</span><span class="w">
+
+</span><span class="n">A</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">tf</span><span class="o">$</span><span class="n">Variable</span><span class="p">(</span><span class="m">0.0</span><span class="p">,</span><span class="w">	</span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Coefficient"</span><span class="p">)</span><span class="w">
+</span><span class="n">b</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">tf</span><span class="o">$</span><span class="n">Variable</span><span class="p">(</span><span class="m">1.0</span><span class="p">,</span><span class="w">	</span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Intercept"</span><span class="p">)</span><span class="w">
+
+</span><span class="n">y_hat</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">A</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">x_data</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">b</span></code></pre></figure>
+
+<p>Secondly, we define a loss function (MSE) and a submodule optimizer <code class="highlighter-rouge">tf$train$GradientDescentOptimizer</code>
+with a learning rate $\gamma = 0.03$. There are several other submodules such as <code class="highlighter-rouge">AdagradOptimizer</code>, <code class="highlighter-rouge">MomentumOptimizer</code>, <code class="highlighter-rouge">RMSPropOptimizer</code> which based on the problem of interest. The <code class="highlighter-rouge">GradientDescentOptimizer</code> will update the parameters $A$ and $b$ in each iteration by,</p>
+
+<script type="math/tex; mode=display">A_{n+1} = A_{n} - \gamma \nabla MSE(A_n)</script>
+
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># Define MSE as the equation above</span><span class="w">
+</span><span class="n">MSE</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">tf</span><span class="o">$</span><span class="n">reduce_mean</span><span class="p">((</span><span class="n">y_data</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">y_hat</span><span class="p">)</span><span class="o">^</span><span class="m">2</span><span class="p">)</span><span class="w">  
+</span><span class="c1"># Optimizer engine </span><span class="w">
+</span><span class="n">optimizer</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">tf</span><span class="o">$</span><span class="n">train</span><span class="o">$</span><span class="n">GradientDescentOptimizer</span><span class="p">(</span><span class="m">0.03</span><span class="p">)</span><span class="w">  
+</span><span class="c1"># Define the objective function</span><span class="w">
+</span><span class="n">train</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">optimizer</span><span class="o">$</span><span class="n">minimize</span><span class="p">(</span><span class="n">MSE</span><span class="p">)</span><span class="w"> </span></code></pre></figure>
+
+<p>Finally, we fetch data to placeholder using <code class="highlighter-rouge">feed_dict</code> and update parameters along the gradient few thousand times.</p>
+
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">sess</span><span class="o">$</span><span class="n">run</span><span class="p">(</span><span class="n">tf</span><span class="o">$</span><span class="n">global_variables_initializer</span><span class="p">())</span><span class="w"> </span><span class="c1"># To init all the variables</span><span class="w">
+
+</span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">epoch</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="m">1</span><span class="o">:</span><span class="m">2000</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="n">sess</span><span class="o">$</span><span class="n">run</span><span class="p">(</span><span class="n">train</span><span class="p">,</span><span class="w"> </span><span class="n">feed_dict</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dict</span><span class="p">(</span><span class="n">x_data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">iris</span><span class="o">$</span><span class="n">Petal.Length</span><span class="p">,</span><span class="w"> 
+                                       </span><span class="n">y_data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">iris</span><span class="o">$</span><span class="n">Petal.Width</span><span class="p">))</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span><span class="n">cat</span><span class="p">(</span><span class="s2">"Coefficient: "</span><span class="p">,</span><span class="w"> </span><span class="n">sess</span><span class="o">$</span><span class="n">run</span><span class="p">(</span><span class="n">A</span><span class="p">),</span><span class="w"> </span><span class="s2">"\n Intercept: "</span><span class="p">,</span><span class="w"> </span><span class="n">sess</span><span class="o">$</span><span class="n">run</span><span class="p">(</span><span class="n">b</span><span class="p">),</span><span class="w"> </span><span class="s2">"\n"</span><span class="p">)</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-text" data-lang="text">## Coefficient:  0.4157551 
+##  Intercept:  -0.363074</code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">sess</span><span class="o">$</span><span class="n">close</span><span class="p">()</span><span class="w">
+</span><span class="n">tf</span><span class="o">$</span><span class="n">reset_default_graph</span><span class="p">()</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># Compare to linear regression</span><span class="w">
+</span><span class="n">lm</span><span class="p">(</span><span class="n">Petal.Width</span><span class="w"> </span><span class="o">~</span><span class="w"> </span><span class="n">Petal.Length</span><span class="p">,</span><span class="w"> </span><span class="n">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">iris</span><span class="p">)</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-text" data-lang="text">## 
+## Call:
+## lm(formula = Petal.Width ~ Petal.Length, data = iris)
+## 
+## Coefficients:
+##  (Intercept)  Petal.Length  
+##      -0.3631        0.4158</code></pre></figure>
+
+<h3 id="monitoring-with-tensorboard">Monitoring with <code class="highlighter-rouge">TensorBoard</code></h3>
+<p><code class="highlighter-rouge">TensorBoard</code> is a metrics module that helps to monitor the learning process. In the complex model, <code class="highlighter-rouge">TensorBoard</code> not only visualizes but also debug, optimize the objective function. Most of the codes in this section are inherited from the previous section with few lines for adding variables to our watch list.</p>
+
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># We model the relationship between Petal.Width and Petal.Length</span><span class="w">
+</span><span class="n">data</span><span class="p">(</span><span class="n">iris</span><span class="p">)</span><span class="w">              
+</span><span class="c1">#head(iris)</span><span class="w">
+
+</span><span class="n">sess</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">tf</span><span class="o">$</span><span class="n">Session</span><span class="p">()</span><span class="w">
+
+</span><span class="n">x_data</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">tf</span><span class="o">$</span><span class="n">placeholder</span><span class="p">(</span><span class="n">dtype</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"float"</span><span class="p">,</span><span class="w"> 
+                         </span><span class="n">shape</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">length</span><span class="p">(</span><span class="n">iris</span><span class="o">$</span><span class="n">Petal.Length</span><span class="p">),</span><span class="w"> 
+                         </span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Petal.Length"</span><span class="p">)</span><span class="w"> </span><span class="c1"># Placeholder for Petal.Length</span><span class="w">
+</span><span class="n">y_data</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">tf</span><span class="o">$</span><span class="n">placeholder</span><span class="p">(</span><span class="n">dtype</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"float"</span><span class="p">,</span><span class="w">
+                         </span><span class="n">shape</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">length</span><span class="p">(</span><span class="n">iris</span><span class="o">$</span><span class="n">Petal.Width</span><span class="p">),</span><span class="w"> 
+                         </span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Petal.Width"</span><span class="p">)</span><span class="w">  </span><span class="c1"># Placeholder for Petal.Width</span><span class="w">
+
+</span><span class="n">A</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">tf</span><span class="o">$</span><span class="n">Variable</span><span class="p">(</span><span class="m">0.0</span><span class="p">,</span><span class="w">	</span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Coefficient"</span><span class="p">)</span><span class="w">
+</span><span class="n">b</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">tf</span><span class="o">$</span><span class="n">Variable</span><span class="p">(</span><span class="m">1.0</span><span class="p">,</span><span class="w">	</span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Intercept"</span><span class="p">)</span><span class="w">
+
+</span><span class="n">y_hat</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">A</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">x_data</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">b</span><span class="w">
+
+</span><span class="n">MSE</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">tf</span><span class="o">$</span><span class="n">reduce_mean</span><span class="p">((</span><span class="n">y_data</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">y_hat</span><span class="p">)</span><span class="o">^</span><span class="m">2</span><span class="p">)</span><span class="w"> 
+</span><span class="n">optimizer</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">tf</span><span class="o">$</span><span class="n">train</span><span class="o">$</span><span class="n">GradientDescentOptimizer</span><span class="p">(</span><span class="m">0.03</span><span class="p">)</span><span class="w">
+</span><span class="n">train</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">optimizer</span><span class="o">$</span><span class="n">minimize</span><span class="p">(</span><span class="n">MSE</span><span class="p">)</span><span class="w">
+
+</span><span class="c1">###########################################</span><span class="w">
+</span><span class="c1"># Add variable to summary #</span><span class="w">
+</span><span class="c1"># https://www.tensorflow.org/programmers_guide/summaries_and_tensorboard</span><span class="w">
+</span><span class="c1">###########################################</span><span class="w">
+</span><span class="n">MSE_hist</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">tf</span><span class="o">$</span><span class="n">summary</span><span class="o">$</span><span class="n">scalar</span><span class="p">(</span><span class="s2">"MSE"</span><span class="p">,</span><span class="w"> </span><span class="n">MSE</span><span class="p">)</span><span class="w">   </span><span class="c1"># save all values of MSE </span><span class="w">
+</span><span class="n">A_hist</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">tf</span><span class="o">$</span><span class="n">summary</span><span class="o">$</span><span class="n">scalar</span><span class="p">(</span><span class="s2">"Coefficient"</span><span class="p">,</span><span class="w"> </span><span class="n">A</span><span class="p">)</span><span class="w">       
+</span><span class="n">b_hist</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">tf</span><span class="o">$</span><span class="n">summary</span><span class="o">$</span><span class="n">scalar</span><span class="p">(</span><span class="s2">"Intercept"</span><span class="p">,</span><span class="w"> </span><span class="n">b</span><span class="p">)</span><span class="w">         
+</span><span class="n">merged</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">tf</span><span class="o">$</span><span class="n">summary</span><span class="o">$</span><span class="n">merge_all</span><span class="p">()</span><span class="w">            </span><span class="c1"># Merges all summaries collected in the default graph.</span><span class="w">
+
+</span><span class="n">train_writer</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">tf</span><span class="o">$</span><span class="n">summary</span><span class="o">$</span><span class="n">FileWriter</span><span class="p">(</span><span class="n">logdir</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"/home/hoanguc3m/logs"</span><span class="p">)</span><span class="w">  
+</span><span class="n">train_writer</span><span class="o">$</span><span class="n">add_graph</span><span class="p">(</span><span class="n">sess</span><span class="o">$</span><span class="n">graph</span><span class="p">)</span><span class="w">          </span><span class="c1"># add a graph structure</span><span class="w">
+
+</span><span class="c1">###########################################</span><span class="w">
+</span><span class="c1"># End of summary #</span><span class="w">
+</span><span class="c1">###########################################</span><span class="w">
+
+</span><span class="n">sess</span><span class="o">$</span><span class="n">run</span><span class="p">(</span><span class="n">tf</span><span class="o">$</span><span class="n">global_variables_initializer</span><span class="p">())</span><span class="w">
+
+</span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">epoch</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="m">1</span><span class="o">:</span><span class="m">2000</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="n">result</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">sess</span><span class="o">$</span><span class="n">run</span><span class="p">(</span><span class="nf">list</span><span class="p">(</span><span class="n">merged</span><span class="p">,</span><span class="w"> </span><span class="n">train</span><span class="p">),</span><span class="w">   </span><span class="c1"># remember to run merged</span><span class="w">
+                       </span><span class="n">feed_dict</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dict</span><span class="p">(</span><span class="n">x_data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">iris</span><span class="o">$</span><span class="n">Petal.Length</span><span class="p">,</span><span class="w"> 
+                                      </span><span class="n">y_data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">iris</span><span class="o">$</span><span class="n">Petal.Width</span><span class="p">))</span><span class="w">
+    </span><span class="n">summary</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">result</span><span class="p">[[</span><span class="m">1</span><span class="p">]]</span><span class="w">                    </span><span class="c1"># extract the summary result of merged </span><span class="w">
+    </span><span class="n">train_writer</span><span class="o">$</span><span class="n">add_summary</span><span class="p">(</span><span class="n">summary</span><span class="p">,</span><span class="w"> </span><span class="n">epoch</span><span class="p">)</span><span class="w">  </span><span class="c1"># write summary to disk</span><span class="w">
+</span><span class="p">}</span><span class="w">
+
+</span><span class="c1"># cat("Coefficient: ", sess$run(A), "\n Intercept: ", sess$run(b), "\n")</span><span class="w">
+</span><span class="n">sess</span><span class="o">$</span><span class="n">close</span><span class="p">()</span><span class="w">
+</span><span class="n">tf</span><span class="o">$</span><span class="n">reset_default_graph</span><span class="p">()</span><span class="w">
+</span><span class="n">rm</span><span class="p">(</span><span class="n">list</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ls</span><span class="p">())</span><span class="w"> </span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">tensorboard</span><span class="p">(</span><span class="n">log_dir</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"/home/hoanguc3m/logs"</span><span class="p">)</span><span class="w"> </span><span class="c1"># Play with tensorboard</span></code></pre></figure>
+
+<p>Here are few things that we summary in <code class="highlighter-rouge">TensorBoard</code>. The algorithm reaches convergence after 1000 iterations. For the graph structure, each node in the graph represents for an operator at the edge, we can see the flow of the data. It could be a scalar in case of $A$ and $b$ or it could be a vector in case of $x$ and $y$.
+<img src="/figure/source/2018-07-03-introduction-tensorflow/pic1.jpg" alt="tensor_board" title="Scalar" /></p>
+
+<p><img src="/figure/source/2018-07-03-introduction-tensorflow/pic2.jpg" alt="tensor_board" title="Graph" /></p>
+
+<h2 id="maximum-likelihood-with-tensorflow">Maximum likelihood with <code class="highlighter-rouge">TensorFlow</code></h2>
+
+<p><code class="highlighter-rouge">TensorFlow</code> contains a large collection of probability distributions. <code class="highlighter-rouge">tf$contrib$distributions</code> provide some common distributions such as Bernoulli, Binomial, Uniform, Normal, Student-t,… The interesting feature of these functions is automatic differentiation. Thus, we just need to sepecify the likelihood function of the model and let <code class="highlighter-rouge">TensorFlow</code> takes care of the likelihood. <code class="highlighter-rouge">TensorFlow</code> uses reserve mode automatic differentiation.</p>
+
+<p>In general, we have the following workflow,</p>
+
+<ul>
+  <li>Define the graph (variables, placeholders for data).</li>
+  <li>The flow of the graph and operation on the graph.</li>
+  <li>Calculate the loss function and choose the optimizer engine.</li>
+  <li>The Graph is executed.</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">data</span><span class="p">(</span><span class="n">iris</span><span class="p">)</span><span class="w">              </span><span class="c1"># We model the relationship between Petal.Width and Petal.Length</span><span class="w">
+</span><span class="c1">#head(iris)</span><span class="w">
+
+</span><span class="n">sess</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">tf</span><span class="o">$</span><span class="n">Session</span><span class="p">()</span><span class="w">
+
+</span><span class="n">x_data</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">tf</span><span class="o">$</span><span class="n">placeholder</span><span class="p">(</span><span class="n">dtype</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"float"</span><span class="p">,</span><span class="w"> 
+                         </span><span class="n">shape</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">length</span><span class="p">(</span><span class="n">iris</span><span class="o">$</span><span class="n">Petal.Length</span><span class="p">),</span><span class="w"> 
+                         </span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Petal.Length"</span><span class="p">)</span><span class="w"> </span><span class="c1"># Placeholder for Petal.Length</span><span class="w">
+</span><span class="n">y_data</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">tf</span><span class="o">$</span><span class="n">placeholder</span><span class="p">(</span><span class="n">dtype</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"float"</span><span class="p">,</span><span class="w">
+                         </span><span class="n">shape</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">length</span><span class="p">(</span><span class="n">iris</span><span class="o">$</span><span class="n">Petal.Width</span><span class="p">),</span><span class="w"> 
+                         </span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Petal.Width"</span><span class="p">)</span><span class="w">  </span><span class="c1"># Placeholder for Petal.Width</span><span class="w">
+
+
+</span><span class="n">A</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">tf</span><span class="o">$</span><span class="n">Variable</span><span class="p">(</span><span class="m">0.0</span><span class="p">,</span><span class="w">	</span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Coefficient"</span><span class="p">)</span><span class="w">
+</span><span class="n">b</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">tf</span><span class="o">$</span><span class="n">Variable</span><span class="p">(</span><span class="m">1.0</span><span class="p">,</span><span class="w">	</span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Intercept"</span><span class="p">)</span><span class="w">
+
+
+</span><span class="n">sigma</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">tf</span><span class="o">$</span><span class="n">Variable</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="w">	</span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Sigma"</span><span class="p">)</span><span class="w">
+
+</span><span class="n">y_hat</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">A</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">x_data</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">b</span><span class="w">
+
+</span><span class="c1">#############################################################</span><span class="w">
+</span><span class="c1"># MLE #</span><span class="w">
+</span><span class="c1">#############################################################</span><span class="w">
+
+</span><span class="c1"># define a Gaussian distribution with mean = y_hat and sd = sigma</span><span class="w">
+</span><span class="n">gaussian_dist</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">tf</span><span class="o">$</span><span class="n">contrib</span><span class="o">$</span><span class="n">distributions</span><span class="o">$</span><span class="n">Normal</span><span class="p">(</span><span class="n">loc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">y_hat</span><span class="p">,</span><span class="w"> </span><span class="n">scale</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sigma</span><span class="p">)</span><span class="w">
+</span><span class="c1"># log_likelihood (y_data | A,b,sigma)</span><span class="w">
+</span><span class="n">log_prob</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">gaussian_dist</span><span class="o">$</span><span class="n">log_prob</span><span class="p">(</span><span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">y_data</span><span class="p">)</span><span class="w">
+</span><span class="c1"># negative_log_likelihood (y_data | A,b,sigma)</span><span class="w">
+</span><span class="n">neg_log_likelihood</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="m">-1.0</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">tf</span><span class="o">$</span><span class="n">reduce_sum</span><span class="p">(</span><span class="n">log_prob</span><span class="p">)</span><span class="w">
+
+</span><span class="c1"># gradient of neg_log_likelihood wrt (A,b,sigma)</span><span class="w">
+</span><span class="n">grad</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">tf</span><span class="o">$</span><span class="n">gradients</span><span class="p">(</span><span class="n">neg_log_likelihood</span><span class="p">,</span><span class="nf">c</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="w"> </span><span class="n">b</span><span class="p">,</span><span class="w"> </span><span class="n">sigma</span><span class="p">))</span><span class="w">
+
+
+</span><span class="c1"># optimizer</span><span class="w">
+</span><span class="n">optimizer</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">tf</span><span class="o">$</span><span class="n">train</span><span class="o">$</span><span class="n">AdamOptimizer</span><span class="p">(</span><span class="n">learning_rate</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0.01</span><span class="p">)</span><span class="w">
+</span><span class="n">train_op</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">optimizer</span><span class="o">$</span><span class="n">minimize</span><span class="p">(</span><span class="n">loss</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">neg_log_likelihood</span><span class="p">)</span><span class="w">
+
+</span><span class="c1">#############################################################</span><span class="w">
+</span><span class="c1"># End of MLE #</span><span class="w">
+</span><span class="c1">#############################################################</span><span class="w">
+
+</span><span class="n">sess</span><span class="o">$</span><span class="n">run</span><span class="p">(</span><span class="n">tf</span><span class="o">$</span><span class="n">global_variables_initializer</span><span class="p">())</span><span class="w">
+
+</span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">epoch</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="m">1</span><span class="o">:</span><span class="m">2000</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="n">result</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">sess</span><span class="o">$</span><span class="n">run</span><span class="p">(</span><span class="nf">list</span><span class="p">(</span><span class="n">train_op</span><span class="p">,</span><span class="w">            </span><span class="c1"># Min neg_log_likelihood</span><span class="w">
+                            </span><span class="n">neg_log_likelihood</span><span class="p">,</span><span class="w">  </span><span class="c1"># neg_log_likelihood</span><span class="w">
+                            </span><span class="n">grad</span><span class="p">),</span><span class="w">               </span><span class="c1"># Gradient</span><span class="w">
+                       </span><span class="n">feed_dict</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dict</span><span class="p">(</span><span class="n">x_data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">iris</span><span class="o">$</span><span class="n">Petal.Length</span><span class="p">,</span><span class="w"> 
+                                      </span><span class="n">y_data</span><span class="w"> </span><span class="o">=</span><span class="w">  </span><span class="n">iris</span><span class="o">$</span><span class="n">Petal.Width</span><span class="p">))</span><span class="w">
+</span><span class="p">}</span><span class="w">
+
+</span><span class="n">cat</span><span class="p">(</span><span class="s2">"Coefficient: "</span><span class="p">,</span><span class="w"> </span><span class="n">sess</span><span class="o">$</span><span class="n">run</span><span class="p">(</span><span class="n">A</span><span class="p">),</span><span class="w"> </span><span class="s2">"\n Intercept: "</span><span class="p">,</span><span class="w"> </span><span class="n">sess</span><span class="o">$</span><span class="n">run</span><span class="p">(</span><span class="n">b</span><span class="p">),</span><span class="w"> </span><span class="s2">"\n Sigma: "</span><span class="p">,</span><span class="w"> </span><span class="n">sess</span><span class="o">$</span><span class="n">run</span><span class="p">(</span><span class="n">sigma</span><span class="p">))</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-text" data-lang="text">## Coefficient:  0.4157555 
+##  Intercept:  -0.3630754 
+##  Sigma:  0.2051031</code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">cat</span><span class="p">(</span><span class="s2">"Gradient wrt: d.A "</span><span class="p">,</span><span class="w"> </span><span class="n">result</span><span class="p">[[</span><span class="m">3</span><span class="p">]][[</span><span class="m">1</span><span class="p">]],</span><span class="w"> </span><span class="s2">"\n d.b: "</span><span class="p">,</span><span class="w"> </span><span class="n">result</span><span class="p">[[</span><span class="m">3</span><span class="p">]][[</span><span class="m">2</span><span class="p">]],</span><span class="w"> </span><span class="s2">"\n d.sigma: "</span><span class="p">,</span><span class="w"> </span><span class="n">result</span><span class="p">[[</span><span class="m">3</span><span class="p">]][[</span><span class="m">3</span><span class="p">]],</span><span class="w"> </span><span class="s2">" \n"</span><span class="p">)</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-text" data-lang="text">## Gradient wrt: d.A  -0.02883911 
+##  d.b:  -0.006343842 
+##  d.sigma:  0</code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">sess</span><span class="o">$</span><span class="n">close</span><span class="p">()</span><span class="w">
+</span><span class="n">tf</span><span class="o">$</span><span class="n">reset_default_graph</span><span class="p">()</span></code></pre></figure>
+
+<h2 id="bayesian-with-tensorflow_probability">Bayesian with <code class="highlighter-rouge">TensorFlow_Probability</code></h2>
+<p><code class="highlighter-rouge">TensorFlow_Probability</code> contains the most recent innovated Bayesian inference algorithms used in machine learning and deep learning. <code class="highlighter-rouge">TensorFlow_Probability</code> make it easier for probabilistic reasoning and statistical analysis.</p>
+
+<p><img src="https://cdn-images-1.medium.com/max/800/0*19BJhsJ-2DzQ7fFH." alt="tfp" title="Tfp framework" /></p>
+
+<p><code class="highlighter-rouge">TensorFlow</code> package in <code class="highlighter-rouge">R</code> does not support for API to <code class="highlighter-rouge">TensorFlow_Probability</code> yet, so we can run <code class="highlighter-rouge">python</code> code through <code class="highlighter-rouge">reticulate</code> package who helps to connect <code class="highlighter-rouge">R</code> and <code class="highlighter-rouge">python</code>.
+In this section, we will work with a graphical probabilistic model using <code class="highlighter-rouge">tfp$edward2</code> and make an inference with Hamiltonian Monte Carlo <code class="highlighter-rouge">tfp.mcmc.HamiltonianMonteCarlo</code>. More examples could be found at <a href="https://github.com/tensorflow/probability">Github/tfp</a>.</p>
+
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># For Ubuntu due to both python2 and python3</span><span class="w">
+</span><span class="c1"># Sys.setenv(TENSORFLOW_PYTHON="/usr/bin/python3")</span><span class="w">
+</span><span class="n">library</span><span class="p">(</span><span class="n">tensorflow</span><span class="p">)</span><span class="w">
+</span><span class="c1"># use_python("/usr/bin/python3", required = T)</span><span class="w">
+    </span><span class="c1"># reticulate::use_python("/opt/local/tools/python/Python-3.6.5/bin/python3.6")</span><span class="w">
+</span><span class="n">library</span><span class="p">(</span><span class="n">reticulate</span><span class="p">)</span><span class="w">
+
+
+</span><span class="n">repl_python</span><span class="p">()</span><span class="w">
+</span><span class="n">import</span><span class="w"> </span><span class="n">numpy</span><span class="w"> </span><span class="n">as</span><span class="w"> </span><span class="n">np</span><span class="w">
+</span><span class="n">import</span><span class="w"> </span><span class="n">tensorflow</span><span class="w"> </span><span class="n">as</span><span class="w"> </span><span class="n">tf</span><span class="w">
+</span><span class="n">import</span><span class="w"> </span><span class="n">tensorflow_probability</span><span class="w"> </span><span class="n">as</span><span class="w"> </span><span class="n">tfp</span><span class="w">
+</span><span class="n">from</span><span class="w"> </span><span class="n">tensorflow_probability</span><span class="w"> </span><span class="n">import</span><span class="w"> </span><span class="n">edward2</span><span class="w"> </span><span class="n">as</span><span class="w"> </span><span class="n">ed</span><span class="w">
+</span><span class="n">import</span><span class="w"> </span><span class="n">matplotlib.pyplot</span><span class="w"> </span><span class="n">as</span><span class="w"> </span><span class="n">plt</span><span class="w">
+
+</span><span class="n">y_data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">np.array</span><span class="p">(</span><span class="w">
+</span><span class="p">[</span><span class="m">0.2</span><span class="p">,</span><span class="m">0.2</span><span class="p">,</span><span class="m">0.2</span><span class="p">,</span><span class="m">0.2</span><span class="p">,</span><span class="m">0.2</span><span class="p">,</span><span class="m">0.4</span><span class="p">,</span><span class="m">0.3</span><span class="p">,</span><span class="m">0.2</span><span class="p">,</span><span class="m">0.2</span><span class="p">,</span><span class="m">0.1</span><span class="p">,</span><span class="m">0.2</span><span class="p">,</span><span class="m">0.2</span><span class="p">,</span><span class="m">0.1</span><span class="p">,</span><span class="m">0.1</span><span class="p">,</span><span class="m">0.2</span><span class="p">,</span><span class="m">0.4</span><span class="p">,</span><span class="m">0.4</span><span class="p">,</span><span class="m">0.3</span><span class="p">,</span><span class="w">
+</span><span class="m">0.3</span><span class="p">,</span><span class="m">0.3</span><span class="p">,</span><span class="m">0.2</span><span class="p">,</span><span class="m">0.4</span><span class="p">,</span><span class="m">0.2</span><span class="p">,</span><span class="m">0.5</span><span class="p">,</span><span class="m">0.2</span><span class="p">,</span><span class="m">0.2</span><span class="p">,</span><span class="m">0.4</span><span class="p">,</span><span class="m">0.2</span><span class="p">,</span><span class="m">0.2</span><span class="p">,</span><span class="m">0.2</span><span class="p">,</span><span class="m">0.2</span><span class="p">,</span><span class="m">0.4</span><span class="p">,</span><span class="m">0.1</span><span class="p">,</span><span class="m">0.2</span><span class="p">,</span><span class="m">0.2</span><span class="p">,</span><span class="m">0.2</span><span class="p">,</span><span class="w">
+</span><span class="m">0.2</span><span class="p">,</span><span class="m">0.1</span><span class="p">,</span><span class="m">0.2</span><span class="p">,</span><span class="m">0.2</span><span class="p">,</span><span class="m">0.3</span><span class="p">,</span><span class="m">0.3</span><span class="p">,</span><span class="m">0.2</span><span class="p">,</span><span class="m">0.6</span><span class="p">,</span><span class="m">0.4</span><span class="p">,</span><span class="m">0.3</span><span class="p">,</span><span class="m">0.2</span><span class="p">,</span><span class="m">0.2</span><span class="p">,</span><span class="m">0.2</span><span class="p">,</span><span class="m">0.2</span><span class="p">,</span><span class="m">1.4</span><span class="p">,</span><span class="m">1.5</span><span class="p">,</span><span class="m">1.5</span><span class="p">,</span><span class="m">1.3</span><span class="p">,</span><span class="w">
+</span><span class="m">1.5</span><span class="p">,</span><span class="m">1.3</span><span class="p">,</span><span class="m">1.6</span><span class="p">,</span><span class="m">1</span><span class="n">.</span><span class="p">,</span><span class="m">1.3</span><span class="p">,</span><span class="m">1.4</span><span class="p">,</span><span class="m">1</span><span class="n">.</span><span class="p">,</span><span class="m">1.5</span><span class="p">,</span><span class="m">1</span><span class="n">.</span><span class="p">,</span><span class="m">1.4</span><span class="p">,</span><span class="m">1.3</span><span class="p">,</span><span class="m">1.4</span><span class="p">,</span><span class="m">1.5</span><span class="p">,</span><span class="m">1</span><span class="n">.</span><span class="p">,</span><span class="m">1.5</span><span class="p">,</span><span class="m">1.1</span><span class="p">,</span><span class="m">1.8</span><span class="p">,</span><span class="m">1.3</span><span class="p">,</span><span class="w">
+</span><span class="m">1.5</span><span class="p">,</span><span class="m">1.2</span><span class="p">,</span><span class="m">1.3</span><span class="p">,</span><span class="m">1.4</span><span class="p">,</span><span class="m">1.4</span><span class="p">,</span><span class="m">1.7</span><span class="p">,</span><span class="m">1.5</span><span class="p">,</span><span class="m">1</span><span class="n">.</span><span class="p">,</span><span class="m">1.1</span><span class="p">,</span><span class="m">1</span><span class="n">.</span><span class="p">,</span><span class="m">1.2</span><span class="p">,</span><span class="m">1.6</span><span class="p">,</span><span class="m">1.5</span><span class="p">,</span><span class="m">1.6</span><span class="p">,</span><span class="m">1.5</span><span class="p">,</span><span class="m">1.3</span><span class="p">,</span><span class="m">1.3</span><span class="p">,</span><span class="m">1.3</span><span class="p">,</span><span class="w">
+</span><span class="m">1.2</span><span class="p">,</span><span class="m">1.4</span><span class="p">,</span><span class="m">1.2</span><span class="p">,</span><span class="m">1</span><span class="n">.</span><span class="p">,</span><span class="m">1.3</span><span class="p">,</span><span class="m">1.2</span><span class="p">,</span><span class="m">1.3</span><span class="p">,</span><span class="m">1.3</span><span class="p">,</span><span class="m">1.1</span><span class="p">,</span><span class="m">1.3</span><span class="p">,</span><span class="m">2.5</span><span class="p">,</span><span class="m">1.9</span><span class="p">,</span><span class="m">2.1</span><span class="p">,</span><span class="m">1.8</span><span class="p">,</span><span class="m">2.2</span><span class="p">,</span><span class="m">2.1</span><span class="p">,</span><span class="m">1.7</span><span class="p">,</span><span class="m">1.8</span><span class="p">,</span><span class="w">
+</span><span class="m">1.8</span><span class="p">,</span><span class="m">2.5</span><span class="p">,</span><span class="m">2</span><span class="n">.</span><span class="p">,</span><span class="m">1.9</span><span class="p">,</span><span class="m">2.1</span><span class="p">,</span><span class="m">2</span><span class="n">.</span><span class="p">,</span><span class="m">2.4</span><span class="p">,</span><span class="m">2.3</span><span class="p">,</span><span class="m">1.8</span><span class="p">,</span><span class="m">2.2</span><span class="p">,</span><span class="m">2.3</span><span class="p">,</span><span class="m">1.5</span><span class="p">,</span><span class="m">2.3</span><span class="p">,</span><span class="m">2</span><span class="n">.</span><span class="p">,</span><span class="m">2</span><span class="n">.</span><span class="p">,</span><span class="m">1.8</span><span class="p">,</span><span class="m">2.1</span><span class="p">,</span><span class="m">1.8</span><span class="p">,</span><span class="w">
+</span><span class="m">1.8</span><span class="p">,</span><span class="m">1.8</span><span class="p">,</span><span class="m">2.1</span><span class="p">,</span><span class="m">1.6</span><span class="p">,</span><span class="m">1.9</span><span class="p">,</span><span class="m">2</span><span class="n">.</span><span class="p">,</span><span class="m">2.2</span><span class="p">,</span><span class="m">1.5</span><span class="p">,</span><span class="m">1.4</span><span class="p">,</span><span class="m">2.3</span><span class="p">,</span><span class="m">2.4</span><span class="p">,</span><span class="m">1.8</span><span class="p">,</span><span class="m">1.8</span><span class="p">,</span><span class="m">2.1</span><span class="p">,</span><span class="m">2.4</span><span class="p">,</span><span class="m">2.3</span><span class="p">,</span><span class="m">1.9</span><span class="p">,</span><span class="m">2.3</span><span class="p">,</span><span class="w">
+</span><span class="m">2.5</span><span class="p">,</span><span class="m">2.3</span><span class="p">,</span><span class="m">1.9</span><span class="p">,</span><span class="m">2</span><span class="n">.</span><span class="p">,</span><span class="m">2.3</span><span class="p">,</span><span class="m">1.8</span><span class="p">],</span><span class="w"> </span><span class="n">dtype</span><span class="o">=</span><span class="n">np.float32</span><span class="p">)</span><span class="w">
+</span><span class="n">x_data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">np.array</span><span class="p">(</span><span class="w">
+</span><span class="p">[</span><span class="m">1.4</span><span class="p">,</span><span class="m">1.4</span><span class="p">,</span><span class="m">1.3</span><span class="p">,</span><span class="m">1.5</span><span class="p">,</span><span class="m">1.4</span><span class="p">,</span><span class="m">1.7</span><span class="p">,</span><span class="m">1.4</span><span class="p">,</span><span class="m">1.5</span><span class="p">,</span><span class="m">1.4</span><span class="p">,</span><span class="m">1.5</span><span class="p">,</span><span class="m">1.5</span><span class="p">,</span><span class="m">1.6</span><span class="p">,</span><span class="m">1.4</span><span class="p">,</span><span class="m">1.1</span><span class="p">,</span><span class="m">1.2</span><span class="p">,</span><span class="m">1.5</span><span class="p">,</span><span class="m">1.3</span><span class="p">,</span><span class="m">1.4</span><span class="p">,</span><span class="w">
+</span><span class="m">1.7</span><span class="p">,</span><span class="m">1.5</span><span class="p">,</span><span class="m">1.7</span><span class="p">,</span><span class="m">1.5</span><span class="p">,</span><span class="m">1</span><span class="n">.</span><span class="p">,</span><span class="m">1.7</span><span class="p">,</span><span class="m">1.9</span><span class="p">,</span><span class="m">1.6</span><span class="p">,</span><span class="m">1.6</span><span class="p">,</span><span class="m">1.5</span><span class="p">,</span><span class="m">1.4</span><span class="p">,</span><span class="m">1.6</span><span class="p">,</span><span class="m">1.6</span><span class="p">,</span><span class="m">1.5</span><span class="p">,</span><span class="m">1.5</span><span class="p">,</span><span class="m">1.4</span><span class="p">,</span><span class="m">1.5</span><span class="p">,</span><span class="m">1.2</span><span class="p">,</span><span class="w">
+</span><span class="m">1.3</span><span class="p">,</span><span class="m">1.4</span><span class="p">,</span><span class="m">1.3</span><span class="p">,</span><span class="m">1.5</span><span class="p">,</span><span class="m">1.3</span><span class="p">,</span><span class="m">1.3</span><span class="p">,</span><span class="m">1.3</span><span class="p">,</span><span class="m">1.6</span><span class="p">,</span><span class="m">1.9</span><span class="p">,</span><span class="m">1.4</span><span class="p">,</span><span class="m">1.6</span><span class="p">,</span><span class="m">1.4</span><span class="p">,</span><span class="m">1.5</span><span class="p">,</span><span class="m">1.4</span><span class="p">,</span><span class="m">4.7</span><span class="p">,</span><span class="m">4.5</span><span class="p">,</span><span class="m">4.9</span><span class="p">,</span><span class="m">4</span><span class="n">.</span><span class="p">,</span><span class="w">
+</span><span class="m">4.6</span><span class="p">,</span><span class="m">4.5</span><span class="p">,</span><span class="m">4.7</span><span class="p">,</span><span class="m">3.3</span><span class="p">,</span><span class="m">4.6</span><span class="p">,</span><span class="m">3.9</span><span class="p">,</span><span class="m">3.5</span><span class="p">,</span><span class="m">4.2</span><span class="p">,</span><span class="m">4</span><span class="n">.</span><span class="p">,</span><span class="m">4.7</span><span class="p">,</span><span class="m">3.6</span><span class="p">,</span><span class="m">4.4</span><span class="p">,</span><span class="m">4.5</span><span class="p">,</span><span class="m">4.1</span><span class="p">,</span><span class="m">4.5</span><span class="p">,</span><span class="m">3.9</span><span class="p">,</span><span class="m">4.8</span><span class="p">,</span><span class="m">4</span><span class="n">.</span><span class="p">,</span><span class="w">
+</span><span class="m">4.9</span><span class="p">,</span><span class="m">4.7</span><span class="p">,</span><span class="m">4.3</span><span class="p">,</span><span class="m">4.4</span><span class="p">,</span><span class="m">4.8</span><span class="p">,</span><span class="m">5</span><span class="n">.</span><span class="p">,</span><span class="m">4.5</span><span class="p">,</span><span class="m">3.5</span><span class="p">,</span><span class="m">3.8</span><span class="p">,</span><span class="m">3.7</span><span class="p">,</span><span class="m">3.9</span><span class="p">,</span><span class="m">5.1</span><span class="p">,</span><span class="m">4.5</span><span class="p">,</span><span class="m">4.5</span><span class="p">,</span><span class="m">4.7</span><span class="p">,</span><span class="m">4.4</span><span class="p">,</span><span class="m">4.1</span><span class="p">,</span><span class="m">4</span><span class="n">.</span><span class="p">,</span><span class="w">
+</span><span class="m">4.4</span><span class="p">,</span><span class="m">4.6</span><span class="p">,</span><span class="m">4</span><span class="n">.</span><span class="p">,</span><span class="m">3.3</span><span class="p">,</span><span class="m">4.2</span><span class="p">,</span><span class="m">4.2</span><span class="p">,</span><span class="m">4.2</span><span class="p">,</span><span class="m">4.3</span><span class="p">,</span><span class="m">3</span><span class="n">.</span><span class="p">,</span><span class="m">4.1</span><span class="p">,</span><span class="m">6</span><span class="n">.</span><span class="p">,</span><span class="m">5.1</span><span class="p">,</span><span class="m">5.9</span><span class="p">,</span><span class="m">5.6</span><span class="p">,</span><span class="m">5.8</span><span class="p">,</span><span class="m">6.6</span><span class="p">,</span><span class="m">4.5</span><span class="p">,</span><span class="m">6.3</span><span class="p">,</span><span class="w">
+</span><span class="m">5.8</span><span class="p">,</span><span class="m">6.1</span><span class="p">,</span><span class="m">5.1</span><span class="p">,</span><span class="m">5.3</span><span class="p">,</span><span class="m">5.5</span><span class="p">,</span><span class="m">5</span><span class="n">.</span><span class="p">,</span><span class="m">5.1</span><span class="p">,</span><span class="m">5.3</span><span class="p">,</span><span class="m">5.5</span><span class="p">,</span><span class="m">6.7</span><span class="p">,</span><span class="m">6.9</span><span class="p">,</span><span class="m">5</span><span class="n">.</span><span class="p">,</span><span class="m">5.7</span><span class="p">,</span><span class="m">4.9</span><span class="p">,</span><span class="m">6.7</span><span class="p">,</span><span class="m">4.9</span><span class="p">,</span><span class="m">5.7</span><span class="p">,</span><span class="m">6</span><span class="n">.</span><span class="p">,</span><span class="w">
+</span><span class="m">4.8</span><span class="p">,</span><span class="m">4.9</span><span class="p">,</span><span class="m">5.6</span><span class="p">,</span><span class="m">5.8</span><span class="p">,</span><span class="m">6.1</span><span class="p">,</span><span class="m">6.4</span><span class="p">,</span><span class="m">5.6</span><span class="p">,</span><span class="m">5.1</span><span class="p">,</span><span class="m">5.6</span><span class="p">,</span><span class="m">6.1</span><span class="p">,</span><span class="m">5.6</span><span class="p">,</span><span class="m">5.5</span><span class="p">,</span><span class="m">4.8</span><span class="p">,</span><span class="m">5.4</span><span class="p">,</span><span class="m">5.6</span><span class="p">,</span><span class="m">5.1</span><span class="p">,</span><span class="m">5.1</span><span class="p">,</span><span class="m">5.9</span><span class="p">,</span><span class="w">
+</span><span class="m">5.7</span><span class="p">,</span><span class="m">5.2</span><span class="p">,</span><span class="m">5</span><span class="n">.</span><span class="p">,</span><span class="m">5.2</span><span class="p">,</span><span class="m">5.4</span><span class="p">,</span><span class="m">5.1</span><span class="p">],</span><span class="w"> </span><span class="n">dtype</span><span class="o">=</span><span class="n">np.float32</span><span class="p">)</span><span class="w">
+
+
+</span><span class="n">def</span><span class="w"> </span><span class="n">linear_model</span><span class="p">(</span><span class="n">x_data</span><span class="p">)</span><span class="o">:</span><span class="w">
+    </span><span class="n">A</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ed.Normal</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="m">0</span><span class="n">.</span><span class="p">,</span><span class="w"> </span><span class="n">scale</span><span class="o">=</span><span class="m">10</span><span class="n">.</span><span class="p">,</span><span class="w"> </span><span class="n">name</span><span class="o">=</span><span class="s2">"A"</span><span class="p">)</span><span class="w">  
+    </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ed.Normal</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="m">0</span><span class="n">.</span><span class="p">,</span><span class="w"> </span><span class="n">scale</span><span class="o">=</span><span class="m">10</span><span class="n">.</span><span class="p">,</span><span class="w"> </span><span class="n">name</span><span class="o">=</span><span class="s2">"b"</span><span class="p">)</span><span class="w">  
+    </span><span class="n">sigma</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ed.Gamma</span><span class="p">(</span><span class="n">concentration</span><span class="o">=</span><span class="m">1</span><span class="n">.</span><span class="p">,</span><span class="w"> </span><span class="n">rate</span><span class="o">=</span><span class="m">1</span><span class="n">.</span><span class="p">,</span><span class="w"> </span><span class="n">name</span><span class="o">=</span><span class="s2">"sigma"</span><span class="p">)</span><span class="w">    
+    </span><span class="n">mu</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">A</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">x_data</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">b</span><span class="w">
+    </span><span class="n">y_data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ed.Normal</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="n">mu</span><span class="p">,</span><span class="w"> </span><span class="n">scale</span><span class="o">=</span><span class="n">sigma</span><span class="p">,</span><span class="n">name</span><span class="o">=</span><span class="s2">"y_data"</span><span class="p">)</span><span class="w">  </span><span class="c1"># `y` above</span><span class="w">
+    </span><span class="n">return</span><span class="w"> </span><span class="n">y_data</span><span class="w">
+
+</span><span class="n">log_joint</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ed.make_log_joint_fn</span><span class="p">(</span><span class="n">linear_model</span><span class="p">)</span><span class="w">
+
+
+</span><span class="n">def</span><span class="w"> </span><span class="n">target_log_prob_fn</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="w"> </span><span class="n">b</span><span class="p">,</span><span class="w"> </span><span class="n">sigma</span><span class="p">)</span><span class="o">:</span><span class="w">
+    </span><span class="n">return</span><span class="w"> </span><span class="n">log_joint</span><span class="p">(</span><span class="w">
+      </span><span class="n">x_data</span><span class="o">=</span><span class="n">x_data</span><span class="p">,</span><span class="w">
+      </span><span class="n">A</span><span class="o">=</span><span class="n">A</span><span class="p">,</span><span class="w">
+      </span><span class="n">b</span><span class="o">=</span><span class="n">b</span><span class="p">,</span><span class="w">
+      </span><span class="n">sigma</span><span class="o">=</span><span class="n">sigma</span><span class="p">,</span><span class="w">      
+      </span><span class="n">y_data</span><span class="o">=</span><span class="n">y_data</span><span class="p">)</span><span class="w">
+
+
+</span><span class="n">num_results</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">5000</span><span class="w">
+</span><span class="n">num_burnin_steps</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">3000</span><span class="w">
+
+</span><span class="n">states</span><span class="p">,</span><span class="w"> </span><span class="n">kernel_results</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">tfp.mcmc.sample_chain</span><span class="p">(</span><span class="w">
+    </span><span class="n">num_results</span><span class="o">=</span><span class="n">num_results</span><span class="p">,</span><span class="w">
+    </span><span class="n">num_burnin_steps</span><span class="o">=</span><span class="n">num_burnin_steps</span><span class="p">,</span><span class="w">
+    </span><span class="n">current_state</span><span class="o">=</span><span class="p">[</span><span class="w">
+        </span><span class="n">tf.zeros</span><span class="p">([],</span><span class="w"> </span><span class="n">name</span><span class="o">=</span><span class="s1">'init_A'</span><span class="p">),</span><span class="w">
+        </span><span class="n">tf.zeros</span><span class="p">([],</span><span class="w"> </span><span class="n">name</span><span class="o">=</span><span class="s1">'init_b'</span><span class="p">),</span><span class="w">
+        </span><span class="n">tf.ones</span><span class="p">([],</span><span class="w"> </span><span class="n">name</span><span class="o">=</span><span class="s1">'init_sigma'</span><span class="p">),</span><span class="w">
+    </span><span class="p">],</span><span class="w">
+    </span><span class="n">kernel</span><span class="o">=</span><span class="n">tfp.mcmc.HamiltonianMonteCarlo</span><span class="p">(</span><span class="w">
+        </span><span class="n">target_log_prob_fn</span><span class="o">=</span><span class="n">target_log_prob_fn</span><span class="p">,</span><span class="w">
+        </span><span class="n">step_size</span><span class="o">=</span><span class="m">0.008</span><span class="p">,</span><span class="w">
+        </span><span class="n">num_leapfrog_steps</span><span class="o">=</span><span class="m">5</span><span class="p">))</span><span class="w">
+
+</span><span class="n">A</span><span class="p">,</span><span class="w"> </span><span class="n">b</span><span class="p">,</span><span class="w"> </span><span class="n">sigma</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">states</span><span class="w">
+
+</span><span class="n">sess</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">tf.Session</span><span class="p">()</span><span class="w">
+
+</span><span class="p">[</span><span class="n">A_mcmc</span><span class="p">,</span><span class="w"> </span><span class="n">b_mcmc</span><span class="p">,</span><span class="w"> </span><span class="n">sigma_mcmc</span><span class="p">,</span><span class="w"> </span><span class="n">is_accepted_</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sess.run</span><span class="p">([</span><span class="w">
+      </span><span class="n">A</span><span class="p">,</span><span class="w"> </span><span class="n">b</span><span class="p">,</span><span class="w"> </span><span class="n">sigma</span><span class="p">,</span><span class="w"> </span><span class="n">kernel_results.is_accepted</span><span class="p">])</span><span class="w">
+
+</span><span class="n">num_accepted</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">np.sum</span><span class="p">(</span><span class="n">is_accepted_</span><span class="p">)</span><span class="w">
+</span><span class="n">print</span><span class="p">(</span><span class="s1">'Acceptance rate: {}'</span><span class="n">.format</span><span class="p">(</span><span class="n">num_accepted</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">num_results</span><span class="p">))</span><span class="w">
+
+</span><span class="n">plt.plot</span><span class="p">(</span><span class="n">A_mcmc</span><span class="p">)</span><span class="w">
+</span><span class="n">plt.show</span><span class="p">()</span><span class="w">
+
+</span><span class="n">print</span><span class="p">(</span><span class="s2">"Coefficient: "</span><span class="p">,</span><span class="w"> </span><span class="n">A_mcmc.mean</span><span class="p">(),</span><span class="w"> </span><span class="s2">"\n Intercept: "</span><span class="p">,</span><span class="w"> </span><span class="n">b_mcmc.mean</span><span class="p">(),</span><span class="w"> </span><span class="s2">"\n Sigma: "</span><span class="p">,</span><span class="w"> </span><span class="n">sigma_mcmc.mean</span><span class="p">())</span><span class="w">
+</span><span class="n">exit</span></code></pre></figure>
+
+<p>References:</p>
+
+<ul>
+  <li><a href="http://kyleclo.github.io/maximum-likelihood-in-tensorflow-pt-1/">MLE with TensorFlow</a></li>
+  <li><a href="https://www.youtube.com/watch?v=atiYXm7JZv0">Machine Learning with R and TensorFlow</a></li>
+  <li><a href="https://medium.com/tensorflow/introducing-tensorflow-probability-dca4c304e245">TensorFlow probability</a></li>
+  <li><a href="https://tensorflow.rstudio.com/tensorflow/articles/using_tensorflow_api.html">Using TensorFlow Api</a></li>
+</ul>
+
+  </div>
+
+
+  
+
+<div class="share-page">
+    Share this on &rarr; 
+
+	<a href="https://twitter.com/share?text=An introduction to TensorFlow&url=&via=hoanguc3m&related=hoanguc3m" rel="nofollow" target="_blank" title="Share on Twitter">
+		<i class="fa fa-twitter"></i> Twitter
+    	</a>
+
+    	<a href="https://facebook.com/sharer.php?u=http://localhost:4000/introduction-tensorflow/" rel="nofollow" target="_blank" title="Share on Facebook">
+      		<i class="fa fa-facebook"></i> Facebook
+    	</a>
+	<a href="https://plus.google.com/share?url=http://localhost:4000/introduction-tensorflow/" rel="nofollow" target="_blank" title="Share on Google+">
+      		<i class="fa fa-google-plus"></i> Google+
+    	</a>
+</div>
+
+
+
+
+  
+<div class="comments">
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+    
+	    var disqus_shortname = 'ibfeduvn'; 
+
+	    (function() {
+	        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+	        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+	        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    })();
+
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+
+</article>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+                    
+          <a href="mailto: hoang.nguyen@uc3m.es"><?xml version="1.0" encoding="utf-8"?>
+<!-- Generate more at customizr.net -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg id="mail" class="custom-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" style="height: 40px; width: 40px;"><rect style="opacity: 1; fill: rgb(41, 104, 162);" class="outer-shape" x="0" y="0" width="100" height="100" rx="20" ry="20"></rect>
+	<path class="inner-shape" style="opacity:1;fill:#fff;" transform="translate(25,25) scale(0.5)" d="M50,1C22.938,1,1,22.938,1,50s21.938,49,49,49s49-21.938,49-49S77.062,1,50,1z M25.5,25.5h49 c0.874,0,1.723,0.188,2.502,0.542L50,57.544L22.998,26.041C23.777,25.687,24.626,25.499,25.5,25.5L25.5,25.5z M19.375,68.375v-36.75 c0-0.128,0.005-0.256,0.014-0.383l17.96,20.953L19.587,69.958C19.448,69.447,19.376,68.916,19.375,68.375L19.375,68.375z M74.5,74.5 h-49c-0.541,0-1.072-0.073-1.583-0.212l17.429-17.429L50,66.956l8.653-10.096l17.429,17.429C75.572,74.427,75.041,74.5,74.5,74.5 L74.5,74.5z M80.625,68.375c0,0.541-0.073,1.072-0.211,1.583L62.652,52.195l17.96-20.953c0.008,0.127,0.014,0.255,0.014,0.383 L80.625,68.375L80.625,68.375z"></path>
+</svg>
+
+</a>
+          <a href="http://facebook.com/hoang.nguyen.1675275"><?xml version="1.0" encoding="utf-8"?>
+<!-- Generate more at customizr.net -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg id="facebook-square" class="custom-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" style="height: 40px; width: 40px;"><rect style="opacity: 1; fill: rgb(41, 104, 162);" class="outer-shape" x="0" y="0" width="100" height="100" rx="20" ry="20"></rect>
+	<path class="inner-shape" style="opacity:1;fill:#fff;" transform="translate(25,25) scale(0.5)" d="M82.667,1H17.335C8.351,1,1,8.351,1,17.336v65.329c0,8.99,7.351,16.335,16.334,16.335h65.332 C91.652,99.001,99,91.655,99,82.665V17.337C99,8.353,91.652,1.001,82.667,1L82.667,1z M84.318,50H68.375v42.875H50V50h-8.855V35.973 H50v-9.11c0-12.378,5.339-19.739,19.894-19.739h16.772V22.3H72.967c-4.066-0.007-4.57,2.12-4.57,6.078l-0.023,7.594H86.75 l-2.431,14.027V50z"></path>
+</svg>
+
+</a>
+          
+          <a href="http://github.com/hoanguc3m"><?xml version="1.0" encoding="utf-8"?>
+<!-- Generate more at customizr.net -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg id="github" class="custom-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" style="height: 40px; width: 40px;"><rect style="opacity: 1; fill: rgb(41, 104, 162);" class="outer-shape" x="0" y="0" width="100" height="100" rx="20" ry="20"></rect>
+	<path class="inner-shape" style="opacity:1;fill:#fff;" transform="translate(25,25) scale(0.5)" d="M50,1C22.938,1,1,22.938,1,50s21.938,49,49,49s49-21.938,49-49S77.062,1,50,1z M79.099,79.099 c-3.782,3.782-8.184,6.75-13.083,8.823c-1.245,0.526-2.509,0.989-3.79,1.387v-7.344c0-3.86-1.324-6.699-3.972-8.517 c1.659-0.16,3.182-0.383,4.57-0.67c1.388-0.287,2.855-0.702,4.402-1.245c1.547-0.543,2.935-1.189,4.163-1.938 c1.228-0.75,2.409-1.723,3.541-2.919s2.082-2.552,2.847-4.067s1.372-3.334,1.818-5.455c0.446-2.121,0.67-4.458,0.67-7.01 c0-4.945-1.611-9.155-4.833-12.633c1.467-3.828,1.308-7.991-0.478-12.489l-1.197-0.143c-0.829-0.096-2.321,0.255-4.474,1.053 c-2.153,0.798-4.57,2.105-7.249,3.924c-3.797-1.053-7.736-1.579-11.82-1.579c-4.115,0-8.039,0.526-11.772,1.579 c-1.69-1.149-3.294-2.097-4.809-2.847c-1.515-0.75-2.727-1.26-3.637-1.532c-0.909-0.271-1.754-0.439-2.536-0.503 c-0.782-0.064-1.284-0.079-1.507-0.048c-0.223,0.031-0.383,0.064-0.478,0.096c-1.787,4.53-1.946,8.694-0.478,12.489 c-3.222,3.477-4.833,7.688-4.833,12.633c0,2.552,0.223,4.889,0.67,7.01c0.447,2.121,1.053,3.94,1.818,5.455 c0.765,1.515,1.715,2.871,2.847,4.067s2.313,2.169,3.541,2.919c1.228,0.751,2.616,1.396,4.163,1.938 c1.547,0.543,3.014,0.957,4.402,1.245c1.388,0.287,2.911,0.511,4.57,0.67c-2.616,1.787-3.924,4.626-3.924,8.517v7.487 c-1.445-0.43-2.869-0.938-4.268-1.53c-4.899-2.073-9.301-5.041-13.083-8.823c-3.782-3.782-6.75-8.184-8.823-13.083 C9.934,60.948,8.847,55.56,8.847,50s1.087-10.948,3.231-16.016c2.073-4.899,5.041-9.301,8.823-13.083s8.184-6.75,13.083-8.823 C39.052,9.934,44.44,8.847,50,8.847s10.948,1.087,16.016,3.231c4.9,2.073,9.301,5.041,13.083,8.823 c3.782,3.782,6.75,8.184,8.823,13.083c2.143,5.069,3.23,10.457,3.23,16.016s-1.087,10.948-3.231,16.016 C85.848,70.915,82.88,75.317,79.099,79.099L79.099,79.099z"></path>
+</svg>
+
+</a>
+          
+          
+          
+          
+          <a href="http://twitter.com/hoanguc3m"><?xml version="1.0" encoding="utf-8"?>
+<!-- Generate more at customizr.net -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg id="twitter" class="custom-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" style="height: 40px; width: 40px;"><rect style="opacity: 1; fill: rgb(41, 104, 162);" class="outer-shape" x="0" y="0" width="100" height="100" rx="20" ry="20"></rect>
+	<path class="inner-shape" style="opacity:1;fill:#fff;" transform="translate(25,25) scale(0.5)" d="M99.001,19.428c-3.606,1.608-7.48,2.695-11.547,3.184c4.15-2.503,7.338-6.466,8.841-11.189 c-3.885,2.318-8.187,4-12.768,4.908c-3.667-3.931-8.893-6.387-14.676-6.387c-11.104,0-20.107,9.054-20.107,20.223 c0,1.585,0.177,3.128,0.52,4.609c-16.71-0.845-31.525-8.895-41.442-21.131C6.092,16.633,5.1,20.107,5.1,23.813 c0,7.017,3.55,13.208,8.945,16.834c-3.296-0.104-6.397-1.014-9.106-2.529c-0.002,0.085-0.002,0.17-0.002,0.255 c0,9.799,6.931,17.972,16.129,19.831c-1.688,0.463-3.463,0.71-5.297,0.71c-1.296,0-2.555-0.127-3.783-0.363 c2.559,8.034,9.984,13.882,18.782,14.045c-6.881,5.424-15.551,8.657-24.971,8.657c-1.623,0-3.223-0.096-4.796-0.282 c8.898,5.738,19.467,9.087,30.82,9.087c36.982,0,57.206-30.817,57.206-57.543c0-0.877-0.02-1.748-0.059-2.617 C92.896,27.045,96.305,23.482,99.001,19.428z"></path>
+</svg>
+
+</a>
+          
+        </footer>
+      </div>
+    </div>
+
+    
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		
+		ga('create', 'UA-54792873-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+	<!-- End Google Analytics -->
+
+
+  </body>
+</html>
