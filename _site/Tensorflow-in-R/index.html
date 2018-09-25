@@ -19,22 +19,8 @@
     <link rel="stylesheet" type="text/css" href="/style.css" />
     <link rel="alternate" type="application/rss+xml" title="Hoang Nguyen - If the statistics are boring, then you've got the wrong numbers. <i>Edward R. Tufte</i>" href="/feed.xml" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-
-<!-- mathjax config similar to math.stackexchange -->
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  jax: ["input/TeX", "output/HTML-CSS"],
-  tex2jax: {
-    inlineMath: [ ['$', '$'] ],
-    displayMath: [ ['$$', '$$']],
-    processEscapes: true,
-    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-  },
-  messageStyle: "none",
-  "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] }
-});
-</script>
-<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
 
   </head>
 
@@ -82,24 +68,24 @@ MathJax.Hub.Config({
 <script type="math/tex">y = A x + b</script>
 Then we could describe constants and variables as tensor and operators as nodes. Using Iris data, I assume that <code class="highlighter-rouge">x</code> is <code class="highlighter-rouge">iris$Petal.Length</code> and <code class="highlighter-rouge">y</code> is <code class="highlighter-rouge">iris$Petal.Width</code>.</p>
 
-<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1">#devtools::install_github("rstudio/tensorflow")</span><span class="w">
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1">#devtools::install_github("rstudio/tensorflow")
 </span><span class="n">library</span><span class="p">(</span><span class="n">tensorflow</span><span class="p">)</span><span class="w">
 </span><span class="n">library</span><span class="p">(</span><span class="n">ggplot2</span><span class="p">)</span><span class="w">
 
 </span><span class="n">data</span><span class="p">(</span><span class="n">iris</span><span class="p">)</span><span class="w">
-</span><span class="c1">#head(iris)</span><span class="w">
+</span><span class="c1">#head(iris)
 </span><span class="n">x_data</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">iris</span><span class="o">$</span><span class="n">Petal.Length</span><span class="w">
 </span><span class="n">y_data</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">iris</span><span class="o">$</span><span class="n">Petal.Width</span><span class="w">
 
 </span><span class="n">A</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">tf</span><span class="o">$</span><span class="n">Variable</span><span class="p">(</span><span class="nf">c</span><span class="p">(</span><span class="m">1</span><span class="p">),</span><span class="w">	</span><span class="n">name</span><span class="o">=</span><span class="s2">"Coefficient"</span><span class="p">)</span><span class="w">
 </span><span class="n">b</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">tf</span><span class="o">$</span><span class="n">Variable</span><span class="p">(</span><span class="nf">c</span><span class="p">(</span><span class="m">1</span><span class="p">),</span><span class="w">	</span><span class="n">name</span><span class="o">=</span><span class="s2">"Intercept"</span><span class="p">)</span><span class="w">
-</span><span class="c1"># y &lt;- tf$add(tf$mul(A, x_data), b)</span><span class="w">
+</span><span class="c1"># y &lt;- tf$add(tf$mul(A, x_data), b)
 </span><span class="n">y</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">A</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">x_data</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">b</span></code></pre></figure>
 
 <p>So, we have created a Coefficient and Intercept as a variable. As all computation in Tensorflow needs to be called in <code class="highlighter-rouge">Session</code>. We obtain the equation using <code class="highlighter-rouge">sess$run()</code> as,</p>
 
 <figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">sess</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">tf</span><span class="o">$</span><span class="n">Session</span><span class="p">()</span><span class="w">
-</span><span class="n">sess</span><span class="o">$</span><span class="n">run</span><span class="p">(</span><span class="n">tf</span><span class="o">$</span><span class="n">initialize_all_variables</span><span class="p">())</span><span class="w"> </span><span class="c1"># To init all the vars</span><span class="w">
+</span><span class="n">sess</span><span class="o">$</span><span class="n">run</span><span class="p">(</span><span class="n">tf</span><span class="o">$</span><span class="n">initialize_all_variables</span><span class="p">())</span><span class="w"> </span><span class="c1"># To init all the vars
 </span><span class="n">print</span><span class="p">(</span><span class="n">sess</span><span class="o">$</span><span class="n">run</span><span class="p">(</span><span class="n">y</span><span class="p">))</span><span class="w">
 </span><span class="n">sess</span><span class="o">$</span><span class="n">close</span><span class="p">()</span></code></pre></figure>
 
@@ -114,8 +100,8 @@ Then we could describe constants and variables as tensor and operators as nodes.
 </span><span class="n">train</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">optimizer</span><span class="o">$</span><span class="n">minimize</span><span class="p">(</span><span class="n">MSE</span><span class="p">)</span><span class="w">
 
 </span><span class="n">sess</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">tf</span><span class="o">$</span><span class="n">Session</span><span class="p">()</span><span class="w">
-</span><span class="n">sess</span><span class="o">$</span><span class="n">run</span><span class="p">(</span><span class="n">tf</span><span class="o">$</span><span class="n">initialize_all_variables</span><span class="p">())</span><span class="w"> </span><span class="c1"># To init all the vars</span><span class="w">
-
+</span><span class="n">sess</span><span class="o">$</span><span class="n">run</span><span class="p">(</span><span class="n">tf</span><span class="o">$</span><span class="n">initialize_all_variables</span><span class="p">())</span><span class="w"> </span><span class="c1"># To init all the vars
+</span><span class="w">
 </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="m">1</span><span class="o">:</span><span class="m">2000</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
     </span><span class="n">sess</span><span class="o">$</span><span class="n">run</span><span class="p">(</span><span class="n">train</span><span class="p">)</span><span class="w">
 </span><span class="p">}</span><span class="w">
@@ -136,7 +122,7 @@ Then we could describe constants and variables as tensor and operators as nodes.
 <p><img src="/figure/source/2016-11-10-Tensorflow-in-R/plot-1.png" title="center" alt="center" style="display: block; margin: auto;" /></p>
 
 <figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">sess</span><span class="o">$</span><span class="n">close</span><span class="p">()</span><span class="w">
-</span><span class="c1"># Compare to the lm function</span><span class="w">
+</span><span class="c1"># Compare to the lm function
 </span><span class="n">lm</span><span class="p">(</span><span class="n">y_data</span><span class="o">~</span><span class="n">x_data</span><span class="p">)</span></code></pre></figure>
 
 <figure class="highlight"><pre><code class="language-text" data-lang="text">## 
