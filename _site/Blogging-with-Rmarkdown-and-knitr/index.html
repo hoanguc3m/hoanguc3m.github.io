@@ -19,8 +19,22 @@
     <link rel="stylesheet" type="text/css" href="/style.css" />
     <link rel="alternate" type="application/rss+xml" title="Hoang Nguyen - If the statistics are boring, then you've got the wrong numbers. <i>Edward R. Tufte</i>" href="/feed.xml" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+
+<!-- mathjax config similar to math.stackexchange -->
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  jax: ["input/TeX", "output/HTML-CSS"],
+  tex2jax: {
+    inlineMath: [ ['$', '$'] ],
+    displayMath: [ ['$$', '$$']],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  },
+  messageStyle: "none",
+  "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] }
+});
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
 
   </head>
 
@@ -28,7 +42,7 @@
     <div class="wrapper-masthead">
       <div class="container">
         <header class="masthead clearfix">
-          <a href="/" class="site-avatar"><img src="https://raw.githubusercontent.com/hoanguc3m/hoanguc3m.github.io/master/images/jekyll-logo.png" /></a>
+          <a href="/" class="site-avatar"><img src="images/jekyll-logo.png" /></a>
           
           <div class="site-info">
             <h1 class="site-name"><a href="/">Hoang Nguyen</a></h1>
@@ -127,9 +141,9 @@ First please add this instruction to the Rmarkdown header</p>
     </span><span class="n">render_jekyll</span><span class="p">()</span><span class="w">
     </span><span class="n">knit</span><span class="p">(</span><span class="n">input</span><span class="p">,</span><span class="w"> </span><span class="n">envir</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">parent.frame</span><span class="p">())</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span><span class="c1"># And after that you could use knitr to create your own post
-# 
-</span><span class="w">
+</span><span class="c1"># And after that you could use knitr to create your own post</span><span class="w">
+</span><span class="c1"># </span><span class="w">
+
 </span><span class="n">KnitPost</span><span class="p">(</span><span class="s2">"2016-10-1-Blogging-with-Rmarkdown-and-knitr.Rmd"</span><span class="p">)</span></code></pre></figure>
 
 <p>Now you have the md file together with all the images in the img folder. Let’s upload to github folder.</p>

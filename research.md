@@ -31,7 +31,7 @@ We propose a class of dynamic factor copulas for financial data where the dynami
 **[What are the drivers of the Swedish sustainable development path? New evidence from Bayesian Dynamic Linear Models](https://hoanguc3m.github.io/Talk/00_sustaindev/20170308.pdf)**, joint with [Jesper Stage](https://www.ltu.se/staff/j/jessta-1.115917?l=en), [Magnus Lindmark](https://www.umu.se/en/staff/magnus-lindmark/), [Huong Nguyen Thu](https://www.su.se/english/profiles/ngth2574-1.343248) . 
 
 Abstract: [Paper](https://hoanguc3m.github.io/Talk/00_sustaindev/20170308.pdf) - 
-[Slides](https://hoanguc3m.github.io/Talk/02_vifcop/00_sustaindev/slide20170623.pdf) 
+[Slides](https://hoanguc3m.github.io/Talk/00_sustaindev/slide20170623.pdf) 
 
 According to my knowledge, we are the first who aim to find out the dynamic relationship between genuine savings (GS) and long term well-being represented by future consumptions (PVC). By extending the measure of GS to account for wider range of impacts on natural resource, human capital and technological progress, we  apply Bayesian approach to estimate Dynamic Linear Models (DLMs). We discover that there are increasing dependent trends with all explanatory GS variables and provide a new empirical evidence on the technological progress that underpin Swedish sustainable development.  The dynamic model also provides a trivial framework for testing the hypothesis that their relationship approach to one as the net investment term includes more types of capital. 
 

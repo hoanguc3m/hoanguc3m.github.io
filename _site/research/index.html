@@ -19,8 +19,22 @@
     <link rel="stylesheet" type="text/css" href="/style.css" />
     <link rel="alternate" type="application/rss+xml" title="Hoang Nguyen - If the statistics are boring, then you've got the wrong numbers. <i>Edward R. Tufte</i>" href="/feed.xml" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+
+<!-- mathjax config similar to math.stackexchange -->
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  jax: ["input/TeX", "output/HTML-CSS"],
+  tex2jax: {
+    inlineMath: [ ['$', '$'] ],
+    displayMath: [ ['$$', '$$']],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  },
+  messageStyle: "none",
+  "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] }
+});
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
 
   </head>
 
@@ -28,7 +42,7 @@
     <div class="wrapper-masthead">
       <div class="container">
         <header class="masthead clearfix">
-          <a href="/" class="site-avatar"><img src="https://raw.githubusercontent.com/hoanguc3m/hoanguc3m.github.io/master/images/jekyll-logo.png" /></a>
+          <a href="/" class="site-avatar"><img src="images/jekyll-logo.png" /></a>
           
           <div class="site-info">
             <h1 class="site-name"><a href="/">Hoang Nguyen</a></h1>
@@ -50,25 +64,28 @@
   
   <h1>Research</h1>
   <div class="entry">
-    <p><strong><a href="https://github.com/hoanguc3m/Talk/raw/master/02_vifcop/poster2.pdf">Variational Inference for high dimensional structured factor copulas</a></strong>, joint with <a href="http://portal.uc3m.es/portal/page/portal/dpto_estadistica/personal/Concepcion_Ausin">M. Concepcíon Ausín</a> and <a href="http://portal.uc3m.es/portal/page/portal/dpto_estadistica/home/members/pedro_galeano_san_miguel">Pedro Galeano</a> (UC3M).</p>
+    <p><strong><a href="https://hoanguc3m.github.io/Talk/02_vifcop/WP2-17-10-2018.pdf">Variational Inference for high dimensional structured factor copulas</a></strong>, joint with <a href="http://portal.uc3m.es/portal/page/portal/dpto_estadistica/personal/Concepcion_Ausin">M. Concepcíon Ausín</a> and <a href="http://portal.uc3m.es/portal/page/portal/dpto_estadistica/home/members/pedro_galeano_san_miguel">Pedro Galeano</a> (UC3M).</p>
 
-<p>Abstract: <a href="https://github.com/hoanguc3m/Talk/raw/master/02_vifcop/poster2.pdf">Poster</a> - <a href="https://github.com/hoanguc3m/vifcopula">Code</a></p>
+<p>Abstract: <a href="https://hoanguc3m.github.io/Talk/02_vifcop/WP2-17-10-2018.pdf">Paper</a> -
+<a href="https://hoanguc3m.github.io/Talk/02_vifcop/WP2_onlineAp.pdf">Appendix</a> -
+<a href="https://hoanguc3m.github.io/Talk/02_vifcop/slides2.pdf">Slides</a> - 
+<a href="https://hoanguc3m.github.io/Talk/02_vifcop/poster2.pdf">Poster</a> - <a href="https://github.com/hoanguc3m/vifcopula">Code</a></p>
 
 <p>In this paper, we make two contributions to the literature of factor copula models. First, we employ a Variational Bayesian algorithm to make fast inference for multi-factor and structured factor copulas. Compared to the Markov chain Monte Carlo (MCMC) approach, the VI approximation is much faster and could handle a sizeable problem in a few seconds with high accuracy. Second, we derive an automated procedure to recover the dependence structure. By taking advantage of the posterior sample means, we inspect the initial assumption of bivariate copula functions and switch for a better one by minimizing Bayesian information criterion (BIC). The simulation in different context shows that the procedures of bivariate copula selection could be at least 80% accuracy compared to the true generated copula model.</p>
 
-<p><strong><a href="https://github.com/hoanguc3m/Talk/raw/master/01_Dyfacopula/WP1-24-09-2017.pdf">Parallel Bayesian inference for high dimensional dynamic factor copulas</a></strong>, joint with <a href="http://portal.uc3m.es/portal/page/portal/dpto_estadistica/personal/Concepcion_Ausin">M. Concepcíon Ausín</a> and <a href="http://portal.uc3m.es/portal/page/portal/dpto_estadistica/home/members/pedro_galeano_san_miguel">Pedro Galeano</a> (UC3M)</p>
+<p><strong><a href="https://hoanguc3m.github.io/Talk/01_Dyfacopula/WP1-31-10-2018.pdf">Parallel Bayesian inference for high dimensional dynamic factor copulas</a></strong>, joint with <a href="http://portal.uc3m.es/portal/page/portal/dpto_estadistica/personal/Concepcion_Ausin">M. Concepcíon Ausín</a> and <a href="http://portal.uc3m.es/portal/page/portal/dpto_estadistica/home/members/pedro_galeano_san_miguel">Pedro Galeano</a> (UC3M) - Journal of Financial Econometrics (forthcoming)</p>
 
-<p>Abstract: <a href="https://github.com/hoanguc3m/Talk/raw/master/01_Dyfacopula/WP1-24-09-2017.pdf">Paper</a> -
-<a href="https://github.com/hoanguc3m/Talk/raw/master/01_Dyfacopula/WP1_onlineAp.pdf">Appendix</a> -
-<a href="https://github.com/hoanguc3m/Talk/raw/master/01_Dyfacopula/sevilla_pre.pdf">Slides</a> - 
-<a href="https://github.com/hoanguc3m/Talk/raw/master/01_Dyfacopula/poster_ISBA.pdf">Poster</a> - <a href="https://github.com/hoanguc3m/FactorCopula">Code</a></p>
+<p>Abstract: <a href="https://hoanguc3m.github.io/Talk/01_Dyfacopula/WP1-31-10-2018.pdf">Paper</a> -
+<a href="https://hoanguc3m.github.io/Talk/01_Dyfacopula/WP1_onlineAp.pdf">Appendix</a> -
+<a href="https://hoanguc3m.github.io/Talk/01_Dyfacopula/sevilla_pre.pdf">Slides</a> - 
+<a href="https://hoanguc3m.github.io/Talk/01_Dyfacopula/poster_ISBA.pdf">Poster</a> - <a href="https://github.com/hoanguc3m/FactorCopula">Code</a></p>
 
 <p>We propose a class of dynamic factor copulas for financial data where the dynamic correlation are modelled as generalized autoregressive score (GAS) processes. The model could account for the asymmetric dependence in extreme events. We implement an parallel algorithm to estimate the different pamameters of the factor copula models. An empirical example is illustrated for the stock price of 150 companies listed in S&amp;P500.</p>
 
-<p><strong><a href="https://github.com/hoanguc3m/Talk/raw/master/00_sustaindev/20170308.pdf">What are the drivers of the Swedish sustainable development path? New evidence from Bayesian Dynamic Linear Models</a></strong>, joint with Jesper Stage, Magnus Lindmark, Huong Nguyen Thu .</p>
+<p><strong><a href="https://hoanguc3m.github.io/Talk/00_sustaindev/20170308.pdf">What are the drivers of the Swedish sustainable development path? New evidence from Bayesian Dynamic Linear Models</a></strong>, joint with <a href="https://www.ltu.se/staff/j/jessta-1.115917?l=en">Jesper Stage</a>, <a href="https://www.umu.se/en/staff/magnus-lindmark/">Magnus Lindmark</a>, <a href="https://www.su.se/english/profiles/ngth2574-1.343248">Huong Nguyen Thu</a> .</p>
 
-<p>Abstract: <a href="https://github.com/hoanguc3m/Talk/raw/master/00_sustaindev/20170308.pdf">Paper</a> - 
-<a href="https://github.com/hoanguc3m/Talk/raw/master/00_sustaindev/slide20170623.pdf">Slides</a></p>
+<p>Abstract: <a href="https://hoanguc3m.github.io/Talk/00_sustaindev/20170308.pdf">Paper</a> - 
+<a href="https://hoanguc3m.github.io/Talk/00_sustaindev/slide20170623.pdf">Slides</a></p>
 
 <p>According to my knowledge, we are the first who aim to find out the dynamic relationship between genuine savings (GS) and long term well-being represented by future consumptions (PVC). By extending the measure of GS to account for wider range of impacts on natural resource, human capital and technological progress, we  apply Bayesian approach to estimate Dynamic Linear Models (DLMs). We discover that there are increasing dependent trends with all explanatory GS variables and provide a new empirical evidence on the technological progress that underpin Swedish sustainable development.  The dynamic model also provides a trivial framework for testing the hypothesis that their relationship approach to one as the net investment term includes more types of capital.</p>
 
