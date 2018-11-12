@@ -5,7 +5,6 @@ permalink: /teaching/
 ---
 
 This year, I’m preparing for my coming class in Statistics. Although all the material have been done but I still find challenging to fulfil my duty.
-It is difficult to explain something from the start. Hope that I don't spoil the students.
 
 * *Teaching Assistant*, Statistics Department, UC3M
 

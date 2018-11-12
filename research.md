@@ -23,7 +23,7 @@ Abstract: [Paper](https://hoanguc3m.github.io/Talk/01_Dyfacopula/WP1-31-10-2018.
 [Slides](https://hoanguc3m.github.io/Talk/01_Dyfacopula/sevilla_pre.pdf) - 
 [Poster](https://hoanguc3m.github.io/Talk/01_Dyfacopula/poster_ISBA.pdf) - [Code](https://github.com/hoanguc3m/FactorCopula) 
 
-We propose a class of dynamic factor copulas for financial data where the dynamic correlation are modelled as generalized autoregressive score (GAS) processes. The model could account for the asymmetric dependence in extreme events. We implement an parallel algorithm to estimate the different pamameters of the factor copula models. An empirical example is illustrated for the stock price of 150 companies listed in S&P500. 
+We propose a class of dynamic factor copulas for financial data where the dynamic correlation are modelled as generalized autoregressive score (GAS) processes. The model could account for the asymmetric dependence in extreme events. We implement an parallel algorithm to estimate the different pamameters of the factor copula models. An empirical example is illustrated for the stock price of 140 companies listed in S&P500. 
 
 
 
