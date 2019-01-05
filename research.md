@@ -16,7 +16,7 @@ In this paper, we make two contributions to the literature of factor copula mode
 
 
 
-**[Parallel Bayesian inference for high dimensional dynamic factor copulas](https://hoanguc3m.github.io/Talk/01_Dyfacopula/WP1-31-10-2018.pdf)**, joint with [M. Concepcíon Ausín](http://portal.uc3m.es/portal/page/portal/dpto_estadistica/personal/Concepcion_Ausin) and [Pedro Galeano](http://portal.uc3m.es/portal/page/portal/dpto_estadistica/home/members/pedro_galeano_san_miguel) (UC3M) - Journal of Financial Econometrics (forthcoming)
+**[Parallel Bayesian inference for high dimensional dynamic factor copulas](https://hoanguc3m.github.io/Talk/01_Dyfacopula/WP1-31-10-2018.pdf)**, joint with [M. Concepcíon Ausín](http://portal.uc3m.es/portal/page/portal/dpto_estadistica/personal/Concepcion_Ausin) and [Pedro Galeano](http://portal.uc3m.es/portal/page/portal/dpto_estadistica/home/members/pedro_galeano_san_miguel) (UC3M) - [Journal of Financial Econometrics (2019)](https://doi.org/10.1093/jjfinec/nby032)
 
 Abstract: [Paper](https://hoanguc3m.github.io/Talk/01_Dyfacopula/WP1-31-10-2018.pdf) -
 [Appendix](https://hoanguc3m.github.io/Talk/01_Dyfacopula/WP1_onlineAp.pdf) -
