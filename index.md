@@ -8,7 +8,7 @@ I'm Hoang, graduate student at Universidad Carlos III de Madrid, Getafe Campus. 
 
 Before obtaining Master degree, I attended Vietnam National Economics University with a major in finance and had a chance to be a teaching assistant after that. My research interest changed several times before I fall in love with Bayesian inference. It would be nice experience here, in the Statistics department!
 
-I will be available for interviews at the **EEA Job Market Meeting**, Naples, Italy, 6–7 Dec 2018. Please check out [**my CV**](https://hoanguc3m.github.io/Talk/cv2018_job_pub.pdf) as well as my [**Job Market Paper**](https://hoanguc3m.github.io/Talk/02_vifcop/WP2-17-10-2018.pdf).
+Please check out [**my CV**](https://hoanguc3m.github.io/Talk/cv2018_job_pub.pdf) as well as my lastest [paper](https://hoanguc3m.github.io/Talk/02_vifcop/WP2-17-10-2018.pdf).
 
 ![hoang@uc3m](https://raw.githubusercontent.com/hoanguc3m/hoanguc3m.github.io/master/images/photo1.jpg)
 
