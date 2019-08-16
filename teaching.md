@@ -6,7 +6,7 @@ permalink: /teaching/
 
 This year, I’m preparing for my coming class in Statistics. Although all the material have been done but I still find challenging to fulfil my duty.
 
-* *Teaching Assistant*, Statistics Department, UC3M
+* *Teaching Assistant*, Department of Statistics, UC3M
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Course: **Statistics for Business and Administration II**, FICO, 2018 [Web content](https://aplicaciones.uc3m.es/cpa/generaFicha?est=201&asig=13749&idioma=2&anio=2018) 
 

@@ -18,7 +18,7 @@ avatar: https://raw.githubusercontent.com/hoanguc3m/hoanguc3m.github.io/master/i
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble: 
-  email: hoang.nguyen@uc3m.es 
+  email: hoang.nguyen@oru.se
   facebook: hoang.nguyen.1675275
   flickr: 
   github: hoanguc3m
@@ -67,8 +67,7 @@ gems:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-seo-tag
 
-author: hoanguc3m
-
+author: hoangoru, hoang oru
 
 # Exclude these files from your production _site
 exclude:
