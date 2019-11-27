@@ -8,7 +8,7 @@ I'm Hoang, a postdoctoral researcher at the School of Business, Örebro Universi
 
 Before, I got my Ph.D. at Universidad Carlos III de Madrid under the supervision of Prof. M. Concepcion Ausin and Prof. Pedro Galeano. My research contributions lie primarily in developing econometric models to analyze high dimensional dependence structure. I propose factor copula models as a solution for the curse of dimensionality and apply parallel Bayesian inference or Variational inference to speed up the computation time. It would be nice experience here, in the School of Business!
 
-Please check out [**my CV**](https://hoanguc3m.github.io/Talk/cv2019_norm.pdf) as well as my lastest [paper](https://hoanguc3m.github.io/Talk/02_vifcop/WP2-17-10-2018.pdf).
+Please check out [**my CV**](https://hoanguc3m.github.io/Talk/cv2019_norm.pdf) as well as my lastest [paper](https://hoanguc3m.github.io/Talk/02_vifcop/WP2-15-11-2019.pdf).
 
 ![hoang@uc3m](https://raw.githubusercontent.com/hoanguc3m/hoanguc3m.github.io/master/images/photo1.jpg)
 
