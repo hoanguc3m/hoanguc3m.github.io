@@ -4,9 +4,9 @@ title: Research
 permalink: /research/
 ---
 
-**[Variational Inference for high dimensional structured factor copulas](https://hoanguc3m.github.io/Talk/02_vifcop/WP2-15-11-2019.pdf)**, joint with [M. Concepcíon Ausín](http://portal.uc3m.es/portal/page/portal/dpto_estadistica/personal/Concepcion_Ausin) and [Pedro Galeano](http://portal.uc3m.es/portal/page/portal/dpto_estadistica/home/members/pedro_galeano_san_miguel) (UC3M). 
+**[Variational Inference for high dimensional structured factor copulas](https://hoanguc3m.github.io/Talk/02_vifcop/WP2-04-05-2020.pdf)**, joint with [M. Concepcíon Ausín](http://portal.uc3m.es/portal/page/portal/dpto_estadistica/personal/Concepcion_Ausin) and [Pedro Galeano](http://portal.uc3m.es/portal/page/portal/dpto_estadistica/home/members/pedro_galeano_san_miguel) (UC3M) - [Computational Statistics \& Data Analysis (2020)](https://www.sciencedirect.com/science/article/abs/pii/S0167947320301031).
 
-Abstract: [Paper](https://hoanguc3m.github.io/Talk/02_vifcop/WP2-15-11-2019.pdf) -
+Abstract: [Paper](https://hoanguc3m.github.io/Talk/02_vifcop/WP2-04-05-2020.pdf) -
 [Appendix](https://hoanguc3m.github.io/Talk/02_vifcop/WP2_onlineAp.pdf) -
 [Slides](https://hoanguc3m.github.io/Talk/02_vifcop/slides2.pdf) - 
 [Poster](https://hoanguc3m.github.io/Talk/02_vifcop/poster2.pdf) - [Code](https://github.com/hoanguc3m/vifcopula) 
