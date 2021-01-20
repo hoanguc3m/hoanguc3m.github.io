@@ -10,7 +10,9 @@ Before, I got my Ph.D. at Universidad Carlos III de Madrid under the supervision
 
 I am now working on a project of the vector autoregression model with fat tails and asymmetry and the interconnection between finance and macroeconomic variables through MIDAS Copulas. Please check out [**my CV**](https://hoanguc3m.github.io/Talk/cv2021_norm.pdf) as well as my lastest [paper](https://hoanguc3m.github.io/Talk/03_fatbvars/WP5-20-01-2021.pdf).
 
+<!---
 ![hoang@uc3m](https://raw.githubusercontent.com/hoanguc3m/hoanguc3m.github.io/master/images/photo1.jpg)
+-->
 
 ### More Information
 

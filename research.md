@@ -22,7 +22,7 @@ In this paper, we contribute to the literature by extending the VAR models to ac
 We present evidence of fat tails and asymmetry for monthly macroeconomic variables. The analysis also gives a clear message that asymmetry should be taken into account to have a better prediction during recession and crisis. .
 
 
-**[Variational Inference for high dimensional structured factor copulas](https://hoanguc3m.github.io/Talk/02_vifcop/WP2-04-05-2020.pdf)**, joint with [M. Concepcíon Ausín](http://portal.uc3m.es/portal/page/portal/dpto_estadistica/personal/Concepcion_Ausin) and [Pedro Galeano](http://portal.uc3m.es/portal/page/portal/dpto_estadistica/home/members/pedro_galeano_san_miguel) (UC3M) - [Computational Statistics \& Data Analysis (2020)](https://www.sciencedirect.com/science/article/abs/pii/S0167947320301031).
+**[Variational Inference for high dimensional structured factor copulas](https://hoanguc3m.github.io/Talk/02_vifcop/WP2-04-05-2020.pdf)**, joint with [M. Concepcíon Ausín](http://portal.uc3m.es/portal/page/portal/dpto_estadistica/personal/Concepcion_Ausin) and [Pedro Galeano](http://portal.uc3m.es/portal/page/portal/dpto_estadistica/home/members/pedro_galeano_san_miguel) (UC3M) - [Computational Statistics & Data Analysis (2020)](https://www.sciencedirect.com/science/article/abs/pii/S0167947320301031).
 
 Abstract: [Paper](https://hoanguc3m.github.io/Talk/02_vifcop/WP2-04-05-2020.pdf) -
 [Appendix](https://hoanguc3m.github.io/Talk/02_vifcop/WP2_onlineAp.pdf) -
