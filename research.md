@@ -4,6 +4,24 @@ title: Research
 permalink: /research/
 ---
 
+**[Dynamic relationship between Stock market and Bond market: A GAS MIDAS copula approach]()**, joint with [Farrukh Javed](https://www.oru.se/english/employee/farrukh_javed) (ORU) - [WP (2021)]().
+
+Abstract: [Paper]() - [Slides]() - [Code](https://github.com/hoanguc3m/GASCopula) 
+
+There is evidence that macroeconomic variables influence the relationship among financial variables, however they are sampled at different frequencies. This study proposes a generalized autoregressive score mixed frequency data sampling (GAS MIDAS) copula approach to analyze the dynamic relationship between Stock returns and Bond returns. A GAS MIDAS copula decomposes their dependence into a short-run and a long-run correlation. While the long term effect is updated at a lower frequency using MIDAS, the short term effect follows a GAS process. Asymmetric dependence at different quantiles are taken into account. The model helps to improve the in-sample goodness of fit and the out-of-sample forecast.
+
+
+**[VAR models with fat tails and asymmetry](https://hoanguc3m.github.io/Talk/03_fatbvars/WP5-20-01-2021.pdf)**, joint with [Sune Karlsson](https://www.oru.se/english/employee/sune_karlsson) and [Stepan Mazur](https://www.oru.se/english/employee/stepan_mazur) (ORU) - [WP (2021)](https://hoanguc3m.github.io/Talk/03_fatbvars/WP5-20-01-2021.pdf).
+
+Abstract: [Paper](https://hoanguc3m.github.io/Talk/03_fatbvars/WP5-20-01-2021.pdf) -
+[Appendix]() -
+[Slides](https://hoanguc3m.github.io/Talk/03_fatbvars/WP5-slides-04-11-2020.pdf) -  [Code](https://github.com/hoanguc3m/fatBVARS) 
+
+With the uncertain changes of the economic environment, macroeconomic downturns during recessions and crises can hardly be explained by a Gaussian structural shock. There is evidence that the distribution of macroeconomic variables is fat-tailed and asymmetric. 
+In this paper, we contribute to the literature by extending the VAR models to account for a more realistic assumption of the multivariate distribution of the macroeconomic variables. We propose a general class of Generalized Hyperbolic Skew Student's-$t$ distribution with stochastic volatility (Skew-$t$.SV) VAR that allows us to take into account fat tails and asymmetry. The Bayesian inference using a Gibbs sampler is extended to make inferences of model parameters. 
+We present evidence of fat tails and asymmetry for monthly macroeconomic variables. The analysis also gives a clear message that asymmetry should be taken into account to have a better prediction during recession and crisis. .
+
+
 **[Variational Inference for high dimensional structured factor copulas](https://hoanguc3m.github.io/Talk/02_vifcop/WP2-04-05-2020.pdf)**, joint with [M. Concepcíon Ausín](http://portal.uc3m.es/portal/page/portal/dpto_estadistica/personal/Concepcion_Ausin) and [Pedro Galeano](http://portal.uc3m.es/portal/page/portal/dpto_estadistica/home/members/pedro_galeano_san_miguel) (UC3M) - [Computational Statistics \& Data Analysis (2020)](https://www.sciencedirect.com/science/article/abs/pii/S0167947320301031).
 
 Abstract: [Paper](https://hoanguc3m.github.io/Talk/02_vifcop/WP2-04-05-2020.pdf) -
