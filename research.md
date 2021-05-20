@@ -6,8 +6,9 @@ permalink: /research/
 
 **[6. A dynamic leverage stochastic volatility model]()**, 
 
-<span style="font-size:0.5em;"> 
-Hoang Nguyen, Trong-Nghia Nguyen, Minh-Ngoc Tran\\
+<span style="font-size:0.75em;"> 
+Hoang Nguyen, Trong-Nghia Nguyen, Minh-Ngoc Tran \\
+[Paper](https://hoanguc3m.github.io/Talk/03_DLSV/DynamicLeverage.pdf) - [Slides]() \\
 Abstract: Stock returns are considered as a convolution of two random processes that are the return innovation and the volatility innovation. The correlation of these two processes tends to be nega-
 tive which is the so-called leverage effect. In this study, we propose a dynamic leverage stochastic volatility (DLSV) model where the correlation structure between the return innovation and the
 volatility innovation is assumed to follow a generalized autoregressive score (GAS) process. We find that the leverage effect is reinforced in the market downturn period and weakened in the
@@ -17,7 +18,7 @@ market upturn period.
 
 **[5. Dynamic relationship between Stock market and Bond market: A GAS MIDAS copula approach]()**, 
 
-<span style="font-size:0.5em;"> 
+<span style="font-size:0.75em;"> 
 Hoang Nguyen, Farrukh Javed \\
 [Paper]() - [Slides]() - [Code](https://github.com/hoanguc3m/GASCopula) \\
 Abstract: There is evidence that macroeconomic variables influence the relationship among financial variables, however they are sampled at different frequencies. This study proposes a generalized autoregressive score mixed frequency data sampling (GAS MIDAS) copula approach to analyze the dynamic relationship between Stock returns and Bond returns. A GAS MIDAS copula decomposes their dependence into a short-run and a long-run correlation. While the long term effect is updated at a lower frequency using MIDAS, the short term effect follows a GAS process. Asymmetric dependence at different quantiles are taken into account. The model helps to improve the in-sample goodness of fit and the out-of-sample forecast.
@@ -25,7 +26,7 @@ Abstract: There is evidence that macroeconomic variables influence the relations
 
 **[4. VAR models with fat tails and asymmetry](https://hoanguc3m.github.io/Talk/05_fatbvars/WP5-20-05-2021.pdf)**
 
-<span style="font-size:0.5em;"> 
+<span style="font-size:0.75em;"> 
 Sune Karlsson, Stepan Mazur, Hoang Nguyen \\
 [Paper](https://hoanguc3m.github.io/Talk/05_fatbvars/WP5-20-05-2021.pdf) -
 [Slides](https://hoanguc3m.github.io/Talk/05_fatbvars/WP5-slides-04-11-2020.pdf) -  [Code](https://github.com/hoanguc3m/fatBVARS) \\
@@ -36,7 +37,7 @@ We present evidence of fat tails and asymmetry for monthly macroeconomic variabl
 
 **[3. What are the drivers of the Swedish sustainable development path? New evidence from Bayesian Dynamic Linear Models](https://hoanguc3m.github.io/Talk/00_econ/20170308.pdf)**, 
 
-<span style="font-size:0.5em;"> 
+<span style="font-size:0.75em;"> 
 Jesper Stage, Magnus Lindmark, Hoang Nguyen, Huong Nguyen Thu \\
 [Paper](https://hoanguc3m.github.io/Talk/00_sustaindev/20170308.pdf) - 
 [Slides](https://hoanguc3m.github.io/Talk/00_sustaindev/slide20170623.pdf) 
@@ -48,9 +49,8 @@ According to my knowledge, we are the first who aim to find out the dynamic rela
 
 **[2. Variational Inference for high dimensional structured factor copulas](https://hoanguc3m.github.io/Talk/02_vifcop/WP2-04-05-2020.pdf)**
 
-<span style="font-size:0.5em;"> 
-Hoang Nguyen, M. Concepcíon Ausín and Pedro Galeano \\ 
-[Computational Statistics & Data Analysis (2020)](https://www.sciencedirect.com/science/article/abs/pii/S0167947320301031). \\
+<span style="font-size:0.75em;"> Hoang Nguyen, M. Concepcíon Ausín and Pedro Galeano \\
+[Computational Statistics & Data Analysis (2020)](https://www.sciencedirect.com/science/article/abs/pii/S0167947320301031) \\
 [Paper](https://hoanguc3m.github.io/Talk/02_vifcop/WP2-04-05-2020.pdf) -
 [Appendix](https://hoanguc3m.github.io/Talk/02_vifcop/WP2_onlineAp.pdf) -
 [Slides](https://hoanguc3m.github.io/Talk/02_vifcop/slides2.pdf) - 
@@ -63,7 +63,7 @@ In this paper, we make two contributions to the literature of factor copula mode
 
 **[1. Parallel Bayesian inference for high dimensional dynamic factor copulas](https://hoanguc3m.github.io/Talk/01_Dyfacopula/WP1-31-10-2018.pdf)**
 
-<span style="font-size:0.5em;"> Hoang Nguyen, M. Concepcíon Ausín and Pedro Galeano \\
+<span style="font-size:0.75em;"> Hoang Nguyen, M. Concepcíon Ausín and Pedro Galeano \\
 [Journal of Financial Econometrics (2019)](https://doi.org/10.1093/jjfinec/nby032) \\
 [Paper](https://hoanguc3m.github.io/Talk/01_Dyfacopula/WP1-31-10-2018.pdf) -
 [Appendix](https://hoanguc3m.github.io/Talk/01_Dyfacopula/WP1_onlineAp.pdf) -
