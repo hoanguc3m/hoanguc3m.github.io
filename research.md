@@ -4,7 +4,7 @@ title: Research
 permalink: /research/
 ---
 
-**[6. A dynamic leverage stochastic volatility model](https://hoanguc3m.github.io/Talk/03_DLSV/DynamicLeverage.pdf)** \\
+**[7. A dynamic leverage stochastic volatility model](https://hoanguc3m.github.io/Talk/03_DLSV/DynamicLeverage.pdf)** \\
 <span style="font-size:0.75em;"> 
 Hoang Nguyen, Trong-Nghia Nguyen, Minh-Ngoc Tran \\
 [Working Paper](https://hoanguc3m.github.io/Talk/03_DLSV/DynamicLeverage.pdf) - [Slides]() 
@@ -17,7 +17,7 @@ market upturn period.
 </span>
 
 
-**[5. Dynamic relationship between Stock market and Bond market: A GAS MIDAS copula approach]()** \\
+**[6. Dynamic relationship between Stock market and Bond market: A GAS MIDAS copula approach]()** \\
 <span style="font-size:0.75em;"> 
 Hoang Nguyen, Farrukh Javed \\
 [Working Paper]() - [Slides]() - [Code](https://github.com/hoanguc3m/GASCopula)
@@ -26,7 +26,7 @@ Abstract: There is evidence that macroeconomic variables influence the relations
 -->
 </span>
 
-**[4. VAR models with fat tails and asymmetry](https://hoanguc3m.github.io/Talk/05_fatbvars/WP5-20-05-2021.pdf)** \\
+**[5. Vector autoregression models with skewness and heavy tails](https://hoanguc3m.github.io/Talk/05_fatbvars/WP5-20-05-2021.pdf)** \\
 <span style="font-size:0.75em;"> 
 Sune Karlsson, Stepan Mazur, Hoang Nguyen \\
 [Working Paper](https://hoanguc3m.github.io/Talk/05_fatbvars/WP5-20-05-2021.pdf) -
@@ -38,7 +38,7 @@ We present evidence of fat tails and asymmetry for monthly macroeconomic variabl
 -->
 </span>
 
-**[3. What are the drivers of the Swedish sustainable development path? New evidence from Bayesian Dynamic Linear Models](https://hoanguc3m.github.io/Talk/00_econ/TFP20170308.pdf)** \\
+**[4. What are the drivers of the Swedish sustainable development path? New evidence from Bayesian Dynamic Linear Models](https://hoanguc3m.github.io/Talk/00_econ/TFP20170308.pdf)** \\
 <span style="font-size:0.75em;"> 
 Jesper Stage, Magnus Lindmark, Hoang Nguyen, Huong Nguyen Thu \\
 [Working Paper](https://hoanguc3m.github.io/Talk/00_sustaindev/20170308.pdf) - 
@@ -48,6 +48,10 @@ According to my knowledge, we are the first who aim to find out the dynamic rela
 -->
 </span>
 
+**[3. Predicting returns and dividend growth - the role of non-Gaussian innovations](https://www.sciencedirect.com/science/article/pii/S1544612321003445)** \\
+<span style="font-size:0.75em;"> Tamás Kiss, Stepan Mazur, and Hoang Nguyen \\
+[Finance Research Letters (2021)](https://www.sciencedirect.com/science/article/pii/S1544612321003445) - 
+[Paper](https://www.sciencedirect.com/science/article/pii/S1544612321003445) 
 
 **[2. Variational Inference for high dimensional structured factor copulas](https://hoanguc3m.github.io/Talk/02_vifcop/WP2-04-05-2020.pdf)** \\
 <span style="font-size:0.75em;"> Hoang Nguyen, M. Concepcíon Ausín and Pedro Galeano \\
