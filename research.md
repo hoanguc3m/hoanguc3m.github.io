@@ -52,6 +52,10 @@ According to my knowledge, we are the first who aim to find out the dynamic rela
 <span style="font-size:0.75em;"> Tamás Kiss, Stepan Mazur, and Hoang Nguyen \\
 [Finance Research Letters (2021)](https://www.sciencedirect.com/science/article/pii/S1544612321003445) - 
 [Paper](https://www.sciencedirect.com/science/article/pii/S1544612321003445) 
+<!---
+In this paper we assess whether flexible modelling of innovations impact the predictive performance of the dividend price ratio for returns and dividend growth. Using Bayesian vector autoregressions we allow for stochastic volatility, heavy tails and skewness in the innovations. Our results suggest that point forecasts are barely affected by these features, suggesting that workhorse models on predictability are sufficient. For density forecasts, however, we find that stochastic volatility substantially improves the forecasting performance.
+-->
+</span>
 
 **[2. Variational Inference for high dimensional structured factor copulas](https://hoanguc3m.github.io/Talk/02_vifcop/WP2-04-05-2020.pdf)** \\
 <span style="font-size:0.75em;"> Hoang Nguyen, M. Concepcíon Ausín and Pedro Galeano \\
