@@ -4,7 +4,7 @@ title: Research
 permalink: /research/
 ---
 
-**[7. A dynamic leverage stochastic volatility model](https://hoanguc3m.github.io/Talk/03_DLSV/DynamicLeverage.pdf)** \\
+**[8. A dynamic leverage stochastic volatility model](https://hoanguc3m.github.io/Talk/03_DLSV/DynamicLeverage.pdf)** \\
 <span style="font-size:0.75em;"> 
 Hoang Nguyen, Trong-Nghia Nguyen, Minh-Ngoc Tran \\
 [Working Paper](https://hoanguc3m.github.io/Talk/03_DLSV/DynamicLeverage.pdf) - [Slides]() 
@@ -17,7 +17,7 @@ market upturn period.
 </span>
 
 
-**[6. Dynamic relationship between Stock market and Bond market: A GAS MIDAS copula approach]()** \\
+**[7. Dynamic relationship between Stock market and Bond market: A GAS MIDAS copula approach]()** \\
 <span style="font-size:0.75em;"> 
 Hoang Nguyen, Farrukh Javed \\
 [Working Paper]() - [Slides]() - [Code](https://github.com/hoanguc3m/GASCopula)
@@ -26,7 +26,7 @@ Abstract: There is evidence that macroeconomic variables influence the relations
 -->
 </span>
 
-**[5. Vector autoregression models with skewness and heavy tails](https://hoanguc3m.github.io/Talk/05_fatbvars/WP5-20-05-2021.pdf)** \\
+**[6. Vector autoregression models with skewness and heavy tails](https://hoanguc3m.github.io/Talk/05_fatbvars/WP5-20-05-2021.pdf)** \\
 <span style="font-size:0.75em;"> 
 Sune Karlsson, Stepan Mazur, Hoang Nguyen \\
 [Working Paper](https://hoanguc3m.github.io/Talk/05_fatbvars/WP5-20-05-2021.pdf) -
@@ -38,13 +38,22 @@ We present evidence of fat tails and asymmetry for monthly macroeconomic variabl
 -->
 </span>
 
-**[4. What are the drivers of the Swedish sustainable development path? New evidence from Bayesian Dynamic Linear Models](https://hoanguc3m.github.io/Talk/00_econ/TFP20170308.pdf)** \\
+**[5. What are the drivers of the Swedish sustainable development path? New evidence from Bayesian Dynamic Linear Models](https://hoanguc3m.github.io/Talk/00_econ/TFP20170308.pdf)** \\
 <span style="font-size:0.75em;"> 
 Jesper Stage, Magnus Lindmark, Hoang Nguyen, Huong Nguyen Thu \\
 [Working Paper](https://hoanguc3m.github.io/Talk/00_sustaindev/20170308.pdf) - 
 [Slides](https://hoanguc3m.github.io/Talk/00_sustaindev/slide20170623.pdf) 
 <!---
 According to my knowledge, we are the first who aim to find out the dynamic relationship between genuine savings (GS) and long term well-being represented by future consumptions (PVC). By extending the measure of GS to account for wider range of impacts on natural resource, human capital and technological progress, we  apply Bayesian approach to estimate Dynamic Linear Models (DLMs). We discover that there are increasing dependent trends with all explanatory GS variables and provide a new empirical evidence on the technological progress that underpin Swedish sustainable development.  The dynamic model also provides a trivial framework for testing the hypothesis that their relationship approach to one as the net investment term includes more types of capital. 
+-->
+</span>
+
+**[4. The Relation between the High-Yield Bond Spread and the Unemployment Rate in the Euro Area](https://www.sciencedirect.com/science/article/pii/S1544612321003688)** \\
+<span style="font-size:0.75em;"> Tamás Kiss, Hoang Nguyen, and Pär Österholm \\
+[Finance Research Letters (2021)](https://www.sciencedirect.com/science/article/pii/S1544612321003688) - 
+[Paper](https://www.sciencedirect.com/science/article/pii/S1544612321003688) 
+<!---
+In this paper, we study the relation between the high-yield bond spread and the unemployment rate in the euro area. This is done using Bayesian VAR models with stochastic volatility. The models are estimated assuming both Gaussian and non-Gaussian distributions for the error terms. Analysing data ranging from January 1998 to December 2020, our results show that an increase in the high-yield bond spread increases the unemployment rate. In terms of the specification of the models, we find that Gaussian error terms are preferred. Our findings hence lend support for the large body of previous literature relying on a Gaussianity assumption in their modelling frameworks.
 -->
 </span>
 
