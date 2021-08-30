@@ -4,29 +4,25 @@ title: Research
 permalink: /research/
 ---
 
-**[8. A dynamic leverage stochastic volatility model](https://hoanguc3m.github.io/Talk/03_DLSV/DynamicLeverage.pdf)** \\
+
+**[9. Modelling the Relation between the US Real Economy and the Corporate Bond-Yield Spread in Bayesian VARs with non-Gaussian Disturbances]()** \\
 <span style="font-size:0.75em;"> 
-Hoang Nguyen, Trong-Nghia Nguyen, Minh-Ngoc Tran \\
-[Working Paper](https://hoanguc3m.github.io/Talk/03_DLSV/DynamicLeverage.pdf) - [Slides]() 
+Tamás Kiss,  Stepan Mazur, Hoang Nguyen, and Pär Österholm \\
+[Working Paper](https://www.oru.se/globalassets/oru-sv/institutioner/hh/workingpapers/workingpapers2021/wp-9-2021.pdf) - [Code](https://github.com/hoanguc3m/fatBVARS) 
 <!---
-Abstract: Stock returns are considered as a convolution of two random processes that are the return innovation and the volatility innovation. The correlation of these two processes tends to be nega-
-tive which is the so-called leverage effect. In this study, we propose a dynamic leverage stochastic volatility (DLSV) model where the correlation structure between the return innovation and the
-volatility innovation is assumed to follow a generalized autoregressive score (GAS) process. We find that the leverage effect is reinforced in the market downturn period and weakened in the
-market upturn period.
+Abstract: In this paper we analyze how skewness and heavy tails affect the estimated relationship between the real economy and the corporate bond-yield spread, a popular predictor of real activity. We use quarterly US data to estimate Bayesian VAR models with stochastic volatility and various distributional assumptions regarding the disturbances. In-sample, we find that – after controlling for stochastic volatility – innovations in GDP growth can be well-described by a Gaussian distribution. In contrast, both the unemployment rate and the yield spread appear to benefit from being modelled using non-Gaussian innovations. 
 -->
-</span>
 
-
-**[7. Dynamic relationship between Stock market and Bond market: A GAS MIDAS copula approach]()** \\
+**[8. Dynamic relationship between Stock market and Bond market: A GAS MIDAS copula approach]()** \\
 <span style="font-size:0.75em;"> 
 Hoang Nguyen, Farrukh Javed \\
-[Working Paper]() - [Slides]() - [Code](https://github.com/hoanguc3m/GASCopula)
+[Working Paper](https://www.oru.se/globalassets/oru-sv/institutioner/hh/workingpapers/workingpapers2021/wp-15-2021.pdf) - [Slides](https://hoanguc3m.github.io/Talk/08_GASMIDAS/WP8-slides.pdf) - [Code](https://github.com/hoanguc3m/GASCopula)
 <!---
 Abstract: There is evidence that macroeconomic variables influence the relationship among financial variables, however they are sampled at different frequencies. This study proposes a generalized autoregressive score mixed frequency data sampling (GAS MIDAS) copula approach to analyze the dynamic relationship between Stock returns and Bond returns. A GAS MIDAS copula decomposes their dependence into a short-run and a long-run correlation. While the long term effect is updated at a lower frequency using MIDAS, the short term effect follows a GAS process. Asymmetric dependence at different quantiles are taken into account. The model helps to improve the in-sample goodness of fit and the out-of-sample forecast.
 -->
 </span>
 
-**[6. Vector autoregression models with skewness and heavy tails](https://hoanguc3m.github.io/Talk/05_fatbvars/WP5-20-05-2021.pdf)** \\
+**[7. Vector autoregression models with skewness and heavy tails](https://hoanguc3m.github.io/Talk/05_fatbvars/WP5-20-05-2021.pdf)** \\
 <span style="font-size:0.75em;"> 
 Sune Karlsson, Stepan Mazur, Hoang Nguyen \\
 [Working Paper](https://hoanguc3m.github.io/Talk/05_fatbvars/WP5-20-05-2021.pdf) -
@@ -38,7 +34,7 @@ We present evidence of fat tails and asymmetry for monthly macroeconomic variabl
 -->
 </span>
 
-**[5. What are the drivers of the Swedish sustainable development path? New evidence from Bayesian Dynamic Linear Models](https://hoanguc3m.github.io/Talk/00_econ/TFP20170308.pdf)** \\
+**[6. What are the drivers of the Swedish sustainable development path? New evidence from Bayesian Dynamic Linear Models](https://hoanguc3m.github.io/Talk/00_econ/TFP20170308.pdf)** \\
 <span style="font-size:0.75em;"> 
 Jesper Stage, Magnus Lindmark, Hoang Nguyen, Huong Nguyen Thu \\
 [Working Paper](https://hoanguc3m.github.io/Talk/00_sustaindev/20170308.pdf) - 
@@ -47,6 +43,21 @@ Jesper Stage, Magnus Lindmark, Hoang Nguyen, Huong Nguyen Thu \\
 According to my knowledge, we are the first who aim to find out the dynamic relationship between genuine savings (GS) and long term well-being represented by future consumptions (PVC). By extending the measure of GS to account for wider range of impacts on natural resource, human capital and technological progress, we  apply Bayesian approach to estimate Dynamic Linear Models (DLMs). We discover that there are increasing dependent trends with all explanatory GS variables and provide a new empirical evidence on the technological progress that underpin Swedish sustainable development.  The dynamic model also provides a trivial framework for testing the hypothesis that their relationship approach to one as the net investment term includes more types of capital. 
 -->
 </span>
+
+**[5. A dynamic leverage stochastic volatility model](https://hoanguc3m.github.io/Talk/03_DLSV/DynamicLeverage.pdf)** \\
+<span style="font-size:0.75em;"> 
+Hoang Nguyen, Trong-Nghia Nguyen, Minh-Ngoc Tran \\
+[Applied Economics Letters (2021)]() - 
+[Paper](https://hoanguc3m.github.io/Talk/03_DLSV/DynamicLeverage.pdf) - [Slides](https://hoanguc3m.github.io/Talk/03_DLSV/slides.pdf) 
+
+<!---
+Abstract: Stock returns are considered as a convolution of two random processes that are the return innovation and the volatility innovation. The correlation of these two processes tends to be nega-
+tive which is the so-called leverage effect. In this study, we propose a dynamic leverage stochastic volatility (DLSV) model where the correlation structure between the return innovation and the
+volatility innovation is assumed to follow a generalized autoregressive score (GAS) process. We find that the leverage effect is reinforced in the market downturn period and weakened in the
+market upturn period.
+-->
+</span>
+
 
 **[4. The Relation between the High-Yield Bond Spread and the Unemployment Rate in the Euro Area](https://www.sciencedirect.com/science/article/pii/S1544612321003688)** \\
 <span style="font-size:0.75em;"> Tamás Kiss, Hoang Nguyen, and Pär Österholm \\
