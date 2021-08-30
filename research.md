@@ -49,7 +49,6 @@ According to my knowledge, we are the first who aim to find out the dynamic rela
 Hoang Nguyen, Trong-Nghia Nguyen, Minh-Ngoc Tran \\
 [Applied Economics Letters (2021)]() - 
 [Paper](https://hoanguc3m.github.io/Talk/03_DLSV/DynamicLeverage.pdf) - [Slides](https://hoanguc3m.github.io/Talk/03_DLSV/slides.pdf) 
-
 <!---
 Abstract: Stock returns are considered as a convolution of two random processes that are the return innovation and the volatility innovation. The correlation of these two processes tends to be nega-
 tive which is the so-called leverage effect. In this study, we propose a dynamic leverage stochastic volatility (DLSV) model where the correlation structure between the return innovation and the
