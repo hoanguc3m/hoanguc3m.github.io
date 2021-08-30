@@ -13,7 +13,7 @@ Tamás Kiss,  Stepan Mazur, Hoang Nguyen, and Pär Österholm \\
 Abstract: In this paper we analyze how skewness and heavy tails affect the estimated relationship between the real economy and the corporate bond-yield spread, a popular predictor of real activity. We use quarterly US data to estimate Bayesian VAR models with stochastic volatility and various distributional assumptions regarding the disturbances. In-sample, we find that – after controlling for stochastic volatility – innovations in GDP growth can be well-described by a Gaussian distribution. In contrast, both the unemployment rate and the yield spread appear to benefit from being modelled using non-Gaussian innovations. 
 -->
 
-**[8. Dynamic relationship between Stock market and Bond market: A GAS MIDAS copula approach]()** \\
+**[8. Dynamic relationship between Stock and Bond returns: A GAS MIDAS copula approach](https://www.oru.se/globalassets/oru-sv/institutioner/hh/workingpapers/workingpapers2021/wp-15-2021.pdf)** \\
 <span style="font-size:0.75em;"> 
 Hoang Nguyen, Farrukh Javed \\
 [Working Paper](https://www.oru.se/globalassets/oru-sv/institutioner/hh/workingpapers/workingpapers2021/wp-15-2021.pdf) - [Slides](https://hoanguc3m.github.io/Talk/08_GASMIDAS/WP8-slides.pdf) - [Code](https://github.com/hoanguc3m/GASCopula)
