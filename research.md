@@ -44,6 +44,8 @@ According to my knowledge, we are the first who aim to find out the dynamic rela
 -->
 </span>
 
+---------------------------------------------------------------------------------------------------------------------
+
 **[5. A dynamic leverage stochastic volatility model](https://hoanguc3m.github.io/Talk/03_DLSV/DynamicLeverage.pdf)** \\
 <span style="font-size:0.75em;"> 
 Hoang Nguyen, Trong-Nghia Nguyen, Minh-Ngoc Tran \\
