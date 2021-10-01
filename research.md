@@ -46,10 +46,10 @@ According to my knowledge, we are the first who aim to find out the dynamic rela
 
 ---------------------------------------------------------------------------------------------------------------------
 
-**[5. A dynamic leverage stochastic volatility model](https://hoanguc3m.github.io/Talk/03_DLSV/DynamicLeverage.pdf)** \\
+**[5. A dynamic leverage stochastic volatility model](https://www.tandfonline.com/doi/full/10.1080/13504851.2021.1983127)** \\
 <span style="font-size:0.75em;"> 
 Hoang Nguyen, Trong-Nghia Nguyen, Minh-Ngoc Tran \\
-[Applied Economics Letters (2021)]() - 
+[Applied Economics Letters (2021)](https://www.tandfonline.com/doi/full/10.1080/13504851.2021.1983127) - 
 [Paper](https://hoanguc3m.github.io/Talk/03_DLSV/DynamicLeverage.pdf) - [Slides](https://hoanguc3m.github.io/Talk/03_DLSV/slides.pdf) 
 <!---
 Abstract: Stock returns are considered as a convolution of two random processes that are the return innovation and the volatility innovation. The correlation of these two processes tends to be nega-
