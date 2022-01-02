@@ -5,7 +5,7 @@ permalink: /research/
 ---
 
 
-**[9. Modelling the Relation between the US Real Economy and the Corporate Bond-Yield Spread in Bayesian VARs with non-Gaussian Disturbances]()** \\
+**[10. Modelling the Relation between the US Real Economy and the Corporate Bond-Yield Spread in Bayesian VARs with non-Gaussian Disturbances]()** \\
 <span style="font-size:0.75em;"> 
 Tamás Kiss,  Stepan Mazur, Hoang Nguyen, and Pär Österholm \\
 [Working Paper](https://www.oru.se/globalassets/oru-sv/institutioner/hh/workingpapers/workingpapers2021/wp-9-2021.pdf) - [Code](https://github.com/hoanguc3m/fatBVARS) 
@@ -13,7 +13,7 @@ Tamás Kiss,  Stepan Mazur, Hoang Nguyen, and Pär Österholm \\
 Abstract: In this paper we analyze how skewness and heavy tails affect the estimated relationship between the real economy and the corporate bond-yield spread, a popular predictor of real activity. We use quarterly US data to estimate Bayesian VAR models with stochastic volatility and various distributional assumptions regarding the disturbances. In-sample, we find that – after controlling for stochastic volatility – innovations in GDP growth can be well-described by a Gaussian distribution. In contrast, both the unemployment rate and the yield spread appear to benefit from being modelled using non-Gaussian innovations. 
 -->
 
-**[8. Dynamic relationship between Stock and Bond returns: A GAS MIDAS copula approach](https://www.oru.se/globalassets/oru-sv/institutioner/hh/workingpapers/workingpapers2021/wp-15-2021.pdf)** \\
+**[9. Dynamic relationship between Stock and Bond returns: A GAS MIDAS copula approach](https://www.oru.se/globalassets/oru-sv/institutioner/hh/workingpapers/workingpapers2021/wp-15-2021.pdf)** \\
 <span style="font-size:0.75em;"> 
 Hoang Nguyen, Farrukh Javed \\
 [Working Paper](https://www.oru.se/globalassets/oru-sv/institutioner/hh/workingpapers/workingpapers2021/wp-15-2021.pdf) - [Slides](https://hoanguc3m.github.io/Talk/08_GASMIDAS/WP8-slides.pdf) - [Code](https://github.com/hoanguc3m/GASCopula)
@@ -22,7 +22,7 @@ Abstract: There is evidence that macroeconomic variables influence the relations
 -->
 </span>
 
-**[7. Vector autoregression models with skewness and heavy tails](https://hoanguc3m.github.io/Talk/05_fatbvars/WP5-20-05-2021.pdf)** \\
+**[8. Vector autoregression models with skewness and heavy tails](https://hoanguc3m.github.io/Talk/05_fatbvars/WP5-20-05-2021.pdf)** \\
 <span style="font-size:0.75em;"> 
 Sune Karlsson, Stepan Mazur, Hoang Nguyen \\
 [Working Paper](https://hoanguc3m.github.io/Talk/05_fatbvars/WP5-20-05-2021.pdf) -
@@ -34,7 +34,7 @@ We present evidence of fat tails and asymmetry for monthly macroeconomic variabl
 -->
 </span>
 
-**[6. What are the drivers of the Swedish sustainable development path? New evidence from Bayesian Dynamic Linear Models](https://hoanguc3m.github.io/Talk/00_econ/TFP20170308.pdf)** \\
+**[7. What are the drivers of the Swedish sustainable development path? New evidence from Bayesian Dynamic Linear Models](https://hoanguc3m.github.io/Talk/00_econ/TFP20170308.pdf)** \\
 <span style="font-size:0.75em;"> 
 Jesper Stage, Magnus Lindmark, Hoang Nguyen, Huong Nguyen Thu \\
 [Working Paper](https://hoanguc3m.github.io/Talk/00_sustaindev/20170308.pdf) - 
@@ -45,6 +45,16 @@ According to my knowledge, we are the first who aim to find out the dynamic rela
 </span>
 
 ---------------------------------------------------------------------------------------------------------------------
+
+**[6. Modelling Returns in US Housing Prices—You’re the One for Me, Fat Tails](https://doi.org/10.3390/jrfm14110506)** \\
+<span style="font-size:0.75em;"> Tamás Kiss, Hoang Nguyen, and Pär Österholm \\
+[Journal of Risk and Financial Management  (2021)](https://doi.org/10.3390/jrfm14110506) - 
+[Paper](https://doi.org/10.3390/jrfm14110506) 
+<!---
+In this paper, we analysed the heavy-tailed behaviour in the dynamics of housing-price returns in the United States. We investigated the sources of heavy tails by estimating autoregressive models in which innovations can be subject to GARCH effects and/or non-Gaussianity. Using monthly data from January 1954 to September 2019, the properties of the models were assessed both within- and out-of-sample. We found strong evidence in favour of modelling both GARCH effects and non-Gaussianity. Accounting for these properties improves within-sample performance as well as point and density forecasts.
+-->
+</span>
+
 
 **[5. A dynamic leverage stochastic volatility model](https://www.tandfonline.com/doi/full/10.1080/13504851.2021.1983127)** \\
 <span style="font-size:0.75em;"> 
