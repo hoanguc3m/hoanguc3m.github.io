@@ -22,10 +22,11 @@ Abstract: There is evidence that macroeconomic variables influence the relations
 -->
 </span>
 
-**[8. Vector autoregression models with skewness and heavy tails](https://hoanguc3m.github.io/Talk/05_fatbvars/WP5-20-05-2021.pdf)** \\
+**[8. Vector autoregression models with skewness and heavy tails](https://hoanguc3m.github.io/Talk/05_fatbvars/WP5_BVAR_paper.pdf)** \\
 <span style="font-size:0.75em;"> 
 Sune Karlsson, Stepan Mazur, Hoang Nguyen \\
-[Working Paper](https://hoanguc3m.github.io/Talk/05_fatbvars/WP5-20-05-2021.pdf) -
+[Working Paper](https://hoanguc3m.github.io/Talk/05_fatbvars/WP5_BVAR_paper.pdf) -
+[Online Appendix](https://hoanguc3m.github.io/Talk/05_fatbvars/WP5_BVAR_App.pdf) -
 [Slides](https://hoanguc3m.github.io/Talk/05_fatbvars/WP5-slides-04-11-2020.pdf) -  [Code](https://github.com/hoanguc3m/fatBVARS) 
 <!---
 Abstract: With the uncertain changes of the economic environment, macroeconomic downturns during recessions and crises can hardly be explained by a Gaussian structural shock. There is evidence that the distribution of macroeconomic variables is fat-tailed and asymmetric. 
