@@ -8,7 +8,7 @@ I'm Hoang, a postdoctoral researcher at the School of Business, Örebro Universi
 
 Before, I got my Ph.D. at Universidad Carlos III de Madrid under the supervision of Prof. M. Concepcion Ausin and Prof. Pedro Galeano. My research contributions lie primarily in developing econometric models to analyze high dimensional dependence structure. I propose factor copula models as a solution for the curse of dimensionality and apply parallel Bayesian inference or Variational inference to speed up the computation time. It would be nice experience here, in the School of Business!
 
-I am now working on a project of the vector autoregression model with fat tails and asymmetry and the interconnection between finance and macroeconomic variables through MIDAS Copulas. Please check out [**my CV**](https://hoanguc3m.github.io/Talk/cv2022_norm.pdf) as well as my lastest [working paper](https://www.oru.se/globalassets/oru-sv/institutioner/hh/workingpapers/workingpapers2021/wp-15-2021.pdf).
+I am now working on a project of the vector autoregression model with fat tails and asymmetry and the interconnection between finance and macroeconomic variables through MIDAS Copulas. Please check out [**my CV**](https://hoanguc3m.github.io/Talk/cv2022_norm.pdf) as well as my lastest [working paper](https://hoanguc3m.github.io/Talk/05_fatbvars/WP5_BVAR_paper.pdf).
 
 <!---
 ![hoang@uc3m](https://raw.githubusercontent.com/hoanguc3m/hoanguc3m.github.io/master/images/photo1.jpg)
