@@ -5,6 +5,28 @@ permalink: /research/
 ---
 
 
+<!---
+**[7. What are the drivers of the Swedish sustainable development path? New evidence from Bayesian Dynamic Linear Models](https://hoanguc3m.github.io/Talk/00_econ/TFP20170308.pdf)** \\
+<span style="font-size:0.75em;"> 
+Jesper Stage, Magnus Lindmark, Hoang Nguyen, Huong Nguyen Thu \\
+[Working Paper](https://hoanguc3m.github.io/Talk/00_sustaindev/20170308.pdf) - 
+[Slides](https://hoanguc3m.github.io/Talk/00_sustaindev/slide20170623.pdf) 
+
+According to my knowledge, we are the first who aim to find out the dynamic relationship between genuine savings (GS) and long term well-being represented by future consumptions (PVC). By extending the measure of GS to account for wider range of impacts on natural resource, human capital and technological progress, we  apply Bayesian approach to estimate Dynamic Linear Models (DLMs). We discover that there are increasing dependent trends with all explanatory GS variables and provide a new empirical evidence on the technological progress that underpin Swedish sustainable development.  The dynamic model also provides a trivial framework for testing the hypothesis that their relationship approach to one as the net investment term includes more types of capital. 
+-->
+</span>
+
+**[11. Modeling stock-oil co-dependence with Dynamic Stochastic MIDAS Copula models]()** \\
+<span style="font-size:0.75em;"> 
+Hoang Nguyen, and Audron\.e Virbickait\.e  \\
+[Working Paper](https://www.oru.se/globalassets/oru-sv/institutioner/hh/workingpapers/workingpapers2022/wp-5-2025.pdf) - [Code](https://github.com/hoanguc3m/DSCopula) 
+<!---
+Abstract: Stock and oil relationship is usually time-varying and depends on the current economic conditions. 
+In this study, we propose a new Dynamic Stochastic Mixed data frequency sampling (DSM) copula model,  that decomposes the stock-oil relationship into a short-run dynamic stochastic component and a long-run component,  governed by related macro-finance variables. 
+We find that inflation/interest rate, uncertainty and liquidity factors are the main drivers of the long-run co-dependence. 
+We show that investment portfolios, based on the proposed DSM copula model, are more accurate and produce better economic outcomes as compared to other alternatives.
+-->
+
 **[10. Modelling the Relation between the US Real Economy and the Corporate Bond-Yield Spread in Bayesian VARs with non-Gaussian Disturbances]()** \\
 <span style="font-size:0.75em;"> 
 Tamás Kiss,  Stepan Mazur, Hoang Nguyen, and Pär Österholm \\
@@ -35,15 +57,13 @@ We present evidence of fat tails and asymmetry for monthly macroeconomic variabl
 -->
 </span>
 
-**[7. What are the drivers of the Swedish sustainable development path? New evidence from Bayesian Dynamic Linear Models](https://hoanguc3m.github.io/Talk/00_econ/TFP20170308.pdf)** \\
+**[7. Modelling Okun's Law–Does non-Gaussianity Matter?]()** \\
 <span style="font-size:0.75em;"> 
-Jesper Stage, Magnus Lindmark, Hoang Nguyen, Huong Nguyen Thu \\
-[Working Paper](https://hoanguc3m.github.io/Talk/00_sustaindev/20170308.pdf) - 
-[Slides](https://hoanguc3m.github.io/Talk/00_sustaindev/slide20170623.pdf) 
+Tamás Kiss,  Hoang Nguyen, and Pär Österholm \\
+[Working Paper](https://www.oru.se/globalassets/oru-sv/institutioner/hh/workingpapers/workingpapers2022/wp-1-2022.pdf) - [Code](https://github.com/hoanguc3m/fatBVARS) 
 <!---
-According to my knowledge, we are the first who aim to find out the dynamic relationship between genuine savings (GS) and long term well-being represented by future consumptions (PVC). By extending the measure of GS to account for wider range of impacts on natural resource, human capital and technological progress, we  apply Bayesian approach to estimate Dynamic Linear Models (DLMs). We discover that there are increasing dependent trends with all explanatory GS variables and provide a new empirical evidence on the technological progress that underpin Swedish sustainable development.  The dynamic model also provides a trivial framework for testing the hypothesis that their relationship approach to one as the net investment term includes more types of capital. 
+Abstract: In this paper, we analyse Okun’s law – a relation between the change in the unemployment rate and GDP growth – using data from Australia, the euro area, the United Kingdom and the United States. More specifically, we assess the relevance of non-Gaussianity when mod-elling the relation. This is done in a Bayesian VAR framework with stochastic volatility where we allow the different models’ error distributions to have heavier-than-Gaussian tails and skewness. Our results indicate that accounting for heavy tails yields improvements over a Gaussian specification in some cases, whereas skewness appears less fruitful. In terms of dynamic effects, a shock to GDP growth has robustly negative effects on the change in the unemployment rate in all four economies. 
 -->
-</span>
 
 ---------------------------------------------------------------------------------------------------------------------
 
