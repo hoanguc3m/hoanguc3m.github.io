@@ -13,8 +13,9 @@ Jesper Stage, Magnus Lindmark, Hoang Nguyen, Huong Nguyen Thu \\
 [Slides](https://hoanguc3m.github.io/Talk/00_sustaindev/slide20170623.pdf) 
 
 According to my knowledge, we are the first who aim to find out the dynamic relationship between genuine savings (GS) and long term well-being represented by future consumptions (PVC). By extending the measure of GS to account for wider range of impacts on natural resource, human capital and technological progress, we  apply Bayesian approach to estimate Dynamic Linear Models (DLMs). We discover that there are increasing dependent trends with all explanatory GS variables and provide a new empirical evidence on the technological progress that underpin Swedish sustainable development.  The dynamic model also provides a trivial framework for testing the hypothesis that their relationship approach to one as the net investment term includes more types of capital. 
--->
+
 </span>
+-->
 
 **[11. Modeling stock-oil co-dependence with Dynamic Stochastic MIDAS Copula models]()** \\
 <span style="font-size:0.75em;"> 
