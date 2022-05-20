@@ -19,7 +19,7 @@ According to my knowledge, we are the first who aim to find out the dynamic rela
 
 **[11. Modeling stock-oil co-dependence with Dynamic Stochastic MIDAS Copula models]()** \\
 <span style="font-size:0.75em;"> 
-Hoang Nguyen, and Audron\.e Virbickait\.e  \\
+Hoang Nguyen, and Audrone Virbickaite  \\
 [Working Paper](https://www.oru.se/globalassets/oru-sv/institutioner/hh/workingpapers/workingpapers2022/wp-5-2025.pdf) - [Code](https://github.com/hoanguc3m/DSCopula) 
 <!---
 Abstract: Stock and oil relationship is usually time-varying and depends on the current economic conditions. 
