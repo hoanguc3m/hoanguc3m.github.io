@@ -50,7 +50,7 @@ Abstract: There is evidence that macroeconomic variables influence the relations
 Sune Karlsson, Stepan Mazur, Hoang Nguyen \\
 [Working Paper](https://hoanguc3m.github.io/Talk/05_fatbvars/WP5_BVAR_paper.pdf) -
 [Online Appendix](https://hoanguc3m.github.io/Talk/05_fatbvars/WP5_BVAR_App.pdf) -
-[Slides](https://hoanguc3m.github.io/Talk/05_fatbvars/WP5-slides-04-11-2020.pdf) -  [Code](https://github.com/hoanguc3m/fatBVARS) 
+[Slides](https://hoanguc3m.github.io/Talk/05_fatbvars/WP5-Slides.pdf) -  [Code](https://github.com/hoanguc3m/fatBVARS) 
 <!---
 Abstract: With the uncertain changes of the economic environment, macroeconomic downturns during recessions and crises can hardly be explained by a Gaussian structural shock. There is evidence that the distribution of macroeconomic variables is fat-tailed and asymmetric. 
 In this paper, we contribute to the literature by extending the VAR models to account for a more realistic assumption of the multivariate distribution of the macroeconomic variables. We propose a general class of Generalized Hyperbolic Skew Student's-t distribution with stochastic volatility (Skew-t.SV) VAR that allows us to take into account fat tails and asymmetry. The Bayesian inference using a Gibbs sampler is extended to make inferences of model parameters. 
