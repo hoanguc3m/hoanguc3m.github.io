@@ -140,7 +140,8 @@ In this paper, we make two contributions to the literature of factor copula mode
 We propose a class of dynamic factor copulas for financial data where the dynamic correlation are modelled as generalized autoregressive score (GAS) processes. The model could account for the asymmetric dependence in extreme events. We implement an parallel algorithm to estimate the different pamameters of the factor copula models. An empirical example is illustrated for the stock price of 140 companies listed in S&P500. 
 -->
 </span>
-
+<a href="https://www.scimagojr.com/journalsearch.php?q=20606&amp;tip=sid&amp;exact=no" title="SCImago Journal &amp; Country Rank"><img border="0" src="https://www.scimagojr.com/journal_img.php?id=20606" alt="SCImago Journal &amp; Country Rank"  /></a>
+<a href="https://www.scimagojr.com/journalsearch.php?q=20642&amp;tip=sid&amp;exact=no" title="SCImago Journal &amp; Country Rank"><img border="0" src="https://www.scimagojr.com/journal_img.php?id=20642" alt="SCImago Journal &amp; Country Rank"  /></a>
 <a href="https://www.scimagojr.com/journalsearch.php?q=15519&amp;tip=sid&amp;exact=no" title="SCImago Journal &amp; Country Rank"><img border="0" src="https://www.scimagojr.com/journal_img.php?id=15519" alt="SCImago Journal &amp; Country Rank"  /></a>
 <a href="https://www.scimagojr.com/journalsearch.php?q=18769&amp;tip=sid&amp;exact=no" title="SCImago Journal &amp; Country Rank"><img border="0" src="https://www.scimagojr.com/journal_img.php?id=18769" alt="SCImago Journal &amp; Country Rank"  /></a>
 <a href="https://www.scimagojr.com/journalsearch.php?q=28461&amp;tip=sid&amp;exact=no" title="SCImago Journal &amp; Country Rank"><img border="0" src="https://www.scimagojr.com/journal_img.php?id=28461" alt="SCImago Journal &amp; Country Rank"  /></a>
