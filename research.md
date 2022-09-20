@@ -28,15 +28,9 @@ We find that inflation/interest rate, uncertainty and liquidity factors are the 
 We show that investment portfolios, based on the proposed DSM copula model, are more accurate and produce better economic outcomes as compared to other alternatives.
 -->
 
-**[10. Modelling the Relation between the US Real Economy and the Corporate Bond-Yield Spread in Bayesian VARs with non-Gaussian Disturbances]()** \\
-<span style="font-size:0.75em;"> 
-Tamás Kiss,  Stepan Mazur, Hoang Nguyen, and Pär Österholm \\
-[Working Paper](https://www.oru.se/globalassets/oru-sv/institutioner/hh/workingpapers/workingpapers2021/wp-9-2021.pdf) - [Code](https://github.com/hoanguc3m/fatBVARS) 
-<!---
-Abstract: In this paper we analyze how skewness and heavy tails affect the estimated relationship between the real economy and the corporate bond-yield spread, a popular predictor of real activity. We use quarterly US data to estimate Bayesian VAR models with stochastic volatility and various distributional assumptions regarding the disturbances. In-sample, we find that – after controlling for stochastic volatility – innovations in GDP growth can be well-described by a Gaussian distribution. In contrast, both the unemployment rate and the yield spread appear to benefit from being modelled using non-Gaussian innovations. 
--->
 
-**[9. Dynamic relationship between Stock and Bond returns: A GAS MIDAS copula approach](https://www.oru.se/globalassets/oru-sv/institutioner/hh/workingpapers/workingpapers2021/wp-15-2021.pdf)** \\
+
+**[10. Dynamic relationship between Stock and Bond returns: A GAS MIDAS copula approach](https://www.oru.se/globalassets/oru-sv/institutioner/hh/workingpapers/workingpapers2021/wp-15-2021.pdf)** \\
 <span style="font-size:0.75em;"> 
 Hoang Nguyen, Farrukh Javed \\
 [Working Paper](https://www.oru.se/globalassets/oru-sv/institutioner/hh/workingpapers/workingpapers2021/wp-15-2021.pdf) - [Slides](https://hoanguc3m.github.io/Talk/08_GASMIDAS/WP8-slides.pdf) - [Code](https://github.com/hoanguc3m/GASCopula)
@@ -45,7 +39,7 @@ Abstract: There is evidence that macroeconomic variables influence the relations
 -->
 </span>
 
-**[8. Vector autoregression models with skewness and heavy tails](https://hoanguc3m.github.io/Talk/05_fatbvars/WP5_BVAR_paper.pdf)** \\
+**[9. Vector autoregression models with skewness and heavy tails](https://hoanguc3m.github.io/Talk/05_fatbvars/WP5_BVAR_paper.pdf)** \\
 <span style="font-size:0.75em;"> 
 Sune Karlsson, Stepan Mazur, Hoang Nguyen \\
 [Working Paper](https://hoanguc3m.github.io/Talk/05_fatbvars/WP5_BVAR_paper.pdf) -
@@ -58,15 +52,27 @@ We present evidence of fat tails and asymmetry for monthly macroeconomic variabl
 -->
 </span>
 
+
+---------------------------------------------------------------------------------------------------------------------
+
+**[8. Modelling the Relation between the US Real Economy and the Corporate Bond-Yield Spread in Bayesian VARs with non-Gaussian Disturbances]()** \\
+<span style="font-size:0.75em;"> 
+Tamás Kiss,  Stepan Mazur, Hoang Nguyen, and Pär Österholm \\
+[Journal of Forecasting  (2022)](https://doi.org/10.1002/for.2911) - 
+[Paper](https://doi.org/10.1002/for.2911) - [Code](https://github.com/hoanguc3m/fatBVARS) 
+<!---
+Abstract: In this paper we analyze how skewness and heavy tails affect the estimated relationship between the real economy and the corporate bond-yield spread, a popular predictor of real activity. We use quarterly US data to estimate Bayesian VAR models with stochastic volatility and various distributional assumptions regarding the disturbances. In-sample, we find that – after controlling for stochastic volatility – innovations in GDP growth can be well-described by a Gaussian distribution. In contrast, both the unemployment rate and the yield spread appear to benefit from being modelled using non-Gaussian innovations. 
+-->
+
+
 **[7. Modelling Okun's Law–Does non-Gaussianity Matter?]()** \\
 <span style="font-size:0.75em;"> 
 Tamás Kiss,  Hoang Nguyen, and Pär Österholm \\
-[Working Paper](https://www.oru.se/globalassets/oru-sv/institutioner/hh/workingpapers/workingpapers2022/wp-1-2022.pdf) - [Code](https://github.com/hoanguc3m/fatBVARS) 
+[Empirical Economics  (2022)](https://www.oru.se/globalassets/oru-sv/institutioner/hh/workingpapers/workingpapers2022/wp-1-2022.pdf) - 
+[Paper](https://www.oru.se/globalassets/oru-sv/institutioner/hh/workingpapers/workingpapers2022/wp-1-2022.pdf) - [Code](https://github.com/hoanguc3m/KNOOkunEE) 
 <!---
 Abstract: In this paper, we analyse Okun’s law – a relation between the change in the unemployment rate and GDP growth – using data from Australia, the euro area, the United Kingdom and the United States. More specifically, we assess the relevance of non-Gaussianity when mod-elling the relation. This is done in a Bayesian VAR framework with stochastic volatility where we allow the different models’ error distributions to have heavier-than-Gaussian tails and skewness. Our results indicate that accounting for heavy tails yields improvements over a Gaussian specification in some cases, whereas skewness appears less fruitful. In terms of dynamic effects, a shock to GDP growth has robustly negative effects on the change in the unemployment rate in all four economies. 
 -->
-
----------------------------------------------------------------------------------------------------------------------
 
 **[6. Modelling Returns in US Housing Prices—You’re the One for Me, Fat Tails](https://doi.org/10.3390/jrfm14110506)** \\
 <span style="font-size:0.75em;"> Tamás Kiss, Hoang Nguyen, and Pär Österholm \\
