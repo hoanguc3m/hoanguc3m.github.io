@@ -17,7 +17,7 @@ According to my knowledge, we are the first who aim to find out the dynamic rela
 </span>
 -->
 
-**[11. Modeling stock-oil co-dependence with Dynamic Stochastic MIDAS Copula models]()** \\
+**[11. Modeling stock-oil co-dependence with Dynamic Stochastic MIDAS Copula models](https://www.oru.se/globalassets/oru-sv/institutioner/hh/workingpapers/workingpapers2022/wp-5-2022.pdf)** \\
 <span style="font-size:0.75em;"> 
 Hoang Nguyen and Audrone Virbickaite  \\
 [Working Paper](https://www.oru.se/globalassets/oru-sv/institutioner/hh/workingpapers/workingpapers2022/wp-5-2022.pdf) - [Code](https://github.com/hoanguc3m/DSCopula) 
@@ -55,7 +55,7 @@ We present evidence of fat tails and asymmetry for monthly macroeconomic variabl
 
 ---------------------------------------------------------------------------------------------------------------------
 
-**[8. Modelling the Relation between the US Real Economy and the Corporate Bond-Yield Spread in Bayesian VARs with non-Gaussian Disturbances]()** \\
+**[8. Modelling the Relation between the US Real Economy and the Corporate Bond-Yield Spread in Bayesian VARs with non-Gaussian Disturbances](https://doi.org/10.1002/for.2911)** \\
 <span style="font-size:0.75em;"> 
 Tamás Kiss,  Stepan Mazur, Hoang Nguyen, and Pär Österholm \\
 [Journal of Forecasting  (2022)](https://doi.org/10.1002/for.2911) - 
@@ -65,11 +65,11 @@ Abstract: In this paper we analyze how skewness and heavy tails affect the estim
 -->
 
 
-**[7. Modelling Okun's Law–Does non-Gaussianity Matter?]()** \\
+**[7. Modelling Okun's Law–Does non-Gaussianity Matter?](https://doi.org/10.1007/s00181-022-02309-2)** \\
 <span style="font-size:0.75em;"> 
 Tamás Kiss,  Hoang Nguyen, and Pär Österholm \\
-[Empirical Economics  (2022)](https://www.oru.se/globalassets/oru-sv/institutioner/hh/workingpapers/workingpapers2022/wp-1-2022.pdf) - 
-[Paper](https://www.oru.se/globalassets/oru-sv/institutioner/hh/workingpapers/workingpapers2022/wp-1-2022.pdf) - [Code](https://github.com/hoanguc3m/KNOOkunEE) 
+[Empirical Economics  (2022)](https://doi.org/10.1007/s00181-022-02309-2) - 
+[Paper](https://doi.org/10.1007/s00181-022-02309-2) - [Code](https://github.com/hoanguc3m/KNOOkunEE) 
 <!---
 Abstract: In this paper, we analyse Okun’s law – a relation between the change in the unemployment rate and GDP growth – using data from Australia, the euro area, the United Kingdom and the United States. More specifically, we assess the relevance of non-Gaussianity when mod-elling the relation. This is done in a Bayesian VAR framework with stochastic volatility where we allow the different models’ error distributions to have heavier-than-Gaussian tails and skewness. Our results indicate that accounting for heavy tails yields improvements over a Gaussian specification in some cases, whereas skewness appears less fruitful. In terms of dynamic effects, a shock to GDP growth has robustly negative effects on the change in the unemployment rate in all four economies. 
 -->

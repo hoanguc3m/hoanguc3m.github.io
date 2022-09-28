@@ -19,7 +19,7 @@ avatar: https://raw.githubusercontent.com/hoanguc3m/hoanguc3m.github.io/master/i
 footer-links:
   dribbble: 
   email: hoang.nguyen@oru.se
-  facebook: hoang.nguyen.1675275
+  facebook: 
   flickr: 
   github: hoanguc3m
   instagram: 
@@ -28,6 +28,8 @@ footer-links:
   rss: # just type anything here for a working RSS icon, make sure you set the "url" above!
   twitter: hoangoru
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
+  orcid: 0000-0002-0682-8584
+  scopus: 57224666995
 
 # Your disqus shortname, entering this will enable commenting on posts
 disqus: ibfeduvn
