@@ -4,7 +4,15 @@ title: Teaching
 permalink: /teaching/
 ---
 
-This year, I’m preparing for my coming class in Statistics. Although all the material have been done but I still find challenging to fulfil my duty.
+
+
+* *Co-Instructor*, School of Business, ORU
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Course: **Economics, Methods for Analysis in Economics and Finance**, 2022 [Web content](https://api.oru.se/oruapi/v1/utbildningsinformation/utbildning/NA436A?typ=kurs&accept=html&revision=2.0&sprak=en) 
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Course: **Data mining and business analytics**, 2022 [Web content](https://api.oru.se/oruapi/v1/utbildningsinformation/utbildning/ST112G?typ=kurs&accept=html&revision=1.0&sprak=en) 
+
+
 
 * *Teaching Assistant*, Department of Statistics, UC3M
 

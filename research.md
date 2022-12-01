@@ -39,10 +39,15 @@ Abstract: There is evidence that macroeconomic variables influence the relations
 -->
 </span>
 
-**[9. Vector autoregression models with skewness and heavy tails](https://hoanguc3m.github.io/Talk/05_fatbvars/WP5_BVAR_paper.pdf)** \\
+
+
+---------------------------------------------------------------------------------------------------------------------
+
+**[9. Vector autoregression models with skewness and heavy tails](https://doi.org/)** \\
 <span style="font-size:0.75em;"> 
 Sune Karlsson, Stepan Mazur, Hoang Nguyen \\
-[Working Paper](https://hoanguc3m.github.io/Talk/05_fatbvars/WP5_BVAR_paper.pdf) -
+[Journal of Economic Dynamics and Control (2022)](https://doi.org/) - 
+[Paper](https://hoanguc3m.github.io/Talk/05_fatbvars/WP5_BVAR_paper.pdf) -
 [Online Appendix](https://hoanguc3m.github.io/Talk/05_fatbvars/WP5_BVAR_App.pdf) -
 [Slides](https://hoanguc3m.github.io/Talk/05_fatbvars/WP5-Slides.pdf) -  [Code](https://github.com/hoanguc3m/fatBVARS) 
 <!---
@@ -51,9 +56,6 @@ In this paper, we contribute to the literature by extending the VAR models to ac
 We present evidence of fat tails and asymmetry for monthly macroeconomic variables. The analysis also gives a clear message that asymmetry should be taken into account to have a better prediction during recession and crisis. .
 -->
 </span>
-
-
----------------------------------------------------------------------------------------------------------------------
 
 **[8. Modelling the Relation between the US Real Economy and the Corporate Bond-Yield Spread in Bayesian VARs with non-Gaussian Disturbances](https://doi.org/10.1002/for.2911)** \\
 <span style="font-size:0.75em;"> 
@@ -140,6 +142,8 @@ In this paper, we make two contributions to the literature of factor copula mode
 We propose a class of dynamic factor copulas for financial data where the dynamic correlation are modelled as generalized autoregressive score (GAS) processes. The model could account for the asymmetric dependence in extreme events. We implement an parallel algorithm to estimate the different pamameters of the factor copula models. An empirical example is illustrated for the stock price of 140 companies listed in S&P500. 
 -->
 </span>
+
+<a href="https://www.scimagojr.com/journalsearch.php?q=28976&amp;tip=sid&amp;exact=no" title="SCImago Journal &amp; Country Rank"><img border="0" src="https://www.scimagojr.com/journal_img.php?id=28976" alt="SCImago Journal &amp; Country Rank"  /></a>
 <a href="https://www.scimagojr.com/journalsearch.php?q=20606&amp;tip=sid&amp;exact=no" title="SCImago Journal &amp; Country Rank"><img border="0" src="https://www.scimagojr.com/journal_img.php?id=20606" alt="SCImago Journal &amp; Country Rank"  /></a>
 <a href="https://www.scimagojr.com/journalsearch.php?q=20642&amp;tip=sid&amp;exact=no" title="SCImago Journal &amp; Country Rank"><img border="0" src="https://www.scimagojr.com/journal_img.php?id=20642" alt="SCImago Journal &amp; Country Rank"  /></a>
 <a href="https://www.scimagojr.com/journalsearch.php?q=15519&amp;tip=sid&amp;exact=no" title="SCImago Journal &amp; Country Rank"><img border="0" src="https://www.scimagojr.com/journal_img.php?id=15519" alt="SCImago Journal &amp; Country Rank"  /></a>
