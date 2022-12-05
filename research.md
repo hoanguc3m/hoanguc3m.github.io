@@ -43,10 +43,10 @@ Abstract: There is evidence that macroeconomic variables influence the relations
 
 ---------------------------------------------------------------------------------------------------------------------
 
-**[9. Vector autoregression models with skewness and heavy tails](https://doi.org/)** \\
+**[9. Vector autoregression models with skewness and heavy tails](https://doi.org/10.1016/j.jedc.2022.104580)** \\
 <span style="font-size:0.75em;"> 
 Sune Karlsson, Stepan Mazur, Hoang Nguyen \\
-[Journal of Economic Dynamics and Control (2022)](https://doi.org/) - 
+[Journal of Economic Dynamics and Control (2022)](https://doi.org/10.1016/j.jedc.2022.104580) - 
 [Paper](https://hoanguc3m.github.io/Talk/05_fatbvars/WP5_BVAR_paper.pdf) -
 [Online Appendix](https://hoanguc3m.github.io/Talk/05_fatbvars/WP5_BVAR_App.pdf) -
 [Slides](https://hoanguc3m.github.io/Talk/05_fatbvars/WP5-Slides.pdf) -  [Code](https://github.com/hoanguc3m/fatBVARS) 

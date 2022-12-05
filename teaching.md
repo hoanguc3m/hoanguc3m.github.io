@@ -8,7 +8,7 @@ permalink: /teaching/
 
 * *Co-Instructor*, School of Business, ORU
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Course: **Economics, Methods for Analysis in Economics and Finance**, 2022 [Web content](https://api.oru.se/oruapi/v1/utbildningsinformation/utbildning/NA436A?typ=kurs&accept=html&revision=2.0&sprak=en) 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Course: **Economics, Methods for Analysis in Economics**, 2022 [Web content](https://api.oru.se/oruapi/v1/utbildningsinformation/utbildning/NA436A?typ=kurs&accept=html&revision=2.0&sprak=en) 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Course: **Data mining and business analytics**, 2022 [Web content](https://api.oru.se/oruapi/v1/utbildningsinformation/utbildning/ST112G?typ=kurs&accept=html&revision=1.0&sprak=en) 
 
