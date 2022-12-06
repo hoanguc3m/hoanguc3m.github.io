@@ -17,6 +17,14 @@ According to my knowledge, we are the first who aim to find out the dynamic rela
 </span>
 -->
 
+**[12. Estimation of optimal portfolio compositions for small sampleand singular covariance matrix](https://www.oru.se/globalassets/oru-sv/institutioner/hh/workingpapers/workingpapers2022/wp-15-2022.pdf)** \\
+<span style="font-size:0.75em;"> 
+Taras Bodnar, Stepan Mazur, and Hoang Nguyen \\
+[Working Paper](https://www.oru.se/globalassets/oru-sv/institutioner/hh/workingpapers/workingpapers2022/wp-15-2022.pdf) 
+<!---
+Abstract: In the paper we consider the optimal portfolio choice problem under parameter uncertainty when the covariance matrix of asset returns is singular. Very useful stochastic representations are deduced for the characteristics of the expected utility optimal portfolio. Using these stochastic representations, we derive the moments of higher order of the estimated expected return and the estimated variance of the expected utility optimal portfolio. Another line of applications leads to their asymptotic distributions obtained in the high-dimensional setting. Via a simulation study, it is shown that the derived high-dimensional asymptotic distributions provide good approximations of the exact ones even for moderate sample sizes.
+-->
+
 **[11. Modeling stock-oil co-dependence with Dynamic Stochastic MIDAS Copula models](https://www.oru.se/globalassets/oru-sv/institutioner/hh/workingpapers/workingpapers2022/wp-5-2022.pdf)** \\
 <span style="font-size:0.75em;"> 
 Hoang Nguyen and Audrone Virbickaite  \\
