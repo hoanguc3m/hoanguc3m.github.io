@@ -17,7 +17,7 @@ According to my knowledge, we are the first who aim to find out the dynamic rela
 </span>
 -->
 
-**[12. Estimation of optimal portfolio compositions for small sampleand singular covariance matrix](https://www.oru.se/globalassets/oru-sv/institutioner/hh/workingpapers/workingpapers2022/wp-15-2022.pdf)** \\
+**[12. Estimation of optimal portfolio compositions for small sample and singular covariance matrix](https://www.oru.se/globalassets/oru-sv/institutioner/hh/workingpapers/workingpapers2022/wp-15-2022.pdf)** \\
 <span style="font-size:0.75em;"> 
 Taras Bodnar, Stepan Mazur, and Hoang Nguyen \\
 [Working Paper](https://www.oru.se/globalassets/oru-sv/institutioner/hh/workingpapers/workingpapers2022/wp-15-2022.pdf) 
