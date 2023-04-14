@@ -17,6 +17,14 @@ According to my knowledge, we are the first who aim to find out the dynamic rela
 </span>
 -->
 
+**[13. Bayesian Predictive Distributions of Oil Returns Using Mixed Data Sampling Volatility Models](https://www.oru.se/globalassets/oru-sv/institutioner/hh/workingpapers/workingpapers2023/wp-7-2023.pdf)** \\
+<span style="font-size:0.75em;"> 
+Audrone Virbickaite, Hoang Nguyen and Minh-Ngoc Tran  \\
+[Working Paper](https://www.oru.se/globalassets/oru-sv/institutioner/hh/workingpapers/workingpapers2023/wp-7-2023.pdf) - [Code](https://github.com/hoanguc3m/dtsmcvol) 
+<!---
+Abstract: This study explores the benefits of incorporating fat-tailed innovations, asymmetric volatility response, and an extended information set into crude oil return modeling and forecasting. To this end, we utilize standard volatility models such as Generalized Autoregressive Conditional Heteroskedastic (GARCH), Generalized Autoregressive Score (GAS), and Stochastic Volatility (SV), along with Mixed Data Sampling (MIDAS) regressions, which enable us to incorporate the impacts of relevant financial/macroeconomic news into asset price movements. For inference and prediction, we employ an innovative Bayesian estimation approach called the density-tempered sequential Monte Carlo method. Our findings indicate that the inclusion of exogenous variables is beneficial for GARCH-type models while offering only a marginal improvement for GAS and SV-type models. Notably, GAS-family models exhibit superior performance in terms of in-sample fit, out-of-sample forecast accuracy, as well as Value-at-Risk and Expected Shortfall prediction.
+-->
+
 **[12. Estimation of optimal portfolio compositions for small sample and singular covariance matrix](https://www.oru.se/globalassets/oru-sv/institutioner/hh/workingpapers/workingpapers2022/wp-15-2022.pdf)** \\
 <span style="font-size:0.75em;"> 
 Taras Bodnar, Stepan Mazur, and Hoang Nguyen \\
