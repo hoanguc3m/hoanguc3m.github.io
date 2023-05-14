@@ -33,20 +33,9 @@ Taras Bodnar, Stepan Mazur, and Hoang Nguyen \\
 Abstract: In the paper we consider the optimal portfolio choice problem under parameter uncertainty when the covariance matrix of asset returns is singular. Very useful stochastic representations are deduced for the characteristics of the expected utility optimal portfolio. Using these stochastic representations, we derive the moments of higher order of the estimated expected return and the estimated variance of the expected utility optimal portfolio. Another line of applications leads to their asymptotic distributions obtained in the high-dimensional setting. Via a simulation study, it is shown that the derived high-dimensional asymptotic distributions provide good approximations of the exact ones even for moderate sample sizes.
 -->
 
-**[11. Modeling stock-oil co-dependence with Dynamic Stochastic MIDAS Copula models](https://www.oru.se/globalassets/oru-sv/institutioner/hh/workingpapers/workingpapers2022/wp-5-2022.pdf)** \\
-<span style="font-size:0.75em;"> 
-Hoang Nguyen and Audrone Virbickaite  \\
-[Working Paper](https://www.oru.se/globalassets/oru-sv/institutioner/hh/workingpapers/workingpapers2022/wp-5-2022.pdf) - [Code](https://github.com/hoanguc3m/DSCopula) 
-<!---
-Abstract: Stock and oil relationship is usually time-varying and depends on the current economic conditions. 
-In this study, we propose a new Dynamic Stochastic Mixed data frequency sampling (DSM) copula model,  that decomposes the stock-oil relationship into a short-run dynamic stochastic component and a long-run component,  governed by related macro-finance variables. 
-We find that inflation/interest rate, uncertainty and liquidity factors are the main drivers of the long-run co-dependence. 
-We show that investment portfolios, based on the proposed DSM copula model, are more accurate and produce better economic outcomes as compared to other alternatives.
--->
 
 
-
-**[10. Dynamic relationship between Stock and Bond returns: A GAS MIDAS copula approach](https://www.oru.se/globalassets/oru-sv/institutioner/hh/workingpapers/workingpapers2021/wp-15-2021.pdf)** \\
+**[11. Dynamic relationship between Stock and Bond returns: A GAS MIDAS copula approach](https://www.oru.se/globalassets/oru-sv/institutioner/hh/workingpapers/workingpapers2021/wp-15-2021.pdf)** \\
 <span style="font-size:0.75em;"> 
 Hoang Nguyen, Farrukh Javed \\
 [Working Paper](https://www.oru.se/globalassets/oru-sv/institutioner/hh/workingpapers/workingpapers2021/wp-15-2021.pdf) - [Slides](https://hoanguc3m.github.io/Talk/08_GASMIDAS/WP8-slides.pdf) - [Code](https://github.com/hoanguc3m/GASCopula)
@@ -58,6 +47,22 @@ Abstract: There is evidence that macroeconomic variables influence the relations
 
 
 ---------------------------------------------------------------------------------------------------------------------
+
+**[10. Modeling stock-oil co-dependence with Dynamic Stochastic MIDAS Copula models]()** \\
+<span style="font-size:0.75em;"> 
+Hoang Nguyen and Audrone Virbickaite  \\
+[Energy Economics (2023)]() - 
+[Paper](https://hoanguc3m.github.io/Talk/09_DSM/Paper.pdf) -
+[Online Appendix](https://hoanguc3m.github.io/Talk/09_DSM/OnlineApp.pdf) -
+[Code](https://github.com/hoanguc3m/DSM-EE) 
+<!---
+Abstract: Stock and oil relationship is usually time-varying and depends on the current economic conditions. 
+In this study, we propose a new Dynamic Stochastic Mixed data frequency sampling (DSM) copula model,  that decomposes the stock-oil relationship into a short-run dynamic stochastic component and a long-run component,  governed by related macro-finance variables. 
+We find that inflation/interest rate, uncertainty and liquidity factors are the main drivers of the long-run co-dependence. 
+We show that investment portfolios, based on the proposed DSM copula model, are more accurate and produce better economic outcomes as compared to other alternatives.
+-->
+
+
 
 **[9. Vector autoregression models with skewness and heavy tails](https://doi.org/10.1016/j.jedc.2022.104580)** \\
 <span style="font-size:0.75em;"> 
@@ -159,6 +164,7 @@ We propose a class of dynamic factor copulas for financial data where the dynami
 -->
 </span>
 
+<a href="https://www.scimagojr.com/journalsearch.php?q=29374&amp;tip=sid&amp;exact=no" title="SCImago Journal &amp; Country Rank"><img border="0" src="https://www.scimagojr.com/journal_img.php?id=29374" alt="SCImago Journal &amp; Country Rank"  /></a>
 <a href="https://www.scimagojr.com/journalsearch.php?q=28976&amp;tip=sid&amp;exact=no" title="SCImago Journal &amp; Country Rank"><img border="0" src="https://www.scimagojr.com/journal_img.php?id=28976" alt="SCImago Journal &amp; Country Rank"  /></a>
 <a href="https://www.scimagojr.com/journalsearch.php?q=20606&amp;tip=sid&amp;exact=no" title="SCImago Journal &amp; Country Rank"><img border="0" src="https://www.scimagojr.com/journal_img.php?id=20606" alt="SCImago Journal &amp; Country Rank"  /></a>
 <a href="https://www.scimagojr.com/journalsearch.php?q=20642&amp;tip=sid&amp;exact=no" title="SCImago Journal &amp; Country Rank"><img border="0" src="https://www.scimagojr.com/journal_img.php?id=20642" alt="SCImago Journal &amp; Country Rank"  /></a>
