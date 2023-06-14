@@ -48,10 +48,10 @@ Abstract: There is evidence that macroeconomic variables influence the relations
 
 ---------------------------------------------------------------------------------------------------------------------
 
-**[10. Modeling stock-oil co-dependence with Dynamic Stochastic MIDAS Copula models]()** \\
+**[10. Modeling stock-oil co-dependence with Dynamic Stochastic MIDAS Copula models](https://doi.org/10.1016/j.eneco.2023.106738)** \\
 <span style="font-size:0.75em;"> 
 Hoang Nguyen and Audrone Virbickaite  \\
-[Energy Economics (2023)]() - 
+[Energy Economics (2023)](https://doi.org/10.1016/j.eneco.2023.106738) - 
 [Paper](https://hoanguc3m.github.io/Talk/09_DSM/Paper.pdf) -
 [Online Appendix](https://hoanguc3m.github.io/Talk/09_DSM/OnlineApp.pdf) -
 [Code](https://github.com/hoanguc3m/DSM-EE) 
