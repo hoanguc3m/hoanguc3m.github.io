@@ -175,6 +175,7 @@ We propose a class of dynamic factor copulas for financial data where the dynami
 -->
 </span>
 
+<a href="https://www.scimagojr.com/journalsearch.php?q=17499&amp;tip=sid&amp;exact=no" title="SCImago Journal &amp; Country Rank"><img border="0" src="https://www.scimagojr.com/journal_img.php?id=17499" alt="SCImago Journal &amp; Country Rank"  /></a>
 <a href="https://www.scimagojr.com/journalsearch.php?q=29374&amp;tip=sid&amp;exact=no" title="SCImago Journal &amp; Country Rank"><img border="0" src="https://www.scimagojr.com/journal_img.php?id=29374" alt="SCImago Journal &amp; Country Rank"  /></a>
 <a href="https://www.scimagojr.com/journalsearch.php?q=28976&amp;tip=sid&amp;exact=no" title="SCImago Journal &amp; Country Rank"><img border="0" src="https://www.scimagojr.com/journal_img.php?id=28976" alt="SCImago Journal &amp; Country Rank"  /></a>
 <a href="https://www.scimagojr.com/journalsearch.php?q=20606&amp;tip=sid&amp;exact=no" title="SCImago Journal &amp; Country Rank"><img border="0" src="https://www.scimagojr.com/journal_img.php?id=20606" alt="SCImago Journal &amp; Country Rank"  /></a>
