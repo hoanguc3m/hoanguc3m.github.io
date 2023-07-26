@@ -17,6 +17,17 @@ According to my knowledge, we are the first who aim to find out the dynamic rela
 </span>
 -->
 
+
+**[14. Deep Learning Enhanced Volatility Modeling with Covariates]()** \\
+<span style="font-size:0.75em;"> 
+Hien Thi Nguyen, Hoang Nguyen, and Minh-Ngoc Tran  \\
+[Paper]() -
+[Code]() 
+<!---
+Abstract: Exogenous information such as policy news and economic indicators  can have the potential to trigger significant movements in financial asset volatility. This article presents a model, called the RECH-X model,  that allows incorporating exogenous variables into a recurrent neural network for volatility modeling and forecasting. The RECH-X model can allow for abrupt changes in the volatility level and effectively capture the complex serial dependence structure in the volatility dynamics. We demonstrate in a wide range of applications that the RECH-X model consistently outperforms the benchmark models in terms of volatility modeling and forecasting.
+-->
+
+
 **[13. Bayesian Predictive Distributions of Oil Returns Using Mixed Data Sampling Volatility Models](https://www.oru.se/globalassets/oru-sv/institutioner/hh/workingpapers/workingpapers2023/wp-7-2023.pdf)** \\
 <span style="font-size:0.75em;"> 
 Audrone Virbickaite, Hoang Nguyen and Minh-Ngoc Tran  \\
@@ -35,18 +46,18 @@ Abstract: In the paper we consider the optimal portfolio choice problem under pa
 
 
 
+---------------------------------------------------------------------------------------------------------------------
 **[11. Dynamic relationship between Stock and Bond returns: A GAS MIDAS copula approach](https://www.oru.se/globalassets/oru-sv/institutioner/hh/workingpapers/workingpapers2021/wp-15-2021.pdf)** \\
 <span style="font-size:0.75em;"> 
-Hoang Nguyen, Farrukh Javed \\
-[Working Paper](https://www.oru.se/globalassets/oru-sv/institutioner/hh/workingpapers/workingpapers2021/wp-15-2021.pdf) - [Slides](https://hoanguc3m.github.io/Talk/08_GASMIDAS/WP8-slides.pdf) - [Code](https://github.com/hoanguc3m/GASCopula)
+Hoang Nguyen and Farrukh Javed \\
+[Journal of Empirical Finance (2023)](Paper) - 
+[Paper](https://hoanguc3m.github.io/Talk/08_GASMIDAS/08_GASMIDAS.pdf) - 
+[Slides](https://hoanguc3m.github.io/Talk/08_GASMIDAS/WP8-slides.pdf)
 <!---
 Abstract: There is evidence that macroeconomic variables influence the relationship among financial variables, however they are sampled at different frequencies. This study proposes a generalized autoregressive score mixed frequency data sampling (GAS MIDAS) copula approach to analyze the dynamic relationship between Stock returns and Bond returns. A GAS MIDAS copula decomposes their dependence into a short-run and a long-run correlation. While the long term effect is updated at a lower frequency using MIDAS, the short term effect follows a GAS process. Asymmetric dependence at different quantiles are taken into account. The model helps to improve the in-sample goodness of fit and the out-of-sample forecast.
 -->
 </span>
 
-
-
----------------------------------------------------------------------------------------------------------------------
 
 **[10. Modeling stock-oil co-dependence with Dynamic Stochastic MIDAS Copula models](https://doi.org/10.1016/j.eneco.2023.106738)** \\
 <span style="font-size:0.75em;"> 
