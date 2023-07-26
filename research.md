@@ -51,7 +51,7 @@ Abstract: In the paper we consider the optimal portfolio choice problem under pa
 <span style="font-size:0.75em;"> 
 Hoang Nguyen and Farrukh Javed \\
 [Journal of Empirical Finance (2023)](Paper) - 
-[Paper](https://hoanguc3m.github.io/Talk/08_GASMIDAS/08_GASMIDAS.pdf) - 
+[Paper](https://github.com/hoanguc3m/Talk/blob/master/08_GASMIDAS/GASMIDAS.pdf) - 
 [Slides](https://hoanguc3m.github.io/Talk/08_GASMIDAS/WP8-slides.pdf)
 <!---
 Abstract: There is evidence that macroeconomic variables influence the relationship among financial variables, however they are sampled at different frequencies. This study proposes a generalized autoregressive score mixed frequency data sampling (GAS MIDAS) copula approach to analyze the dynamic relationship between Stock returns and Bond returns. A GAS MIDAS copula decomposes their dependence into a short-run and a long-run correlation. While the long term effect is updated at a lower frequency using MIDAS, the short term effect follows a GAS process. Asymmetric dependence at different quantiles are taken into account. The model helps to improve the in-sample goodness of fit and the out-of-sample forecast.
