@@ -47,10 +47,10 @@ Abstract: In the paper we consider the optimal portfolio choice problem under pa
 
 
 ---------------------------------------------------------------------------------------------------------------------
-**[11. Dynamic relationship between Stock and Bond returns: A GAS MIDAS copula approach](https://www.oru.se/globalassets/oru-sv/institutioner/hh/workingpapers/workingpapers2021/wp-15-2021.pdf)** \\
+**[11. Dynamic relationship between Stock and Bond returns: A GAS MIDAS copula approach](https://doi.org/10.1016/j.jempfin.2023.07.004)** \\
 <span style="font-size:0.75em;"> 
 Hoang Nguyen and Farrukh Javed \\
-[Journal of Empirical Finance (2023)](Paper) - 
+[Journal of Empirical Finance (2023)](https://doi.org/10.1016/j.jempfin.2023.07.004) - 
 [Paper](https://hoanguc3m.github.io/Talk/08_GASMIDAS/GASMIDAS.pdf) - 
 [Slides](https://hoanguc3m.github.io/Talk/08_GASMIDAS/WP8-slides.pdf)
 <!---
