@@ -19,4 +19,4 @@ Jag skulle vilja prata med svenska vänner för att förbättra min svenska dag 
 
 ### Contact me
 
-[hoang.nguyen@oru.se](mailto:hoang.nguyen@oru.se)
+[hoang.nguyen@liu.se](mailto:hoang.nguyen@liu.se)
