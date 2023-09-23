@@ -5,6 +5,13 @@ permalink: /teaching/
 ---
 
 
+* *Co-Instructor*, IEI, LiU
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Course: **Financial Risk Management**, 2023, 2024 [Web content](https://studieinfo.liu.se/kurs/TPPE32/ht-2023) 
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Course: **Portfolio Management**, 2024 [Web content](https://studieinfo.liu.se/en/kurs/TPPE33/vt-2024) 
+
+
 
 * *Co-Instructor*, School of Business, ORU
 
@@ -13,7 +20,7 @@ permalink: /teaching/
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Course: **Data mining and business analytics**, 2022 [Web content](https://api.oru.se/oruapi/v1/utbildningsinformation/utbildning/ST112G?typ=kurs&accept=html&revision=1.0&sprak=en) 
 
 
-
+<!---
 * *Teaching Assistant*, Department of Statistics, UC3M
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Course: **Statistics for Business and Administration II**, FICO, 2018 [Web content](https://aplicaciones.uc3m.es/cpa/generaFicha?est=201&asig=13749&idioma=2&anio=2018) 
@@ -34,4 +41,4 @@ permalink: /teaching/
  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  under supervision of *Prof. Juan Ignacio Pena*, 2015 [Web content](http://www3.uc3m.es/reina/Fichas/Idioma_2/201.13760.html) 
 
- 
+ -->

@@ -18,6 +18,16 @@ According to my knowledge, we are the first who aim to find out the dynamic rela
 -->
 
 
+
+**[15. The Relation between Treasury Yields and the Corporate Bond-Yield Spread -- Stable or Time-Varying?]()** \\
+<span style="font-size:0.75em;"> 
+Sune Karlsson, Tamás Kiss, Hoang Nguyen and Pär Österholm   \\
+[Paper]() -
+[Code](https://github.com/hoanguc3m/fattvpVAR) 
+<!---
+Abstract: In this paper we assess whether the relation between US Treasury yields and the corporate bond yield spread has been stable over time. This is done by estimating hybrid time-varying parameter Bayesian VAR models with stochastic volatility where we -- as a methodogical contribution -- also allow for disturbances with fat tails. We analyse monthly data from April 1953 to February 2023 both within- and out-of-sample. Our results indicate that the relation has not been stable; more specifically, there is evidence that the equation of the corporate bond yield spread is subject to time-variation in its parameters. We also find that \textit{i)} an increase in the corporate bond yield spread decreases the risk free rate and \textit{ii)} an increase in the risk free rate decreases the corporate bond yield spread. Finally, we note that while allowing for fat tails receives a fair amount of support within sample, it appears to be of more limited importance from a forecasting perspective.
+-->
+
 **[14. Deep Learning Enhanced Volatility Modeling with Covariates]()** \\
 <span style="font-size:0.75em;"> 
 Hien Thi Nguyen, Hoang Nguyen, and Minh-Ngoc Tran  \\
@@ -28,15 +38,8 @@ Abstract: Exogenous information such as policy news and economic indicators  can
 -->
 
 
-**[13. Bayesian Predictive Distributions of Oil Returns Using Mixed Data Sampling Volatility Models](https://www.oru.se/globalassets/oru-sv/institutioner/hh/workingpapers/workingpapers2023/wp-7-2023.pdf)** \\
-<span style="font-size:0.75em;"> 
-Audrone Virbickaite, Hoang Nguyen and Minh-Ngoc Tran  \\
-[Working Paper](https://www.oru.se/globalassets/oru-sv/institutioner/hh/workingpapers/workingpapers2023/wp-7-2023.pdf) - [Code](https://github.com/hoanguc3m/dtsmcvol) 
-<!---
-Abstract: This study explores the benefits of incorporating fat-tailed innovations, asymmetric volatility response, and an extended information set into crude oil return modeling and forecasting. To this end, we utilize standard volatility models such as Generalized Autoregressive Conditional Heteroskedastic (GARCH), Generalized Autoregressive Score (GAS), and Stochastic Volatility (SV), along with Mixed Data Sampling (MIDAS) regressions, which enable us to incorporate the impacts of relevant financial/macroeconomic news into asset price movements. For inference and prediction, we employ an innovative Bayesian estimation approach called the density-tempered sequential Monte Carlo method. Our findings indicate that the inclusion of exogenous variables is beneficial for GARCH-type models while offering only a marginal improvement for GAS and SV-type models. Notably, GAS-family models exhibit superior performance in terms of in-sample fit, out-of-sample forecast accuracy, as well as Value-at-Risk and Expected Shortfall prediction.
--->
 
-**[12. Estimation of optimal portfolio compositions for small sample and singular covariance matrix](https://www.oru.se/globalassets/oru-sv/institutioner/hh/workingpapers/workingpapers2022/wp-15-2022.pdf)** \\
+**[13. Estimation of optimal portfolio compositions for small sample and singular covariance matrix](https://www.oru.se/globalassets/oru-sv/institutioner/hh/workingpapers/workingpapers2022/wp-15-2022.pdf)** \\
 <span style="font-size:0.75em;"> 
 Taras Bodnar, Stepan Mazur, and Hoang Nguyen \\
 [Working Paper](https://www.oru.se/globalassets/oru-sv/institutioner/hh/workingpapers/workingpapers2022/wp-15-2022.pdf) 
@@ -47,6 +50,15 @@ Abstract: In the paper we consider the optimal portfolio choice problem under pa
 
 
 ---------------------------------------------------------------------------------------------------------------------
+**[12. Bayesian Predictive Distributions of Oil Returns Using Mixed Data Sampling Volatility Models](https://doi.org/10.1016/j.resourpol.2023.104167)** \\
+<span style="font-size:0.75em;"> 
+Audrone Virbickaite, Hoang Nguyen and Minh-Ngoc Tran  \\
+[Paper](https://doi.org/10.1016/j.resourpol.2023.104167) - [Code](https://github.com/hoanguc3m/dtsmcvol) 
+<!---
+Abstract: This study explores the benefits of incorporating fat-tailed innovations, asymmetric volatility response, and an extended information set into crude oil return modeling and forecasting. To this end, we utilize standard volatility models such as Generalized Autoregressive Conditional Heteroskedastic (GARCH), Generalized Autoregressive Score (GAS), and Stochastic Volatility (SV), along with Mixed Data Sampling (MIDAS) regressions, which enable us to incorporate the impacts of relevant financial/macroeconomic news into asset price movements. For inference and prediction, we employ an innovative Bayesian estimation approach called the density-tempered sequential Monte Carlo method. Our findings indicate that the inclusion of exogenous variables is beneficial for GARCH-type models while offering only a marginal improvement for GAS and SV-type models. Notably, GAS-family models exhibit superior performance in terms of in-sample fit, out-of-sample forecast accuracy, as well as Value-at-Risk and Expected Shortfall prediction.
+-->
+
+
 **[11. Dynamic relationship between Stock and Bond returns: A GAS MIDAS copula approach](https://doi.org/10.1016/j.jempfin.2023.07.004)** \\
 <span style="font-size:0.75em;"> 
 Hoang Nguyen and Farrukh Javed \\
@@ -175,6 +187,7 @@ We propose a class of dynamic factor copulas for financial data where the dynami
 -->
 </span>
 
+<a href="https://www.scimagojr.com/journalsearch.php?q=110031&amp;tip=sid&amp;exact=no" title="SCImago Journal &amp; Country Rank"><img border="0" src="https://www.scimagojr.com/journal_img.php?id=110031" alt="SCImago Journal &amp; Country Rank"  /></a>
 <a href="https://www.scimagojr.com/journalsearch.php?q=17499&amp;tip=sid&amp;exact=no" title="SCImago Journal &amp; Country Rank"><img border="0" src="https://www.scimagojr.com/journal_img.php?id=17499" alt="SCImago Journal &amp; Country Rank"  /></a>
 <a href="https://www.scimagojr.com/journalsearch.php?q=29374&amp;tip=sid&amp;exact=no" title="SCImago Journal &amp; Country Rank"><img border="0" src="https://www.scimagojr.com/journal_img.php?id=29374" alt="SCImago Journal &amp; Country Rank"  /></a>
 <a href="https://www.scimagojr.com/journalsearch.php?q=28976&amp;tip=sid&amp;exact=no" title="SCImago Journal &amp; Country Rank"><img border="0" src="https://www.scimagojr.com/journal_img.php?id=28976" alt="SCImago Journal &amp; Country Rank"  /></a>
