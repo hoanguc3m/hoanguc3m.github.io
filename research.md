@@ -53,6 +53,7 @@ Abstract: In the paper we consider the optimal portfolio choice problem under pa
 **[12. Bayesian Predictive Distributions of Oil Returns Using Mixed Data Sampling Volatility Models](https://doi.org/10.1016/j.resourpol.2023.104167)** \\
 <span style="font-size:0.75em;"> 
 Audrone Virbickaite, Hoang Nguyen and Minh-Ngoc Tran  \\
+[Resources Policy (2023)](https://doi.org/10.1016/j.resourpol.2023.104167) - 
 [Paper](https://doi.org/10.1016/j.resourpol.2023.104167) - [Code](https://github.com/hoanguc3m/dtsmcvol) 
 <!---
 Abstract: This study explores the benefits of incorporating fat-tailed innovations, asymmetric volatility response, and an extended information set into crude oil return modeling and forecasting. To this end, we utilize standard volatility models such as Generalized Autoregressive Conditional Heteroskedastic (GARCH), Generalized Autoregressive Score (GAS), and Stochastic Volatility (SV), along with Mixed Data Sampling (MIDAS) regressions, which enable us to incorporate the impacts of relevant financial/macroeconomic news into asset price movements. For inference and prediction, we employ an innovative Bayesian estimation approach called the density-tempered sequential Monte Carlo method. Our findings indicate that the inclusion of exogenous variables is beneficial for GARCH-type models while offering only a marginal improvement for GAS and SV-type models. Notably, GAS-family models exhibit superior performance in terms of in-sample fit, out-of-sample forecast accuracy, as well as Value-at-Risk and Expected Shortfall prediction.
