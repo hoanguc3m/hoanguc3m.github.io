@@ -17,7 +17,7 @@ According to my knowledge, we are the first who aim to find out the dynamic rela
 </span>
 -->
 
-**[16. Structured factor copulas for modeling the systemic risk\\ of European and U.S. banks]()** \\
+**[16. Structured factor copulas for modeling the systemic risk of European and U.S. banks]()** \\
 <span style="font-size:0.75em;"> 
 Hoang Nguyen, Audrone Virbickaite, M. Concepcíon Ausín and Pedro Galeano   \\
 [Paper]() -
