@@ -17,17 +17,18 @@ According to my knowledge, we are the first who aim to find out the dynamic rela
 </span>
 -->
 
-**[16. Structured factor copulas for modeling the systemic risk of European and U.S. banks]()** \\
+**[17. Structured factor copulas for modeling the systemic risk of European and U.S. banks]()** \\
 <span style="font-size:0.75em;"> 
 Hoang Nguyen, Audrone Virbickaite, M. Concepcíon Ausín and Pedro Galeano   \\
-[Paper]() -
-[Code]() 
+[Paper](https://hoanguc3m.github.io/Talk/04_fvcop/Paper.pdf) -
+[Online Appendix](https://hoanguc3m.github.io/Talk/04_fvcop/OnlineApp.pdf) -
+[Code](https://github.com/hoanguc3m/fvcops) 
 <!---
 Abstract: In this paper, we employ Credit Default Swaps (CDS) to model the joint and conditional distress probabilities of banks in Europe and the U.S.\ using factor copulas. We propose multi-factor,  structured factor, and factor-vine models where the banks in the sample are clustered according to their geographic location. We find that within each region, the co-dependence between banks is best described using both, systematic and idiosyncratic, financial contagion channels. However, if we consider the banking system as a whole, then the systematic contagion channel prevails, meaning that the distress probabilities are driven by a latent global factor and region-specific factors. In all cases, the co-dependence structure of bank CDS spreads is highly correlated in the tail. The out-of-sample forecasts of several measures of systematic risk allow us to identify the periods of distress in the banking sector over the recent years including the COVID-19 pandemic, the interest rate hikes in 2022, and the banking crisis in 2023. 
 -->
 
 
-**[15. The Relation between Treasury Yields and the Corporate Bond-Yield Spread -- Stable or Time-Varying?]()** \\
+**[16. The Relation between Treasury Yields and the Corporate Bond-Yield Spread -- Stable or Time-Varying?]()** \\
 <span style="font-size:0.75em;"> 
 Sune Karlsson, Tamás Kiss, Hoang Nguyen and Pär Österholm   \\
 [Paper]() -
@@ -36,7 +37,7 @@ Sune Karlsson, Tamás Kiss, Hoang Nguyen and Pär Österholm   \\
 Abstract: In this paper we assess whether the relation between US Treasury yields and the corporate bond yield spread has been stable over time. This is done by estimating hybrid time-varying parameter Bayesian VAR models with stochastic volatility where we -- as a methodogical contribution -- also allow for disturbances with fat tails. We analyse monthly data from April 1953 to February 2023 both within- and out-of-sample. Our results indicate that the relation has not been stable; more specifically, there is evidence that the equation of the corporate bond yield spread is subject to time-variation in its parameters. We also find that \textit{i)} an increase in the corporate bond yield spread decreases the risk free rate and \textit{ii)} an increase in the risk free rate decreases the corporate bond yield spread. Finally, we note that while allowing for fat tails receives a fair amount of support within sample, it appears to be of more limited importance from a forecasting perspective.
 -->
 
-**[14. Deep Learning Enhanced Volatility Modeling with Covariates]()** \\
+**[15. Deep Learning Enhanced Volatility Modeling with Covariates]()** \\
 <span style="font-size:0.75em;"> 
 Hien Thi Nguyen, Hoang Nguyen, and Minh-Ngoc Tran  \\
 [Paper](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4657189) -
@@ -47,7 +48,7 @@ Abstract: Exogenous information such as policy news and economic indicators  can
 
 
 
-**[13. Estimation of optimal portfolio compositions for small sample and singular covariance matrix](https://www.oru.se/globalassets/oru-sv/institutioner/hh/workingpapers/workingpapers2022/wp-15-2022.pdf)** \\
+**[14. Estimation of optimal portfolio compositions for small sample and singular covariance matrix](https://www.oru.se/globalassets/oru-sv/institutioner/hh/workingpapers/workingpapers2022/wp-15-2022.pdf)** \\
 <span style="font-size:0.75em;"> 
 Taras Bodnar, Stepan Mazur, and Hoang Nguyen \\
 [Working Paper](https://www.oru.se/globalassets/oru-sv/institutioner/hh/workingpapers/workingpapers2022/wp-15-2022.pdf) 
@@ -58,6 +59,17 @@ Abstract: In the paper we consider the optimal portfolio choice problem under pa
 
 
 ---------------------------------------------------------------------------------------------------------------------
+
+**[13. A Note on The Dynamic Effects of Supply and Demand Shocks in the Crude Oil Market](https://doi.org/)** \\
+<span style="font-size:0.75em;"> 
+Hoang Nguyen and Pär Österholm  \\
+[Applied Economics Letters (2021)](https://doi.org/) - 
+[Paper](https://doi.org/)
+<!---
+Abstract: In this paper, we investigate whether key relations in the crude oil market have been stable over time. This is done by estimating hybrid time-varying parameter structural Bayesian VAR models using monthly data ranging from February 1973 to May 2023. Model selection suggests that while stochastic volatility is preferred over homoskedasticity, the dynamics of the model are best described by constant parameters in all equations.
+-->
+
+
 **[12. Bayesian Predictive Distributions of Oil Returns Using Mixed Data Sampling Volatility Models](https://doi.org/10.1016/j.resourpol.2023.104167)** \\
 <span style="font-size:0.75em;"> 
 Audrone Virbickaite, Hoang Nguyen and Minh-Ngoc Tran  \\
