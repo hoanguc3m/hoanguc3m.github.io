@@ -63,7 +63,7 @@ Abstract: In the paper we consider the optimal portfolio choice problem under pa
 **[13. A Note on The Dynamic Effects of Supply and Demand Shocks in the Crude Oil Market](https://doi.org/)** \\
 <span style="font-size:0.75em;"> 
 Hoang Nguyen and Pär Österholm  \\
-[Applied Economics Letters (2021)](https://doi.org/) - 
+[Applied Economics Letters (2024)](https://doi.org/) - 
 [Paper](https://doi.org/)
 <!---
 Abstract: In this paper, we investigate whether key relations in the crude oil market have been stable over time. This is done by estimating hybrid time-varying parameter structural Bayesian VAR models using monthly data ranging from February 1973 to May 2023. Model selection suggests that while stochastic volatility is preferred over homoskedasticity, the dynamics of the model are best described by constant parameters in all equations.
