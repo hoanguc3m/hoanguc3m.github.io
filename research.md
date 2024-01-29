@@ -17,7 +17,7 @@ According to my knowledge, we are the first who aim to find out the dynamic rela
 </span>
 -->
 
-**[17. Structured factor copulas for modeling the systemic risk of European and U.S. banks]()** \\
+**[17. Structured factor copulas for modeling the systemic risk of European and U.S. banks](https://arxiv.org/abs/2401.03443)** \\
 <span style="font-size:0.75em;"> 
 Hoang Nguyen, Audrone Virbickaite, M. Concepcíon Ausín and Pedro Galeano   \\
 [Paper](https://hoanguc3m.github.io/Talk/04_fvcop/Paper.pdf) -
@@ -60,11 +60,11 @@ Abstract: In the paper we consider the optimal portfolio choice problem under pa
 
 ---------------------------------------------------------------------------------------------------------------------
 
-**[13. A Note on The Dynamic Effects of Supply and Demand Shocks in the Crude Oil Market](https://doi.org/)** \\
+**[13. A Note on The Dynamic Effects of Supply and Demand Shocks in the Crude Oil Market](https://doi.org/10.1080/13504851.2024.2308590)** \\
 <span style="font-size:0.75em;"> 
 Hoang Nguyen and Pär Österholm  \\
-[Applied Economics Letters (2024)](https://doi.org/) - 
-[Paper](https://doi.org/)
+[Applied Economics Letters (2024)](https://doi.org/10.1080/13504851.2024.2308590) - 
+[Paper](https://doi.org/10.1080/13504851.2024.2308590) - [Code](https://github.com/hoanguc3m/HTVPOil) 
 <!---
 Abstract: In this paper, we investigate whether key relations in the crude oil market have been stable over time. This is done by estimating hybrid time-varying parameter structural Bayesian VAR models using monthly data ranging from February 1973 to May 2023. Model selection suggests that while stochastic volatility is preferred over homoskedasticity, the dynamics of the model are best described by constant parameters in all equations.
 -->
