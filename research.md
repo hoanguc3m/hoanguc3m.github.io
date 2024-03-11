@@ -28,13 +28,13 @@ Abstract: In this paper, we employ Credit Default Swaps (CDS) to model the joint
 -->
 
 
-**[16. The Relation between Treasury Yields and the Corporate Bond-Yield Spread -- Stable or Time-Varying?]()** \\
+**[16. US Interest Rates: Are Relations Stable?]()** \\
 <span style="font-size:0.75em;"> 
 Sune Karlsson, Tamás Kiss, Hoang Nguyen and Pär Österholm   \\
 [Paper](https://hoanguc3m.github.io/Talk/00_econ/HTVP-OT.pdf) -
 [Code](https://github.com/hoanguc3m/fattvpVAR) 
 <!---
-Abstract: In this paper we assess whether the relation between US Treasury yields and the corporate bond yield spread has been stable over time. This is done by estimating hybrid time-varying parameter Bayesian VAR models with stochastic volatility where we -- as a methodogical contribution -- also allow for disturbances with fat tails. We analyse monthly data from April 1953 to February 2023 both within- and out-of-sample. Our results indicate that the relation has not been stable; more specifically, there is evidence that the equation of the corporate bond yield spread is subject to time-variation in its parameters. We also find that \textit{i)} an increase in the corporate bond yield spread decreases the risk free rate and \textit{ii)} an increase in the risk free rate decreases the corporate bond yield spread. Finally, we note that while allowing for fat tails receives a fair amount of support within sample, it appears to be of more limited importance from a forecasting perspective.
+Abstract: In this paper, we assess whether key relations between US interest rates have been stable over time. This is done by estimating trivariate hybrid time-varying parame- ter Bayesian VAR models with stochastic volatility for the three-month Treasury bill rate, the slope of the Treasury yield curve and the corporate bond-yield spread. As a methodological contribution, we also allow for disturbances with heavy tails. We anal- yse monthly data from April 1953 to February 2023 both within- and out-of-sample. Our results indicate that the relations have not been stable; more specifically, there is evidence that the equation of the corporate bond-yield spread is subject to time varia- tion in its parameters. We also find that an increase in the corporate bond-yield spread decreases the risk free rate. Finally, we note that while allowing for heavy tails receives a fair amount of support within sample, it appears to be of more limited importance from a forecasting perspective.
 -->
 
 **[15. Deep Learning Enhanced Volatility Modeling with Covariates]()** \\
