@@ -17,7 +17,7 @@ According to my knowledge, we are the first who aim to find out the dynamic rela
 </span>
 -->
 
-**[17. Structured factor copulas for modeling the systemic risk of European and U.S. banks](https://arxiv.org/abs/2401.03443)** \\
+**[18. Structured factor copulas for modeling the systemic risk of European and U.S. banks](https://arxiv.org/abs/2401.03443)** \\
 <span style="font-size:0.75em;"> 
 Hoang Nguyen, Audrone Virbickaite, M. Concepcíon Ausín and Pedro Galeano   \\
 [Paper](https://hoanguc3m.github.io/Talk/04_fvcop/Paper.pdf) -
@@ -28,7 +28,7 @@ Abstract: In this paper, we employ Credit Default Swaps (CDS) to model the joint
 -->
 
 
-**[16. US Interest Rates: Are Relations Stable?]()** \\
+**[17. US Interest Rates: Are Relations Stable?](https://swopec.hhs.se/oruesi/abs/oruesi2024_003.htm)** \\
 <span style="font-size:0.75em;"> 
 Sune Karlsson, Tamás Kiss, Hoang Nguyen and Pär Österholm   \\
 [Paper](https://hoanguc3m.github.io/Talk/00_econ/HTVP-OT.pdf) -
@@ -37,7 +37,7 @@ Sune Karlsson, Tamás Kiss, Hoang Nguyen and Pär Österholm   \\
 Abstract: In this paper, we assess whether key relations between US interest rates have been stable over time. This is done by estimating trivariate hybrid time-varying parame- ter Bayesian VAR models with stochastic volatility for the three-month Treasury bill rate, the slope of the Treasury yield curve and the corporate bond-yield spread. As a methodological contribution, we also allow for disturbances with heavy tails. We anal- yse monthly data from April 1953 to February 2023 both within- and out-of-sample. Our results indicate that the relations have not been stable; more specifically, there is evidence that the equation of the corporate bond-yield spread is subject to time varia- tion in its parameters. We also find that an increase in the corporate bond-yield spread decreases the risk free rate. Finally, we note that while allowing for heavy tails receives a fair amount of support within sample, it appears to be of more limited importance from a forecasting perspective.
 -->
 
-**[15. Deep Learning Enhanced Volatility Modeling with Covariates]()** \\
+**[16. Deep Learning Enhanced Volatility Modeling with Covariates](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4657189)** \\
 <span style="font-size:0.75em;"> 
 Hien Thi Nguyen, Hoang Nguyen, and Minh-Ngoc Tran  \\
 [Paper](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4657189) -
@@ -48,7 +48,7 @@ Abstract: Exogenous information such as policy news and economic indicators  can
 
 
 
-**[14. Estimation of optimal portfolio compositions for small sample and singular covariance matrix](https://www.oru.se/globalassets/oru-sv/institutioner/hh/workingpapers/workingpapers2022/wp-15-2022.pdf)** \\
+**[15. Estimation of optimal portfolio compositions for small sample and singular covariance matrix](https://www.oru.se/globalassets/oru-sv/institutioner/hh/workingpapers/workingpapers2022/wp-15-2022.pdf)** \\
 <span style="font-size:0.75em;"> 
 Taras Bodnar, Stepan Mazur, and Hoang Nguyen \\
 [Working Paper](https://www.oru.se/globalassets/oru-sv/institutioner/hh/workingpapers/workingpapers2022/wp-15-2022.pdf) 
@@ -59,6 +59,15 @@ Abstract: In the paper we consider the optimal portfolio choice problem under pa
 
 
 ---------------------------------------------------------------------------------------------------------------------
+
+**[14. Monitoring the dynamic networks of stock returns with an application to the Swedish stock market](https://link.springer.com/article/10.1007/s10614-024-10616-2)** \\
+<span style="font-size:0.75em;"> 
+Elena Farahbakhsh Touli, Hoang Nguyen and Olha Bodnar \\
+[Paper](https://link.springer.com/article/10.1007/s10614-024-10616-2) 
+<!---
+Abstract: In this paper, two approaches for measuring the distance between stock returns and the network connectedness are presented that are based on the Pearson correlation coefficient dissimilarity and the generalized variance decomposition dissimilarity. Using these two procedures, the center of the network is determined. Also, hierarchical clustering methods are used to divide the dense networks into sparse trees, which provide us with information about how the companies of a financial market are related to each other. We implement the derived theoretical results to study the dynamic connectedness between the companies in the Swedish capital market by considering 28 companies included in the determination of the market index OMX30. The network structure of the market is constructed using different methods to determine the distance between the companies. We use hierarchical clustering methods to find the relation among the companies in each window. Next, we obtain a one-dimensional time series of the distances between the clustering trees that reflect the changes in the relationship between the companies in the market over time. The method from statistical process control, namely the Shewhart control chart, is applied to those time series to detect abnormal changes in the financial market.
+-->
+
 
 **[13. A Note on The Dynamic Effects of Supply and Demand Shocks in the Crude Oil Market](https://doi.org/10.1080/13504851.2024.2308590)** \\
 <span style="font-size:0.75em;"> 
@@ -208,6 +217,7 @@ We propose a class of dynamic factor copulas for financial data where the dynami
 -->
 </span>
 
+<a href="https://www.scimagojr.com/journalsearch.php?q=19053&amp;tip=sid&amp;exact=no" title="SCImago Journal &amp; Country Rank"><img border="0" src="https://www.scimagojr.com/journal_img.php?id=19053" alt="SCImago Journal &amp; Country Rank"  /></a>
 <a href="https://www.scimagojr.com/journalsearch.php?q=110031&amp;tip=sid&amp;exact=no" title="SCImago Journal &amp; Country Rank"><img border="0" src="https://www.scimagojr.com/journal_img.php?id=110031" alt="SCImago Journal &amp; Country Rank"  /></a>
 <a href="https://www.scimagojr.com/journalsearch.php?q=17499&amp;tip=sid&amp;exact=no" title="SCImago Journal &amp; Country Rank"><img border="0" src="https://www.scimagojr.com/journal_img.php?id=17499" alt="SCImago Journal &amp; Country Rank"  /></a>
 <a href="https://www.scimagojr.com/journalsearch.php?q=29374&amp;tip=sid&amp;exact=no" title="SCImago Journal &amp; Country Rank"><img border="0" src="https://www.scimagojr.com/journal_img.php?id=29374" alt="SCImago Journal &amp; Country Rank"  /></a>
