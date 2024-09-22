@@ -17,17 +17,6 @@ According to my knowledge, we are the first who aim to find out the dynamic rela
 </span>
 -->
 
-**[18. Structured factor copulas for modeling the systemic risk of European and U.S. banks](https://arxiv.org/abs/2401.03443)** \\
-<span style="font-size:0.75em;"> 
-Hoang Nguyen, Audrone Virbickaite, M. Concepcíon Ausín and Pedro Galeano   \\
-[Paper](https://hoanguc3m.github.io/Talk/04_fvcop/Paper.pdf) -
-[Online Appendix](https://hoanguc3m.github.io/Talk/04_fvcop/OnlineApp.pdf) -
-[Code](https://github.com/hoanguc3m/fvcops) 
-<!---
-Abstract: In this paper, we employ Credit Default Swaps (CDS) to model the joint and conditional distress probabilities of banks in Europe and the U.S.\ using factor copulas. We propose multi-factor,  structured factor, and factor-vine models where the banks in the sample are clustered according to their geographic location. We find that within each region, the co-dependence between banks is best described using both, systematic and idiosyncratic, financial contagion channels. However, if we consider the banking system as a whole, then the systematic contagion channel prevails, meaning that the distress probabilities are driven by a latent global factor and region-specific factors. In all cases, the co-dependence structure of bank CDS spreads is highly correlated in the tail. The out-of-sample forecasts of several measures of systematic risk allow us to identify the periods of distress in the banking sector over the recent years including the COVID-19 pandemic, the interest rate hikes in 2022, and the banking crisis in 2023. 
--->
-
-
 **[17. US Interest Rates: Are Relations Stable?](https://swopec.hhs.se/oruesi/abs/oruesi2024_003.htm)** \\
 <span style="font-size:0.75em;"> 
 Sune Karlsson, Tamás Kiss, Hoang Nguyen and Pär Österholm   \\
@@ -37,28 +26,30 @@ Sune Karlsson, Tamás Kiss, Hoang Nguyen and Pär Österholm   \\
 Abstract: In this paper, we assess whether key relations between US interest rates have been stable over time. This is done by estimating trivariate hybrid time-varying parame- ter Bayesian VAR models with stochastic volatility for the three-month Treasury bill rate, the slope of the Treasury yield curve and the corporate bond-yield spread. As a methodological contribution, we also allow for disturbances with heavy tails. We anal- yse monthly data from April 1953 to February 2023 both within- and out-of-sample. Our results indicate that the relations have not been stable; more specifically, there is evidence that the equation of the corporate bond-yield spread is subject to time varia- tion in its parameters. We also find that an increase in the corporate bond-yield spread decreases the risk free rate. Finally, we note that while allowing for heavy tails receives a fair amount of support within sample, it appears to be of more limited importance from a forecasting perspective.
 -->
 
-**[16. Deep Learning Enhanced Volatility Modeling with Covariates](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4657189)** \\
-<span style="font-size:0.75em;"> 
-Hien Thi Nguyen, Hoang Nguyen, and Minh-Ngoc Tran  \\
-[Paper](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4657189) -
-[Code]() 
-<!---
-Abstract: Exogenous information such as policy news and economic indicators  can have the potential to trigger significant movements in financial asset volatility. This article presents a model, called the RECH-X model,  that allows incorporating exogenous variables into a recurrent neural network for volatility modeling and forecasting. The RECH-X model can allow for abrupt changes in the volatility level and effectively capture the complex serial dependence structure in the volatility dynamics. We demonstrate in a wide range of applications that the RECH-X model consistently outperforms the benchmark models in terms of volatility modeling and forecasting.
--->
 
-
-
-**[15. Estimation of optimal portfolio compositions for small sample and singular covariance matrix](https://www.oru.se/globalassets/oru-sv/institutioner/hh/workingpapers/workingpapers2022/wp-15-2022.pdf)** \\
-<span style="font-size:0.75em;"> 
-Taras Bodnar, Stepan Mazur, and Hoang Nguyen \\
-[Working Paper](https://www.oru.se/globalassets/oru-sv/institutioner/hh/workingpapers/workingpapers2022/wp-15-2022.pdf) 
-<!---
-Abstract: In the paper we consider the optimal portfolio choice problem under parameter uncertainty when the covariance matrix of asset returns is singular. Very useful stochastic representations are deduced for the characteristics of the expected utility optimal portfolio. Using these stochastic representations, we derive the moments of higher order of the estimated expected return and the estimated variance of the expected utility optimal portfolio. Another line of applications leads to their asymptotic distributions obtained in the high-dimensional setting. Via a simulation study, it is shown that the derived high-dimensional asymptotic distributions provide good approximations of the exact ones even for moderate sample sizes.
--->
 
 
 
 ---------------------------------------------------------------------------------------------------------------------
+
+**[16. Structured factor copulas for modeling the systemic risk of European and U.S. banks](https://hoanguc3m.github.io/Talk/04_fvcop/Paper.pdf)** \\
+<span style="font-size:0.75em;"> 
+Hoang Nguyen, Audrone Virbickaite, M. Concepcíon Ausín and Pedro Galeano   \\
+[Paper](https://hoanguc3m.github.io/Talk/04_fvcop/Paper.pdf) -
+[Online Appendix](https://hoanguc3m.github.io/Talk/04_fvcop/OnlineApp.pdf) -
+[Code](https://github.com/hoanguc3m/fvcops) 
+<!---
+Abstract: In this paper, we employ Credit Default Swaps (CDS) to model the joint and conditional distress probabilities of banks in Europe and the U.S.\ using factor copulas. We propose multi-factor,  structured factor, and factor-vine models where the banks in the sample are clustered according to their geographic location. We find that within each region, the co-dependence between banks is best described using both, systematic and idiosyncratic, financial contagion channels. However, if we consider the banking system as a whole, then the systematic contagion channel prevails, meaning that the distress probabilities are driven by a latent global factor and region-specific factors. In all cases, the co-dependence structure of bank CDS spreads is highly correlated in the tail. The out-of-sample forecasts of several measures of systematic risk allow us to identify the periods of distress in the banking sector over the recent years including the COVID-19 pandemic, the interest rate hikes in 2022, and the banking crisis in 2023. 
+-->
+
+**[15. Deep Learning Enhanced Volatility Modeling with Covariates](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4657189)** \\
+<span style="font-size:0.75em;"> 
+Hien Thi Nguyen, Hoang Nguyen, and Minh-Ngoc Tran  \\
+[Finance Research Letters (2024)]() - 
+[Paper](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4657189)
+<!---
+Abstract: Exogenous information such as policy news and economic indicators  can have the potential to trigger significant movements in financial asset volatility. This article presents a model, called the RECH-X model,  that allows incorporating exogenous variables into a recurrent neural network for volatility modeling and forecasting. The RECH-X model can allow for abrupt changes in the volatility level and effectively capture the complex serial dependence structure in the volatility dynamics. We demonstrate in a wide range of applications that the RECH-X model consistently outperforms the benchmark models in terms of volatility modeling and forecasting.
+-->
 
 **[14. Monitoring the dynamic networks of stock returns with an application to the Swedish stock market](https://link.springer.com/article/10.1007/s10614-024-10616-2)** \\
 <span style="font-size:0.75em;"> 
@@ -218,6 +209,20 @@ We propose a class of dynamic factor copulas for financial data where the dynami
 -->
 </span>
 
+---------------------------------------------------------------------------------------------------------------------
+
+**Book chapter**
+
+**[1. Estimation of optimal portfolio compositions for small sample and singular covariance matrix](https://hoanguc3m.github.io/Talk/00_econ/BMNPortsingCov.pdf)** \\
+<span style="font-size:0.75em;"> 
+Taras Bodnar, Stepan Mazur, and Hoang Nguyen \\
+[Advanced Statistical Methods in Process Monitoring, Finance, and Environmental Science : Essays in Honour of Wolfgang Schmid (2024)](https://www.brownsbfs.co.uk/Product/Knoth-Sven/Advanced-Statistical-Methods-in-Process-Monitoring-Financ/9783031691102) - 
+[Paper](https://hoanguc3m.github.io/Talk/00_econ/BMNPortsingCov.pdf) 
+<!---
+Abstract: In the paper we consider the optimal portfolio choice problem under parameter uncertainty when the covariance matrix of asset returns is singular. Very useful stochastic representations are deduced for the characteristics of the expected utility optimal portfolio. Using these stochastic representations, we derive the moments of higher order of the estimated expected return and the estimated variance of the expected utility optimal portfolio. Another line of applications leads to their asymptotic distributions obtained in the high-dimensional setting. Via a simulation study, it is shown that the derived high-dimensional asymptotic distributions provide good approximations of the exact ones even for moderate sample sizes.
+-->
+
+<a href="https://www.scimagojr.com/journalsearch.php?q=17385&amp;tip=sid&amp;exact=no" title="SCImago Journal &amp; Country Rank"><img border="0" src="https://www.scimagojr.com/journal_img.php?id=17385" alt="SCImago Journal &amp; Country Rank"  /></a>
 <a href="https://www.scimagojr.com/journalsearch.php?q=19053&amp;tip=sid&amp;exact=no" title="SCImago Journal &amp; Country Rank"><img border="0" src="https://www.scimagojr.com/journal_img.php?id=19053" alt="SCImago Journal &amp; Country Rank"  /></a>
 <a href="https://www.scimagojr.com/journalsearch.php?q=110031&amp;tip=sid&amp;exact=no" title="SCImago Journal &amp; Country Rank"><img border="0" src="https://www.scimagojr.com/journal_img.php?id=110031" alt="SCImago Journal &amp; Country Rank"  /></a>
 <a href="https://www.scimagojr.com/journalsearch.php?q=17499&amp;tip=sid&amp;exact=no" title="SCImago Journal &amp; Country Rank"><img border="0" src="https://www.scimagojr.com/journal_img.php?id=17499" alt="SCImago Journal &amp; Country Rank"  /></a>
