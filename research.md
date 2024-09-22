@@ -35,6 +35,7 @@ Abstract: In this paper, we assess whether key relations between US interest rat
 **[16. Structured factor copulas for modeling the systemic risk of European and U.S. banks](https://hoanguc3m.github.io/Talk/04_fvcop/Paper.pdf)** \\
 <span style="font-size:0.75em;"> 
 Hoang Nguyen, Audrone Virbickaite, M. Concepcíon Ausín and Pedro Galeano   \\
+[International Review of Financial Analysis (2024)]() - 
 [Paper](https://hoanguc3m.github.io/Talk/04_fvcop/Paper.pdf) -
 [Online Appendix](https://hoanguc3m.github.io/Talk/04_fvcop/OnlineApp.pdf) -
 [Code](https://github.com/hoanguc3m/fvcops) 
