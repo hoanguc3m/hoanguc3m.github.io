@@ -39,7 +39,7 @@ Hoang Nguyen, Audrone Virbickaite, M. Concepcíon Ausín and Pedro Galeano   \\
 [Paper](https://hoanguc3m.github.io/Talk/04_fvcop/Paper.pdf) -
 [Online Appendix](https://hoanguc3m.github.io/Talk/04_fvcop/OnlineApp.pdf)
 <!---
-- [Code](https://github.com/hoanguc3m/fvcops) 
+[Code](https://github.com/hoanguc3m/fvcops) 
 Abstract: In this paper, we employ Credit Default Swaps (CDS) to model the joint and conditional distress probabilities of banks in Europe and the U.S.\ using factor copulas. We propose multi-factor,  structured factor, and factor-vine models where the banks in the sample are clustered according to their geographic location. We find that within each region, the co-dependence between banks is best described using both, systematic and idiosyncratic, financial contagion channels. However, if we consider the banking system as a whole, then the systematic contagion channel prevails, meaning that the distress probabilities are driven by a latent global factor and region-specific factors. In all cases, the co-dependence structure of bank CDS spreads is highly correlated in the tail. The out-of-sample forecasts of several measures of systematic risk allow us to identify the periods of distress in the banking sector over the recent years including the COVID-19 pandemic, the interest rate hikes in 2022, and the banking crisis in 2023. 
 -->
 
