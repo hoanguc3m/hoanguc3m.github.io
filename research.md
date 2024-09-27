@@ -35,18 +35,18 @@ Abstract: In this paper, we assess whether key relations between US interest rat
 **[16. Structured factor copulas for modeling the systemic risk of European and U.S. banks](https://hoanguc3m.github.io/Talk/04_fvcop/Paper.pdf)** \\
 <span style="font-size:0.75em;"> 
 Hoang Nguyen, Audrone Virbickaite, M. Concepcíon Ausín and Pedro Galeano   \\
-[International Review of Financial Analysis (2024)]() - 
+[International Review of Financial Analysis (2024)](https://doi.org/10.1016/j.irfa.2024.103621) - 
 [Paper](https://hoanguc3m.github.io/Talk/04_fvcop/Paper.pdf) -
 [Online Appendix](https://hoanguc3m.github.io/Talk/04_fvcop/OnlineApp.pdf) -
-[Code](https://github.com/hoanguc3m/fvcops) 
 <!---
+[Code](https://github.com/hoanguc3m/fvcops) 
 Abstract: In this paper, we employ Credit Default Swaps (CDS) to model the joint and conditional distress probabilities of banks in Europe and the U.S.\ using factor copulas. We propose multi-factor,  structured factor, and factor-vine models where the banks in the sample are clustered according to their geographic location. We find that within each region, the co-dependence between banks is best described using both, systematic and idiosyncratic, financial contagion channels. However, if we consider the banking system as a whole, then the systematic contagion channel prevails, meaning that the distress probabilities are driven by a latent global factor and region-specific factors. In all cases, the co-dependence structure of bank CDS spreads is highly correlated in the tail. The out-of-sample forecasts of several measures of systematic risk allow us to identify the periods of distress in the banking sector over the recent years including the COVID-19 pandemic, the interest rate hikes in 2022, and the banking crisis in 2023. 
 -->
 
 **[15. Deep Learning Enhanced Volatility Modeling with Covariates](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4657189)** \\
 <span style="font-size:0.75em;"> 
 Hien Thi Nguyen, Hoang Nguyen, and Minh-Ngoc Tran  \\
-[Finance Research Letters (2024)]() - 
+[Finance Research Letters (2024)](https://doi.org/10.1016/j.frl.2024.106145) - 
 [Paper](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4657189)
 <!---
 Abstract: Exogenous information such as policy news and economic indicators  can have the potential to trigger significant movements in financial asset volatility. This article presents a model, called the RECH-X model,  that allows incorporating exogenous variables into a recurrent neural network for volatility modeling and forecasting. The RECH-X model can allow for abrupt changes in the volatility level and effectively capture the complex serial dependence structure in the volatility dynamics. We demonstrate in a wide range of applications that the RECH-X model consistently outperforms the benchmark models in terms of volatility modeling and forecasting.
