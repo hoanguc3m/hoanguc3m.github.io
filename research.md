@@ -17,6 +17,15 @@ According to my knowledge, we are the first who aim to find out the dynamic rela
 </span>
 -->
 
+**[18. VAR Models with Fat Tails and Dynamic Asymmetry](https://swopec.hhs.se/oruesi/abs/oruesi2024_008.htm)** \\
+<span style="font-size:0.75em;"> 
+Tamás Kiss,  Stepan Mazur, Hoang Nguyen and Pär Österholm   \\
+[Paper](https://hoanguc3m.github.io/Talk/00_econ/KMNPDynSkew.pdf) -
+[Code](https://github.com/hoanguc3m/fatBVARS) 
+<!---
+Abstract: In this paper, we extend the standard Gaussian stochastic-volatility Bayesian VAR by employing the generalized hyperbolic skew Student’s t distribution for the innovations. Allowing the skewness parameter to vary over time, our specification permits flexible modelling of innovations in terms of both fat tails and – potentially dynamic – asymmetry. In an empirical application using US data on industrial production, consumer prices and economic policy uncertainty, we find support – although to a moderate extent – for time-varying skewness. In addition, we find that shocks to economic policy uncertainty have a negative effect on both industrial production growth and CPI inflation.
+-->
+
 **[17. US Interest Rates: Are Relations Stable?](https://swopec.hhs.se/oruesi/abs/oruesi2024_003.htm)** \\
 <span style="font-size:0.75em;"> 
 Sune Karlsson, Tamás Kiss, Hoang Nguyen and Pär Österholm   \\
