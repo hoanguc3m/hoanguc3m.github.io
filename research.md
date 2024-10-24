@@ -226,7 +226,7 @@ We propose a class of dynamic factor copulas for financial data where the dynami
 **[1. Estimation of optimal portfolio compositions for small sample and singular covariance matrix](https://hoanguc3m.github.io/Talk/00_econ/BMNPortsingCov.pdf)** \\
 <span style="font-size:0.75em;"> 
 Taras Bodnar, Stepan Mazur, and Hoang Nguyen \\
-[Advanced Statistical Methods in Process Monitoring, Finance, and Environmental Science : Essays in Honour of Wolfgang Schmid (2024)](https://www.brownsbfs.co.uk/Product/Knoth-Sven/Advanced-Statistical-Methods-in-Process-Monitoring-Financ/9783031691102) - 
+[Advanced Statistical Methods in Process Monitoring, Finance, and Environmental Science : Essays in Honour of Wolfgang Schmid (2024)](https://link.springer.com/chapter/10.1007/978-3-031-69111-9_13) - 
 [Paper](https://hoanguc3m.github.io/Talk/00_econ/BMNPortsingCov.pdf) 
 <!---
 Abstract: In the paper we consider the optimal portfolio choice problem under parameter uncertainty when the covariance matrix of asset returns is singular. Very useful stochastic representations are deduced for the characteristics of the expected utility optimal portfolio. Using these stochastic representations, we derive the moments of higher order of the estimated expected return and the estimated variance of the expected utility optimal portfolio. Another line of applications leads to their asymptotic distributions obtained in the high-dimensional setting. Via a simulation study, it is shown that the derived high-dimensional asymptotic distributions provide good approximations of the exact ones even for moderate sample sizes.
