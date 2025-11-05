@@ -17,13 +17,30 @@ According to my knowledge, we are the first who aim to find out the dynamic rela
 </span>
 -->
 
-**[18. VAR Models with Fat Tails and Dynamic Asymmetry](https://swopec.hhs.se/oruesi/abs/oruesi2024_008.htm)** \\
+**[20. Nowcasting with heavy-tail mixed-frequency VARs](https://swopec.hhs.se/oruesi/abs/oruesi2025_014.htm)** \\
 <span style="font-size:0.75em;"> 
-Tamás Kiss,  Stepan Mazur, Hoang Nguyen and Pär Österholm   \\
-[Paper](https://hoanguc3m.github.io/Talk/00_econ/KMNPDynSkew.pdf) -
-[Code](https://github.com/hoanguc3m/fatBVARS) 
+Sune Karlsson, Stepan Mazur, Hoang Nguyen \\
+[Paper]()  -  [Code](https://github.com/hoanguc3m/MFVART) 
 <!---
-Abstract: In this paper, we extend the standard Gaussian stochastic-volatility Bayesian VAR by employing the generalized hyperbolic skew Student’s t distribution for the innovations. Allowing the skewness parameter to vary over time, our specification permits flexible modelling of innovations in terms of both fat tails and – potentially dynamic – asymmetry. In an empirical application using US data on industrial production, consumer prices and economic policy uncertainty, we find support – although to a moderate extent – for time-varying skewness. In addition, we find that shocks to economic policy uncertainty have a negative effect on both industrial production growth and CPI inflation.
+Abstract: The mixed-frequency VAR model has become a workhorse for nowcasting low-frequency macroeconomic variables with the most recent release of information on related high-frequency variables. However, assuming Gaussian innovations  may lead to biased estimations in the presence of outliers. In this paper, we propose an MF-VAR model with orthogonal Student-$t$ distributions that accounts for the individual outliers in each VAR equation. Using the U.S. data for a small VAR setting, we show that the heavy-tailed distribution delivers more accurate nowcasting and forecasting for the quarterly GDP growth. It also enhances the nowcasting of monthly variables and provide a solution for the contaminated estimations caused by the Covid-19 pandemic extreme observations. 
+-->
+</span>
+
+
+**[19. Volume-driven time-of-day effects in intraday volatility models](https://swopec.hhs.se/oruesi/abs/oruesi2025_013.htm)** \\
+<span style="font-size:0.75em;"> 
+Igor F. B. Martins, Audrone Virbickaite, Hoang Nguyen and Hedibert Freitas Lopes   \\
+[Paper]() - 
+<!---
+Abstract: We propose a high-frequency stochastic volatility model that integrates persistent component, static intraday periodicity, and volume-driven time-of-day effects. By allowing intraday volatility patterns to respond to lagged trading activity, the model captures economically relevant departures from static periodic volatility. We find that volume-driven components account for a substantial share of intraday volatility for futures data across equity indexes, currencies, and commodities. Out-of-sample, our forecasts achieve near-zero intercepts, unit slopes, and the highest $R^2$ values in Mincer-Zarnowitz regressions, while horse-race regressions indicate that competing forecasts add little information once our predictions are included. These statistical improvements translate into economically meaningful gains, as volatility-managed portfolio strategies based on our model consistently improve Sharpe ratios. Our results highlight the value of incorporating lagged trading activity into high-frequency volatility models.
+-->
+
+**[18. Fast and Slow Level Shifts in Intraday Stochastic Volatility?](https://swopec.hhs.se/oruesi/abs/oruesi2025_012.htm)** \\
+<span style="font-size:0.75em;"> 
+Igor F. B. Martins, Audrone Virbickaite, Hoang Nguyen and Hedibert Freitas Lopes   \\
+[Paper]() - 
+<!---
+Abstract: This paper proposes a mixed-frequency stochastic volatility model for intraday returns that captures fast and slow level shifts in the volatility level induced by news from both low-frequency variables and scheduled announcements. A MIDAS component describes slow-moving changes in volatility driven by daily variables, while an announcement component captures fast event-driven volatility bursts. Using 5-minute crude oil futures returns, we show that accounting for both fast and slow level shifts significantly improves volatility forecasts at intraday and daily horizons. The superior forecasts also translate into higher Sharpe ratios using the volatility-managed portfolio strategy.
 -->
 
 **[17. US Interest Rates: Are Relations Stable?](https://swopec.hhs.se/oruesi/abs/oruesi2024_003.htm)** \\
@@ -222,6 +239,15 @@ We propose a class of dynamic factor copulas for financial data where the dynami
 ---------------------------------------------------------------------------------------------------------------------
 
 **Book chapter**
+
+**[2. VAR Models with Fat Tails and Dynamic Asymmetry](https://link.springer.com/chapter/10.1007/978-3-032-00110-8_5)** \\
+<span style="font-size:0.75em;"> 
+Tamás Kiss,  Stepan Mazur, Hoang Nguyen and Pär Österholm   \\
+[Paper](https://hoanguc3m.github.io/Talk/00_econ/KMNPDynSkew.pdf) -
+[Code](https://github.com/hoanguc3m/fatBVARS) 
+<!---
+Abstract: In this chapter, we extend the standard Gaussian stochastic volatility Bayesian VAR by employing the generalized hyperbolic skew Student’s t distribution for the innovations. Allowing the skewness parameter to vary over time, our specification permits flexible modelling of innovations in terms of both fat tails and—potentially dynamic—asymmetry. In an empirical application using US data on industrial production, consumer prices and economic policy uncertainty, we find support—although to a moderate extent—for time-varying skewness. In addition, we find that shocks to economic policy uncertainty have a negative effect on both industrial production growth and CPI inflation.
+-->
 
 **[1. Estimation of optimal portfolio compositions for small sample and singular covariance matrix](https://hoanguc3m.github.io/Talk/00_econ/BMNPortsingCov.pdf)** \\
 <span style="font-size:0.75em;"> 
