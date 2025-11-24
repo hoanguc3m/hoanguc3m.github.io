@@ -17,7 +17,7 @@ According to my knowledge, we are the first who aim to find out the dynamic rela
 </span>
 -->
 
-**[20. Nowcasting with heavy-tail mixed-frequency VARs](https://swopec.hhs.se/oruesi/abs/oruesi2025_014.htm)** \\
+**[20. Nowcasting with heavy-tail mixed-frequency VARs](https://swopec.hhs.se/oruesi/abs/oruesi2026_001.htm)** \\
 <span style="font-size:0.75em;"> 
 Sune Karlsson, Stepan Mazur, Hoang Nguyen \\
 [Paper]()  -  [Code](https://github.com/hoanguc3m/MFVART) 
@@ -27,15 +27,15 @@ Abstract: The mixed-frequency VAR model has become a workhorse for nowcasting lo
 </span>
 
 
-**[19. Volume-driven time-of-day effects in intraday volatility models](https://swopec.hhs.se/oruesi/abs/oruesi2025_013.htm)** \\
+**[19. Volume-driven time-of-day effects in intraday volatility models](https://swopec.hhs.se/oruesi/abs/oruesi2025_014.htm)** \\
 <span style="font-size:0.75em;"> 
 Igor F. B. Martins, Audrone Virbickaite, Hoang Nguyen and Hedibert Freitas Lopes   \\
-[Paper](https://www.oru.se/globalassets/oru-sv/institutioner/hh/workingpapers/workingpapers2025/wp-13-2025.pdf) 
+[Paper](https://www.oru.se/globalassets/oru-sv/institutioner/hh/workingpapers/workingpapers2025/wp-14-2025.pdf) 
 <!---
 Abstract: We propose a high-frequency stochastic volatility model that integrates persistent component, static intraday periodicity, and volume-driven time-of-day effects. By allowing intraday volatility patterns to respond to lagged trading activity, the model captures economically relevant departures from static periodic volatility. We find that volume-driven components account for a substantial share of intraday volatility for futures data across equity indexes, currencies, and commodities. Out-of-sample, our forecasts achieve near-zero intercepts, unit slopes, and the highest $R^2$ values in Mincer-Zarnowitz regressions, while horse-race regressions indicate that competing forecasts add little information once our predictions are included. These statistical improvements translate into economically meaningful gains, as volatility-managed portfolio strategies based on our model consistently improve Sharpe ratios. Our results highlight the value of incorporating lagged trading activity into high-frequency volatility models.
 -->
 
-**[18. Fast and Slow Level Shifts in Intraday Stochastic Volatility?](https://swopec.hhs.se/oruesi/abs/oruesi2025_012.htm)** \\
+**[18. Fast and Slow Level Shifts in Intraday Stochastic Volatility](https://swopec.hhs.se/oruesi/abs/oruesi2025_012.htm)** \\
 <span style="font-size:0.75em;"> 
 Igor F. B. Martins, Audrone Virbickaite, Hoang Nguyen and Hedibert Freitas Lopes   \\
 [Paper](https://www.oru.se/globalassets/oru-sv/institutioner/hh/workingpapers/workingpapers2025/wp-12-2025.pdf) 
