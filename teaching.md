@@ -7,9 +7,9 @@ permalink: /teaching/
 
 * *Co-Instructor*, IEI, LiU
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Course: **Financial Risk Management**, 2023, 2024 [Web content](https://studieinfo.liu.se/kurs/TPPE32/ht-2023) 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Course: **Financial Risk Management**, 2023 - now [Web content](https://studieinfo.liu.se/kurs/TPPE32/ht-2023) 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Course: **Portfolio Management**, 2024 [Web content](https://studieinfo.liu.se/en/kurs/TPPE33/vt-2024) 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Course: **Portfolio Management**, 2024 - now [Web content](https://studieinfo.liu.se/en/kurs/TPPE33/vt-2024) 
 
 
 
