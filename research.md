@@ -17,7 +17,7 @@ According to my knowledge, we are the first who aim to find out the dynamic rela
 </span>
 -->
 
-**[20. Nowcasting with heavy-tail mixed-frequency VARs](https://swopec.hhs.se/oruesi/abs/oruesi2026_001.htm)** \\
+**[20. Nowcasting with heavy-tail mixed-frequency VARs](https://swopec.hhs.se/oruesi/abs/oruesi2026_010.htm)** \\
 <span style="font-size:0.75em;"> 
 Sune Karlsson, Stepan Mazur, Hoang Nguyen \\
 [Paper]()  -  [Code](https://github.com/hoanguc3m/MFVART) 
