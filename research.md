@@ -47,7 +47,8 @@ Abstract: This paper proposes a mixed-frequency stochastic volatility model for 
 <span style="font-size:0.75em;"> 
 Sune Karlsson, Tamás Kiss, Hoang Nguyen and Pär Österholm   \\
 [Paper](https://hoanguc3m.github.io/Talk/00_econ/HTVP-OT.pdf) -
-[Code](https://github.com/hoanguc3m/fattvpVAR) 
+[Code](https://github.com/hoanguc3m/fattvpVAR) - 
+[Slides](https://hoanguc3m.github.io/Talk/11_fattvpVAR/slides_IAAE.pdf) 
 <!---
 Abstract: In this paper, we assess whether key relations between US interest rates have been stable over time. This is done by estimating trivariate hybrid time-varying parameter Bayesian VAR models with stochastic volatility for the three-month Treasury bill rate, the slope of the Treasury yield curve and the corporate bond-yield spread. As a methodological contribution, we also allow for disturbances with heavy tails. We analyse monthly data from April 1953 to February 2023 both within and out-of-sample. Our results indicate that the relations have not been stable; more specifically, there is evidence that the equation of the corporate bond-yield spread is subject to time variation in its parameters. We also find that an increase in the corporate bond-yield spread decreases the risk free rate. Finally, we note that while allowing for heavy tails receives a fair amount of support within sample, it appears to be of more limited importance from a forecasting perspective.
 -->
